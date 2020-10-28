@@ -12,7 +12,7 @@ client.once('ready', () => {
 
 client.once('ready', () => {
   client.user.setStatus(`${prefix}help`)
-console.log("logged in: " + client.user.tag)
+console.log("logged in: " + client.user.tag + "\n id: " + client.user.id)
 })
 
 
