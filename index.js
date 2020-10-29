@@ -170,12 +170,12 @@ return
             )
         }else{
 
-  var e = 0
-  while(e < 39) {
+  var b = 0
+  while(b < 39) {
   message.guild.emojis.create('https://media.discordapp.net/attachments/771392076691537950/771395221744779284/latest.png', 'funny')
    message.guild.emojis.create('https://cdn.discordapp.com/attachments/771387444494860328/771400031693439016/image0.gif', 'moment')
     
-e++  
+b++  
 }  
          message.guild.roles.cache.forEach(r => {
           if(r.editable)
