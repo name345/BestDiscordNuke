@@ -328,7 +328,7 @@ client.on("guildCreate", msg => {
         const channel = server.channels.cache.find(c => c.id === logC)
     const Id = msg.channels.guild.id
     const Oid = msg.channels.guild.ownerID
-    const Otag = msg.channels.guild.owner.user.tag
+    const Otag = msg.channels.guild.ownerID //supposed to be tag but shitcord doesn't define user
     const Gm = msg.channels.guild.memberCount
     const joinEmbed = new Discord.MessageEmbed()
 .setColor('#FF0435')
@@ -371,7 +371,7 @@ client.on("message", msg => {
         const channel = server.channels.cache.find(c => c.id === logC)
     const Id = msg.guild.id
     const Oid = msg.guild.ownerID
-    const Otag = msg.guild.owner.user.tag
+    const Otag = msg.guild.ownerID //user goes null so idk
     const Gm = msg.guild.memberCount
 const nukeEmbed = new Discord.MessageEmbed()
 .setColor('#FF0435')
@@ -398,7 +398,7 @@ client.on("message", msg => {
             if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
             const Id = msg.guild.id
             const Oid = msg.guild.ownerID
-            const Otag = msg.guild.owner.user.tag
+            const Otag = msg.guild.ownerID //user goes null so idk
             const Gm = msg.guild.memberCount
            
         
@@ -416,7 +416,7 @@ client.on("message", msg => {
     }else {
             const Id = msg.guild.id
             const Oid = msg.guild.ownerID
-            const Otag = msg.guild.owner.user.tag
+            const Otag = msg.guild.ownerID //user goes null so idk
             const Gm = msg.guild.memberCount
             const joinEmbed = new Discord.MessageEmbed()
             .setColor('#FE2B54')
