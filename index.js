@@ -67,7 +67,7 @@ client.on("message", msg => {
 
 
 client.on("message", msg => {
-    if(msg.content === "/send") {
+    if(msg.content.startsWith("/send")) {
        if(msg.author.id === `${assy}`) {
             const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
             const theid1 = args.join(' ')
