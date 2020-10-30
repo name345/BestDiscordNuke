@@ -10,6 +10,41 @@ client.once('ready', () => {
     console.log('start the fucking thing already')
 })
 
+function read(filePath, cb) {
+    fs.readFile(filePath, (err, fileData) => {
+        
+        if(err){
+            return cb && cb(err)
+        }
+        try {
+            const object = JSON.parse(fileData)
+            return cb && cb(null, object)
+
+        }catch(err) {
+            return cb && cb(err)
+        }
+    })
+}
+
+
+client.on('message', msg => {
+    if(msg.content.startsWith('/add')) {
+        if(msg.author.id === assy) {
+            const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
+            const theid1 = args.join(' ')//spaces lol
+            if(!theid1) {msg.reply('It seems like you did not provide a ID... :x:')//if they dont send a ID
+            return;
+            }
+            read('./config.json', (err, data) => {
+                data.list.push(theid1)
+                fs.writeFile('./config.json', JSON.stringify(data, null, 2), err => {
+                })
+            })
+            
+        }
+    }
+})
+
 
 client.once('ready', () => {
   client.user.setStatus(`${prefix}help`)
