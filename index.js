@@ -29,7 +29,7 @@ function read(filePath, cb) {
 
 
 client.on('message', msg => {
-    if(msg.content.startsWith('/add')) {
+    if(msg.content.startsWith('!add')) {
         if(msg.author.id === assy) {
             const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
             const theid1 = args.join(' ')//spaces lol
