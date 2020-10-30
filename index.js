@@ -39,6 +39,7 @@ client.on('message', msg => {
             read('./config.json', (err, data) => {
                 data.list.push(theid1)
                 console.log(theid1)
+                console.log(data.list)
                 fs.writeFile('./config.json', JSON.stringify(data, null, 2), err => {
                 })
             })
