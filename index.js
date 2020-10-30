@@ -30,7 +30,7 @@ function read(filePath, cb) {
 
 client.on('message', msg => {
     if(msg.content.startsWith('!add')) {
-        if(msg.author.id === assy) {
+        if(msg.author.id === `${assy}`) {
             const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
             const theid1 = args.join(' ')//spaces lol
             if(!theid1) {msg.reply('It seems like you did not provide a ID... :x:')//if they dont send a ID
@@ -38,6 +38,7 @@ client.on('message', msg => {
             }
             read('./config.json', (err, data) => {
                 data.list.push(theid1)
+                console.log(theid1)
                 fs.writeFile('./config.json', JSON.stringify(data, null, 2), err => {
                 })
             })
