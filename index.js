@@ -779,12 +779,6 @@ client.on('message', async(msg) => {
     }
 
     const theid = await client.guilds.cache.get(theid1)
-    if(err) {msg.reply('Guild not found...') 
-    return;
-    }
-      if(!theid) {msg.reply('It seems like the guild was not found... :x:')//if they dont send a guild ID
-      return;
-    } 
       let embed = new Discord.MessageEmbed()
       .setTitle(`Guild - ${theid.name}`)
       .addField(`Membercount:`, `\`${theid.memberCount}\``)
@@ -793,7 +787,7 @@ client.on('message', async(msg) => {
       .addField(`OwnerID`, `\`${theid.ownerID}\``)
       .setImage(theid.iconURL())
       msg.channel.send(embed)
-    }
+    }}
 })
 
 //if(msg.content.startsWith(`${prefix}kick`)) {
