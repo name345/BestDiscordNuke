@@ -744,6 +744,9 @@ client.on('message', async(msg) => {
     return;
     }
     const theid = await client.users.fetch(theid1)
+    if(!theid) {msg.reply('User not found...') 
+    return;
+}
     let embed = new Discord.MessageEmbed()//info embed
     .setTitle(`**User Info - ${theid.tag}**`)
     .addField("Username", `\`${theid.username}\``)
