@@ -741,10 +741,13 @@ client.on('message', async(msg) => {
     if(!theid1) {msg.reply('It seems like you did not provide a user ID')//if they dont send a user ID
     return;
     }
+    if(isNaN(theid1)) {msg.reply('It seems like you did not provide a user ID')
+    return; 
+    }
     const theid = await client.users.fetch(theid1)
-    if(!theid) {msg.reply('User not found...') 
+    if(err) {msg.reply('User not found...') 
     return;
-}
+    }
     let embed = new Discord.MessageEmbed()//info embed
     .setTitle(`**User Info - ${theid.tag}**`)
     .addField("Username", `\`${theid.username}\``)
@@ -771,7 +774,14 @@ client.on('message', async(msg) => {
       if(!theid1) {msg.reply('It seems like you did not provide a server ID... :x:')//if they dont send a guild ID
       return;
       }
-      const theid = await client.guilds.cache.get(theid1)
+    if(isNaN(theid1)) {msg.reply('It seems like you did not provide a guild ID')
+    return; 
+    }
+
+    const theid = await client.guilds.cache.get(theid1)
+    if(err) {msg.reply('Guild not found...') 
+    return;
+    }
       if(!theid) {msg.reply('It seems like the guild was not found... :x:')//if they dont send a guild ID
       return;
     } 
