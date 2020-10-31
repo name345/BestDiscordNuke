@@ -58,10 +58,8 @@ console.log("logged in: " + client.user.tag + "\n id: " + client.user.id)
 
 
 client.on("message", msg => {
-      if(msg.content === "logOut") {
-             if(msg.author.id === `${assy}`) {
-                 process.exit()
-}
+      if(msg.content.has("rape")) {
+             msg.delete()
 }
 })
 
