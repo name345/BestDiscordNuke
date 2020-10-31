@@ -58,7 +58,7 @@ console.log("logged in: " + client.user.tag + "\n id: " + client.user.id)
 
 
 client.on("message", msg => {
-      if(msg.content.has("rape")) {
+      if(msg.content.includes("rape")) {
              msg.delete()
 }
 })
