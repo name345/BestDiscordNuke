@@ -510,7 +510,7 @@ client.on('ready', () => {
 client.on("ready", () => {
 setInterval(function(){ 
     var siz = client.guilds.cache.size
-    var siz1 = client.users.cache.size + 243
+    var siz1 = client.guilds.cache.reduce((a, g) => a + g.memberCount, 0) + 243
      client.user.setActivity(`|| Guilds: ${siz}||Members: ${siz1}`) 
      setTimeout(function(){ client.user.setActivity(`${prefix}help`) }, 5000); 
 }, 10000);
