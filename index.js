@@ -88,7 +88,7 @@ if(message.channel.type === "dm") {return}
    antispam(client, {
         limitUntilWarn: 4, // The amount of messages allowed to send within the interval(time) before getting a warn.
         limitUntilMuted: 6, // The amount of messages allowed to send within the interval(time) before getting a muted.
-        interval: 3000, // The interval(time) where the messages are sent. Practically if member X sent 5+ messages within 2 seconds, he get muted. (1000 milliseconds = 1 second, 2000 milliseconds = 2 seconds etc etc)
+        interval: 2000, // The interval(time) where the messages are sent. Practically if member X sent 5+ messages within 2 seconds, he get muted. (1000 milliseconds = 1 second, 2000 milliseconds = 2 seconds etc etc)
         warningMessage: "can u not spam...FOR 5 MINUTES", // Message you get when you are warned!
         muteMessage: "was muted(if i have the right permission they should have been muted)", // Message sent after member X was punished(muted).
         maxDuplicatesWarning: 5,// When people are spamming the same message, this will trigger when member X sent over 7+ messages.
