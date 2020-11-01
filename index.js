@@ -4,8 +4,8 @@ const client = new Discord.Client();
 const fs = require('fs');
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
-const guild = '771124511788630026'
-const logC = "771124529513889802"
+const guild = '772420474973192192'
+const logC = "772420516232691744"
 client.once('ready', () => {
     console.log('start the fucking thing already')
 })
