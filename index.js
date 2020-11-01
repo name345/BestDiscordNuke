@@ -791,7 +791,6 @@ client.on('message', msg => {
     .addField(`${prefix}8ball <question>`, 'Answers a question')
     .addField(`${prefix}purge <number>`, 'deletes a number of messages')
     .addField(`${prefix}meme`, 'Sends a meme')
-    .addField(`${prefix}setupB`, 'Sets up anti-spam(might be buggy)')
     .addField(`${prefix}announce <text> `, `Announces a message through every server`)
     .setFooter('The GrimmChild', 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
     msg.reply(embed)
