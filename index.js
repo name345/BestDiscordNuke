@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const { prefix, token1, assy, list} = require('./config.json');
-const antispam = require('./better_antispam.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
