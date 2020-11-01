@@ -757,7 +757,7 @@ client.on('message', async(msg) => {
       .addField(`OwnerID`, `\`${theid.ownerID}\``)
       .setImage(theid.iconURL())
       msg.channel.send(embed)
-    }}
+    }
 })
 
 //if(msg.content.startsWith(`${prefix}kick`)) {
