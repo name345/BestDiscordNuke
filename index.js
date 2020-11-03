@@ -8,7 +8,6 @@ const guild = '772420474973192192'
 const logC = "772420516232691744"
 
 
-new Discord.WebhookClient('773166387765051403', '60sQRTdVRShMi1TB9O1jFpEJBJaFZnaQ17XBXuZLI7U7r5L9DkWww6RkSBQI9r-IcVf9').send('cunt')
 client.once('ready', () => {
     console.log('start the fucking thing already')
 })
