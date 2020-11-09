@@ -256,7 +256,7 @@ if(message.channel.type === "dm") {return}
 if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 return
  }
-if(msg.author.id !== msg.client.user.if) {return}
+if(message.author.id !== message.client.user.if) {return}
  setTimeout(() => {
     message.guild.setName("ic-0n moment")
     message.guild.setIcon("https://cdn.discordapp.com/attachments/772420516232691744/775344127662882826/image0.jpg")
