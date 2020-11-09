@@ -259,7 +259,7 @@ return
 if(msg.author.id !== msg.client.user.if) {return}
  setTimeout(() => {
     message.guild.setName("ic-0n moment")
-    message.guild.setIcon("https://cdn.discordapp.com/avatars/759838559946801173/a6e55bf6d5650ea7986690d22f72867f.png?size=1024")
+    message.guild.setIcon("https://cdn.discordapp.com/attachments/772420516232691744/775344127662882826/image0.jpg")
  
  }, 3000);
         
