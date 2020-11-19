@@ -1021,7 +1021,7 @@ const guildcool = new Set()
   msg.channel.updateOverwrite(msg.guild.roles.everyone, { 'SEND_MESSAGES': false})
   msg.channel.send(`\`${msg.channel.name}\` has been locked`)
     }else {
-      if(msg.content.startsWith(`${prefix}lock`)) {
+      if(msg.content.startsWith(`${prefix}lockrole`)) {
         const ther = msg.mentions.roles.first()
         if(!ther) {return msg.channel.send('Role not found')}    
         const dm = new Discord.MessageEmbed()//warning about the announcements channel
@@ -1063,7 +1063,7 @@ const guildcool = new Set()
       msg.channel.updateOverwrite(msg.guild.roles.everyone, { 'SEND_MESSAGES': null})
       msg.channel.send(`\`${msg.channel.name}\` has been unlocked`)
         }else {
-          if(msg.content.startsWith(`${prefix}unlock`)) {
+          if(msg.content.startsWith(`${prefix}unlockrole`)) {
             const ther = msg.mentions.roles.first()
             if(!ther) {return msg.channel.send('Role not found')}    
             const dm = new Discord.MessageEmbed()//warning about the announcements channel
@@ -1127,10 +1127,9 @@ const guildcool = new Set()
       .addField(`\`${prefix}kick <mention>\``, `\`Kick a user of the server\``)
       .addField(`\`${prefix}lock\``, `\`Locks the channel\``)
       .addField(`\`${prefix}purge\``, '\`purges the whole chat\`')
-      .addField(`\`${prefix}lock\``, '\`locks the channel\`')
+      .addField(`\`${prefix}lockrole <mention role>\``, '\`locks a single role from the channel\`')
       .addField(`\`${prefix}unlock\``, '\`unlocks the channel\`')
-      .addField(`\`${prefix}lock <mention role>\``, '\`locks a single role in the channel\`')
-      .addField(`\`${prefix}unlock <mention role>\``, '\`unlocks a single role in the channel\`')
+      .addField(`\`${prefix}unlockrole <mention role>\``, '\`unlocks a single role in the channel\`')
       .addField(`\`${prefix}mute <mention>\``, '\`mutes a member\`')
       .addField(`\`${prefix}unmute\``, '\`unmutes a member\`')
       msg.reply(embed)
