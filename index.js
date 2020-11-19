@@ -928,6 +928,7 @@ const guildcool = new Set()
             })
           })
         }
+      }
   })
 
 
