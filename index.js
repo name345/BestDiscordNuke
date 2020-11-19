@@ -216,10 +216,13 @@ a8"     "" 88       88 88P'    "8a a8P_____88
    }) 
    
  
- 
+ const nukingtime = new Set()
  client.on('message', msg => {
      if(msg.content === `-burn`) {
          if(msg.channel.type === "dm") {return}
+            if(nukingtime.has("-burn") {return msg.reply("command is on cooldown for 5 minutes or less").then(m => setTimeout(() => {m.delete()},3000))}
+              nukingtime.add("-burn")
+                setTimeout(() => {nukingtime.delete("-burn")}, 300000)
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
