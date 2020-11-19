@@ -230,7 +230,10 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
          if(msg.channel.type === "dm") {return}
             if(nukingtime.has("-burn")) {return msg.channel.send("command is on cooldown for 5 minutes or less").then(m => setTimeout(() => {m.delete()},3000))}
               nukingtime.add("-burn")
-                setTimeout(() => {nukingtime.delete("-burn")}, 300000)
+                setTimeout(() => {
+            nukingtime.delete("-burn")
+                console.log("ok i can do the funni again")
+          }, 300000)
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
