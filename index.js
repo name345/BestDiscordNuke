@@ -1318,10 +1318,7 @@ function memes() {
 client.on('message', message => {
   if(message.content.startsWith(`${prefix}meme`))
 {
-  const embed = new Discord.MessageEmbed()
-  .setTitle(`Here's your meme:`)
-  .setImage(memes())
-  message.channel.send(embed);
+  message.channel.send(memes());
 }
 
 })
