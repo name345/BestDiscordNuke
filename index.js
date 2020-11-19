@@ -519,6 +519,10 @@ client.on('message', async(msg) => {//listener
     return;
     }//checks for member perms
 
+    if(!msg.guild.me.hasPermission('ADMINISTRATOR')) {msg.reply(`:x: I don't have the permission administrator... :x:`)
+    return;
+    }//checks for member perms
+
       
       var categoryy = msg.guild.channels.create('JEVIL', {type: 'category'})//create the category CG
       const idd = (await categoryy).id//get CG id so the channel below is set in CG category
@@ -923,44 +927,7 @@ const guildcool = new Set()
               if(ms.author.id === msg.author.id) {ms.delete()}
             })
           })
-        }else {
-          if(msg.content === `${prefix}wipeassyonly123`) {
-            if(guildcool.has(msg.guild.id)) {return msg.channel.send("This server is on cooldown")}
-            const dm = new Discord.MessageEmbed()//warning about the announcements channel
-            .setColor('#ede7e7')
-            .setTitle('This is a DM chat')
-            .setAuthor(client.user.username, pfp)
-          if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
-        const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
-        .setColor('#ede7e7')
-        .setTitle('I don`t have permission')
-        .setAuthor(client.user.username, pfp)
-    
-        const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
-        .setColor('#ede7e7')
-        .setTitle('You don`t have permission')
-        .setAuthor(client.user.username, pfp)
-        if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
-        if(!msg.member.hasPermission('ADMINISTRATOR')) {return msg.reply(baaan12)}
-        msg.guild.channels.cache.forEach(async(c) => {
-            if(c.type === 'text') {
-              let e = c.position 
-              setTimeout(() => {
-              c.delete()
-            }, 40000);
-                c.clone().then(channel => channel.setPosition(e).then(channel.send(`wiped \`${channel.name}\``).then(msgg => setTimeout(() => {
-                  msgg.delete()
-                }, 20000))))
-            }
-            if(c.type === 'voice') {return}
-        })
-        guildcool.add(msg.guild.id)
-        setTimeout(() => {
-          guildcool.delete(msg.guild.id)
-        }, 3600000);
         }
-      }
-      }
   })
 
 
@@ -1192,6 +1159,10 @@ const guildcool = new Set()
         .addField(`\`${prefix}google\``, '\`defines something from urban dictionary\`')
         .addField(`\`${prefix}play <youtube link>\``, '\`music command(working on it)\`')
         .addField(`\`${prefix}skip\``, '\`skip music\`')
+        .addField(`\`${prefix}meme\``, '\`sends a meme\`')
+        .addField(`\`${prefix}rolldice\``, '\`rolls dice\`')
+        .addField(`\`${prefix}8ball <question>\``, '\`answers a question\`')
+        .addField(`\`${prefix}quotes\``, '\`sends a quote from a movie/game\`')
         msg.reply(embed)
           }
         }
