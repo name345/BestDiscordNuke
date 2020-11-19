@@ -1,12 +1,14 @@
 const Discord = require('discord.js');
 const {Intents, Client} = require('discord.js');
 const client = new Client({ws: {intents: Intents.ALL}});
+const fetch = require('node-fetch')
 const { prefix, token1, assy, list} = require('./config.json');
 const fs = require('fs');
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
 const guild = '772420474973192192'
 const logC = "772420516232691744"
+var pfp = 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png'
 //+1 626-708-0327 dani phone number
 
 client.once('ready', () => {
@@ -607,213 +609,639 @@ client.on('message', msg => {
   }
 })
 
-//kick
-client.on('message', msg => {
-  if(msg.content.startsWith(`${prefix}kick`)) {//command
-  if(msg.channel.type === "dm") return msg.reply(':x: It seems like this is a dm chat... :x:')//checks if its a dm
-    if(!msg.member.hasPermission('KICK_MEMBERS')) return msg.reply(`:x: It seems like you do not have the permission to kick members... :x:`)//checks the permission of the author
-    if(!msg.guild.me.hasPermission('KICK_MEMBERS')) return msg.reply(`:x: It seems like I do not have the permission to kick members... :x:`)//checks the bots permission
-    const mentionkick = msg.mentions.members.first()//the member to kick
-    if(mentionkick === msg.member) {msg.reply(`It seems like you tried kicking yourself... you failed...`);//if someone tries to kick themselfs
-    return;
-    }
-    if(!mentionkick) {msg.reply(':x: It seems like you did not mention anyone to kick... :x:');//if you dont mention anyone
-    return;
-    };
-    if(!mentionkick.kickable) {msg.reply(':x: It seems like I cannot kick that member... :x:');//if the member isnt kickable
-    return;
-    }
-    let authorHighRole = msg.member.roles.highest.position;//highest role of the author
-    let memberHighRole = msg.mentions.members.first().roles.highest.position;//highest role of the member to kick
-    if(memberHighRole >= authorHighRole) {msg.reply(':x: It seems like you cannot kick members with higher role then yours... :x:');//if someone tries kicking someone with a role higher then them but lower then the bots role
-    return;
-    };
-    mentionkick.kick().then(msg.channel.send(`**${mentionkick.user.tag}** has been kicked :white_check_mark:`))//sends the kick message and kicks
-}
-})
 
-
-
-//kick
-client.on('message', msg => {
-  if(msg.content.startsWith(`${prefix}ban`)) {//command
-  if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat... :x:')//checks if its a dm chat
-    if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply(`It seems like you do not have the permission to ban members... :x:`)//checks the permission of the author
-    if(!msg.guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(`It seems like I do not have the permission to ban members... :x:`)//checks the bots permission
-    const mentionkick = msg.mentions.members.first()//the member to kick
-    if(mentionkick === msg.member) {msg.reply(`It seems like you tried banning yourself... you failed...`);//if someone tries to kick themselfs
-    return;
-    }
-    if(!mentionkick) {msg.reply('It seems like you did not mention anyone to ban...?');//if you dont mention anyone
-    return;
-    };
-    if(!mentionkick.bannable) {msg.reply('It seems like I cannot ban that member... :x:');//if the member isnt kickable
-    return;
-    }
-    let authorHighRole = msg.member.roles.highest.position;//highest role of the author
-    let memberHighRole = msg.mentions.members.first().roles.highest.position;//highest role of the member to kick
-    if(memberHighRole >= authorHighRole) {msg.reply('It seems like you cannot ban members with higher role then yours... :x:');//if someone tries kicking someone with a role higher then them but lower then the bots role
-    return;
-    };
-    mentionkick.ban().then(msg.channel.send(`**${mentionkick.user.tag}** has been banned :white_check_mark:`))//sends the kick message and kicks
-}
-})
-
-client.on('message', async(msg) => {
-  if(msg.content.startsWith(`${prefix}unban`)) {//command name
-
-  if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat... :x:')//chekcs if its a dm chat
-
-    if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply(`It seems like you do not have the permission to unban members... :x:`)//checks the permission of the author
-
-    if(!msg.guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(`It seems like I do not have the permission to unban members... :x:`)//checks the bots permission
-
-    const args = msg.content.split(' ').slice(1);//gets rid of command
-    const theid = args.join(' ')//spaces
-
-    if(!theid) {msg.reply(`It seems like you did not provide a user ID... :x:`);//if they dont provide a id
-
-    if(isNaN(theid)) {msg.reply(`It seems like you did not provide a user ID... :x:`)}//if the id isnt a number
-    return;
-    };
-
-    var daBan = msg.guild.members.unban(theid)//unbans
-    const theid1 = await client.users.fetch(theid)
-    if(!daBan) { return msg.reply('It seems like the user dosen`t exist...?')//if it dosent ban
-
-    }else 
-    msg.reply(`**${theid1.tag}** has been unbanned`)//if the user has been unbanned
-  }
-})
-
-client.on('message', async(msg) => {
-
-  if(msg.content.startsWith(`${prefix}hackban`)) {//command name
-
-  if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat... :x:')//chekcs if it s a dm chat
-
-  if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply(`It seems like you do not have the permission to ban members... :x:`)//checks the permission of the author
-
-  if(!msg.guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(`It seems like I do not have the permission to ban members... :x:`)//checks the bots permission
-
-  const args = msg.content.split(' ').slice(1, 2);//gets rid of command and reason
-
-  const theid = args.join(' ')//spaces
-
-  const args2 = msg.content.split(' ').slice(2);//gets the reason
-
-  const reason = args2.join(' ')//spaces but for reason
-
-    if(isNaN(theid)) return msg.reply('It seems like you did not provide an actual ID... :x:');//if its not a number
-
-    if(!theid) return msg.reply('It seems like you did not provide a ID... :x:')//if they dont provide a id
-
-    var daBan = msg.guild.members.ban(theid, {reason: reason})//bans
-    const theid1 = await client.users.fetch(theid)
-    if(!theid1) {return msg.reply('It seems like that user dosen`t exist...?')//if the user isnt banned
-
-  }else
-   msg.reply(`**${theid1.tag}** has been banned for **${reason}**`)//sends ban text
-  }
-})
-
-
-
-
-client.on('message', async(msg) => {
-  if(msg.content.startsWith(`${prefix}userinfo`)) {//command
-
-  if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat...')//checks if its a dm chat
-    const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
-    const theid1 = args.join(' ')//spaces lol
-    if(!theid1) {msg.reply('It seems like you did not provide a user ID')//if they dont send a user ID
-    return;
-    }
-    if(isNaN(theid1)) {msg.reply('It seems like you did not provide a user ID')
-    return; 
-    }
-    const theid = await client.users.fetch(theid1)
-    if(err) {msg.reply('User not found...') 
-    return;
-    }
-    let embed = new Discord.MessageEmbed()//info embed
-    .setTitle(`**User Info - ${theid.tag}**`)
-    .addField("Username", `\`${theid.username}\``)
-    .addField("Discrim", `\`${theid.discriminator}\``)
-    .addField("ID", `\`${theid.id}\``)
-    .addField("Created", `\`${theid.createdAt}\``)
-    .setImage(theid.displayAvatarURL())
-    .setFooter(client.user.tag)
-    .setColor('#FF0435')
-
-    msg.channel.send(embed)//sends embed
-  }
-})
-
-//    .setImage(theid.avatarURL())
-
-
-client.on('message', async(msg) => {
-  if(msg.content.startsWith(`${prefix}guildinfo`)) {//command
-
-    if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat... :x:')//checks if its a dm chat
-      const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
-      const theid1 = args.join(' ')//spaces lol
-      if(!theid1) {msg.reply('It seems like you did not provide a server ID... :x:')//if they dont send a guild ID
+  client.on('message', msg => {
+    if(msg.content.startsWith(`${prefix}kick`)) {//command
+        const dm = new Discord.MessageEmbed()
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+    if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm
+    const admin = new Discord.MessageEmbed()
+    .setColor('#ede7e7')
+    .setTitle(':x: You do not have the permission to kick members :x:')
+    .setAuthor(client.user.username, pfp)
+      if(!msg.member.hasPermission('KICK_MEMBERS')) return msg.reply(admin)//checks the permission of the author
+      const admin1 = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle(':x: I do not have the permission to kick members :x:')
+      .setAuthor(client.user.username, pfp)
+      if(!msg.guild.me.hasPermission('KICK_MEMBERS')) return msg.reply(admin1)//checks the bots permission
+      const mentionkick = msg.mentions.members.first()//the member to kick
+      if(mentionkick === msg.member) {msg.reply(`It seems like you tried kicking yourself... you failed...`);//if someone tries to kick themselfs
       return;
       }
-    if(isNaN(theid1)) {msg.reply('It seems like you did not provide a guild ID')
-    return; 
-    }
+      const some = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle('You need to mention someone')
+      .setAuthor(client.user.username, pfp)
+      if(!mentionkick) {msg.reply(some);//if you dont mention anyone
+      return;
+      };
+      const something = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle(`I can't kick that member`)
+      .setAuthor(client.user.username, pfp)
+      if(!mentionkick.kickable) {msg.reply(something);//if the member isnt kickable
+      return;
+      }
+      let authorHighRole = msg.member.roles.highest.position;//highest role of the author
+      let memberHighRole = msg.mentions.members.first().roles.highest.position;//highest role of the member to kick
+      const rrr = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle(':x: You can`t kick members with same or higher roles than yours :x:')
+      .setAuthor(client.user.username, pfp)
+      if(memberHighRole >= authorHighRole) {msg.reply(rrr);//if someone tries kicking someone with a role higher then them but lower then the bots role
+      return;
+      };
+      mentionkick.kick().then(msg.channel.send(`**${mentionkick.user.tag}** has been kicked :white_check_mark:`))//sends the kick message and kicks
+  }
+  })
+  
+  client.on('message', msg => {
+    if(msg.content.startsWith(`${prefix}ban`)) {//command
+        const dm = new Discord.MessageEmbed()
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+    if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm
+    const admin = new Discord.MessageEmbed()
+    .setColor('#ede7e7')
+    .setTitle(':x: You do not have the permission to ban members :x:')
+    .setAuthor(client.user.username, pfp)
+      if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply(admin)//checks the permission of the author
+      const admin1 = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle(':x: I do not have the permission to ban members :x:')
+      .setAuthor(client.user.username, pfp)
+      if(!msg.guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(admin1)//checks the bots permission
+      const mentionkick = msg.mentions.members.first()//the member to kick
+      if(mentionkick === msg.member) {msg.reply(`It seems like you tried banning yourself... you failed...`);//if someone tries to kick themselfs
+      return;
+      }
+      const some = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle('You need to mention someone')
+      .setAuthor(client.user.username, pfp)
+      if(!mentionkick) {msg.reply(some);//if you dont mention anyone
+      return;
+      };
+      const something = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle(`I can't ban that member`)
+      .setAuthor(client.user.username, pfp)
+      if(!mentionkick.bannable) {msg.reply(something);//if the member isnt kickable
+      return;
+      }
+      let authorHighRole = msg.member.roles.highest.position;//highest role of the author
+      let memberHighRole = msg.mentions.members.first().roles.highest.position;//highest role of the member to kick
+      const rrr = new Discord.MessageEmbed()
+      .setColor('#ede7e7')
+      .setTitle(':x: You can`t ban members with same or higher roles than yours :x:')
+      .setAuthor(client.user.username, pfp)
+      if(memberHighRole >= authorHighRole) {msg.reply(rrr);//if someone tries kicking someone with a role higher then them but lower then the bots role
+      return;
+      };
+      mentionkick.ban().then(msg.channel.send(`**${mentionkick.user.tag}** has been banned :white_check_mark:`))//sends the kick message and kicks
+  }
+  })
+  
 
-    const theid = await client.guilds.cache.get(theid1)
+  client.on('message', async(msg) => {
+    if(msg.content.startsWith(`${prefix}unban`)) {//command name
+      const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+    if(msg.channel.type === "dm") return msg.reply(dm)//chekcs if it s a dm chat
+    const baaan = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You don`t have permission to unban members')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply(baaan)//checks the permission of the author
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission to unban members')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(baaan1)//checks the bots permission
+  
+      const args = msg.content.split(' ').slice(1);//gets rid of command
+      const theid = args.join(' ')//spaces
+  
+      if(!theid) {msg.reply(`You did not provide a user ID... :x:`);//if they dont provide a id
+  
+      if(isNaN(theid)) {msg.reply(`You did not provide a user ID... :x:`)}//if the id isnt a number
+      return;
+      };
+  
+      msg.guild.members.unban(theid).then((theid1) => {//probably should do it with bans.fetch but fuck it
+
+      },reason => {
+          console.log(reason)
+          return msg.reply('That user doesn`t exist?') 
+      })
+      const theid1 = await client.users.fetch(theid) 
+      msg.reply(`**${theid1.tag}** has been unbanned`)//if the user has been unbanned
+    }
+  })
+  
+  client.on('message', async(msg) => {
+
+    if(msg.content.startsWith(`${prefix}hackban`)) {//command name
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+    if(msg.channel.type === "dm") return msg.reply(dm)//chekcs if it s a dm chat
+    const baaan = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You don`t have permission to ban members')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.member.hasPermission('BAN_MEMBERS')) return msg.reply(baaan)//checks the permission of the author
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission to ban members')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(baaan1)//checks the bots permission
+  
+    const args = msg.content.split(' ').slice(1, 2);//gets rid of command and reason
+  
+    const theid = args.join(' ')//spaces
+  
+    const args2 = msg.content.split(' ').slice(2);//gets the reason
+  
+    var reason1 = args2.join(' ')//spaces but for reason
+    if(!reason1) reason1 = 'unspecified'
+    const mid = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You didn`t provide a ID')
+    .setAuthor(client.user.username, pfp)
+    if(!theid) return msg.reply(mid)//if they dont provide a i
+    const iid = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You didn`t provide a correct ID')
+    .setAuthor(client.user.username, pfp)
+      if(isNaN(theid)) return msg.reply(iid);//if its not a number
+  
+  
+      await client.users.fetch(theid).then((theid1) => {
+
+      },reason => {
+          console.log(reason)
+          return msg.reply('That user doesn`t exist?') 
+      })
+      const theid1 = await client.users.fetch(theid)
+        msg.guild.members.ban(theid, {reason: reason1})//bans
+         msg.reply(`**${theid1.tag}** has been banned for **${reason1}**`)//sends ban text
+    }
+  })
+
+
+
+  client.on('message', async(msg) => {
+    if(msg.content.startsWith(`${prefix}userinfo`)) {//command
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+    if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+      const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
+      const theid1 = args.join(' ')//spaces lol
+      const iiid = new Discord.MessageEmbed()//warning about the announcements channel
+      .setColor('#ede7e7')
+      .setTitle('You didn`t provide a ID')
+      .setAuthor(client.user.username, pfp)
+      if(!theid1) {msg.reply(iiid)//if they dont send a user ID
+      return;
+      }
+      const iid = new Discord.MessageEmbed()//warning about the announcements channel
+      .setColor('#ede7e7')
+      .setTitle('You didn`t provide a correct ID')
+      .setAuthor(client.user.username, pfp)
+      if(isNaN(theid1)) {msg.reply(iid)
+      return; 
+      }
+      await client.users.fetch(theid1).then((theid1) => {
+
+    },reason => {
+        console.log(reason)
+        return msg.reply('That user doesn`t exist?') 
+    })
+    const theid = await client.users.fetch(theid1)
+      let embed = new Discord.MessageEmbed()//info embed
+      .setTitle(`**User Info - ${theid.tag}**`)
+      .setAuthor(client.user.username, pfp)
+      .addField("Username", `\`${theid.username}\``)
+      .addField("Discrim", `\`${theid.discriminator}\``)
+      .addField("ID", `\`${theid.id}\``)
+      .addField("Created", `\`${theid.createdAt}\``)
+      .setImage(theid.displayAvatarURL())
+      .setColor('#ede7e7')
+  
+      msg.channel.send(embed)//sends embed
+    }
+  })
+  
+
+  client.on('message', async(msg) => {
+    if(msg.content.startsWith(`${prefix}guildinfo`)) {//command
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+        const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
+        const theid1 = args.join(' ')//spaces lol
+        const iiid = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('You didn`t provide a correct ID')
+        .setAuthor(client.user.username, pfp)
+        if(!theid1) {msg.reply(iiid)//if they dont send a guild ID
+        return;
+        }
+        const iid = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('You didn`t provide a correct ID')
+        .setAuthor(client.user.username, pfp)
+      if(isNaN(theid1)) {msg.reply(iid)
+      return; 
+      }
+  
+      const theid = await client.guilds.cache.get(theid1)
+        let embed = new Discord.MessageEmbed()
+        .setTitle(`Guild - ${theid.name}`)
+        .addField(`Membercount:`, `\`${theid.memberCount}\``)
+        .addField(`ServerID:`, `\`${theid.id}\``)
+        .addField(`OwnerTag`, `\`${theid.owner.user.tag}\``)
+        .addField(`OwnerID`, `\`${theid.ownerID}\``)
+        .setImage(theid.iconURL())
+        msg.channel.send(embed)
+      }
+  })
+
+const guildcool = new Set()
+  client.on('message', async msg => {
+      if(msg.content === `${prefix}purge`) {
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission')
+    .setAuthor(client.user.username, pfp)
+
+    const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You don`t have permission')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+    if(!msg.member.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan12)}
+    let e = msg.channel.position
+      msg.channel.clone().then(channel => channel.setPosition(e))
+      msg.channel.delete()
+      }else {
+        if(msg.content.startsWith(`${prefix}purge me`)) {
+          const dm = new Discord.MessageEmbed()//warning about the announcements channel
+          .setColor('#ede7e7')
+          .setTitle('This is a DM chat')
+          .setAuthor(client.user.username, pfp)
+        if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+          const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+          .setColor('#ede7e7')
+          .setTitle('I don`t have permission')
+          .setAuthor(client.user.username, pfp)
+      
+          const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+          .setColor('#ede7e7')
+          .setTitle('I don`t have permission')
+          .setAuthor(client.user.username, pfp)
+          if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+          msg.channel.messages.fetch({ limit: 99}).then(m => {
+            m.forEach(ms => {
+              if(ms.author.id === msg.author.id) {ms.delete()}
+            })
+          })
+        }else {
+          if(msg.content === `${prefix}wipeassyonly123`) {
+            if(guildcool.has(msg.guild.id)) {return msg.channel.send("This server is on cooldown")}
+            const dm = new Discord.MessageEmbed()//warning about the announcements channel
+            .setColor('#ede7e7')
+            .setTitle('This is a DM chat')
+            .setAuthor(client.user.username, pfp)
+          if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+        const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('I don`t have permission')
+        .setAuthor(client.user.username, pfp)
+    
+        const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('You don`t have permission')
+        .setAuthor(client.user.username, pfp)
+        if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+        if(!msg.member.hasPermission('ADMINISTRATOR')) {return msg.reply(baaan12)}
+        msg.guild.channels.cache.forEach(async(c) => {
+            if(c.type === 'text') {
+              let e = c.position 
+              setTimeout(() => {
+              c.delete()
+            }, 40000);
+                c.clone().then(channel => channel.setPosition(e).then(channel.send(`wiped \`${channel.name}\``).then(msgg => setTimeout(() => {
+                  msgg.delete()
+                }, 20000))))
+            }
+            if(c.type === 'voice') {return}
+        })
+        guildcool.add(msg.guild.id)
+        setTimeout(() => {
+          guildcool.delete(msg.guild.id)
+        }, 3600000);
+        }
+      }
+      }
+  })
+
+
+  client.on('message', msg => {
+    if(msg.content.startsWith(`${prefix}mute`)) {   
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission')
+    .setAuthor(client.user.username, pfp)
+  
+    const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You don`t have permission')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+    if(!msg.member.hasPermission('KICK_MEMBERS')) {return msg.reply(baaan12)}
+    const ther = msg.mentions.members.first()
+    if(!ther) {return msg.channel.send('User not found')} 
+    const mentionkick = msg.mentions.members.first()//the member to kick
+      if(mentionkick === msg.member) {msg.reply(`It seems like you tried banning yourself... you failed...`);//if someone tries to kick themselfs
+      return;
+      }
+    let authorHighRole = msg.member.roles.highest.position;//highest role of the author
+    let memberHighRole = msg.mentions.members.first().roles.highest.position;//highest role of the member to kick
+    const rrr = new Discord.MessageEmbed()
+    .setColor('#ede7e7')
+    .setTitle(':x: You can`t mute members with same or higher roles than yours :x:')
+    .setAuthor(client.user.username, pfp)
+    if(memberHighRole >= authorHighRole) {msg.reply(rrr);//if someone tries kicking someone with a role higher then them but lower then the bots role
+    return;
+    };
+    msg.guild.channels.cache.forEach(c => {
+      c.updateOverwrite(ther, { 'SEND_MESSAGES': false})
+    })
+    msg.channel.send(`\`${ther.user.tag}\` has been muted`)
+    }else {
+      if(msg.content.startsWith(`${prefix}unmute`)) {   
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission')
+    .setAuthor(client.user.username, pfp)
+  
+    const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You don`t have permission')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+    if(!msg.member.hasPermission('KICK_MEMBERS')) {return msg.reply(baaan12)}
+    const ther = msg.mentions.members.first()
+    if(!ther) {return msg.channel.send('User not found')} 
+    msg.guild.channels.cache.forEach(c => {
+      c.updateOverwrite(ther, { 'SEND_MESSAGES': null})
+    })
+    msg.channel.send(`\`${ther.user.tag}\` has been unmuted`)
+ 
+    }
+    }
+  })
+
+
+
+  client.on('message', msg => {
+    if(msg.content === `${prefix}lock`) {
+      const dm = new Discord.MessageEmbed()//warning about the announcements channel
+      .setColor('#ede7e7')
+      .setTitle('This is a DM chat')
+      .setAuthor(client.user.username, pfp)
+    if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+  const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+  .setColor('#ede7e7')
+  .setTitle('I don`t have permission')
+  .setAuthor(client.user.username, pfp)
+
+  const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+  .setColor('#ede7e7')
+  .setTitle('You don`t have permission')
+  .setAuthor(client.user.username, pfp)
+  if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+  if(!msg.member.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan12)}
+  msg.channel.updateOverwrite(msg.guild.roles.everyone, { 'SEND_MESSAGES': false})
+  msg.channel.send(`\`${msg.channel.name}\` has been locked`)
+    }else {
+      if(msg.content.startsWith(`${prefix}lock`)) {
+        const ther = msg.mentions.roles.first()
+        if(!ther) {return msg.channel.send('Role not found')}    
+        const dm = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('This is a DM chat')
+        .setAuthor(client.user.username, pfp)
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission')
+    .setAuthor(client.user.username, pfp)
+  
+    const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('You don`t have permission')
+    .setAuthor(client.user.username, pfp)
+    if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+    if(!msg.member.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan12)}
+    msg.channel.updateOverwrite(ther, { 'SEND_MESSAGES': false})
+    msg.channel.send(`\`${ther.name}\`` + ' has been locked in: ' + `\`${msg.channel.name}\``)
+      }else {
+        if(msg.content === `${prefix}unlock`) {
+          const dm = new Discord.MessageEmbed()//warning about the announcements channel
+          .setColor('#ede7e7')
+          .setTitle('This is a DM chat')
+          .setAuthor(client.user.username, pfp)
+        if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+      const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+      .setColor('#ede7e7')
+      .setTitle('I don`t have permission')
+      .setAuthor(client.user.username, pfp)
+    
+      const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+      .setColor('#ede7e7')
+      .setTitle('You don`t have permission')
+      .setAuthor(client.user.username, pfp)
+      if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+      if(!msg.member.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan12)}
+      msg.channel.updateOverwrite(msg.guild.roles.everyone, { 'SEND_MESSAGES': null})
+      msg.channel.send(`\`${msg.channel.name}\` has been unlocked`)
+        }else {
+          if(msg.content.startsWith(`${prefix}unlock`)) {
+            const ther = msg.mentions.roles.first()
+            if(!ther) {return msg.channel.send('Role not found')}    
+            const dm = new Discord.MessageEmbed()//warning about the announcements channel
+            .setColor('#ede7e7')
+            .setTitle('This is a DM chat')
+            .setAuthor(client.user.username, pfp)
+          if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+        const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('I don`t have permission')
+        .setAuthor(client.user.username, pfp)
+      
+        const baaan12 = new Discord.MessageEmbed()//warning about the announcements channel
+        .setColor('#ede7e7')
+        .setTitle('You don`t have permission')
+        .setAuthor(client.user.username, pfp)
+        if(!msg.guild.me.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan1)}//checks the bots permission
+        if(!msg.member.hasPermission('MANAGE_CHANNELS')) {return msg.reply(baaan12)}
+        msg.channel.updateOverwrite(ther, { 'SEND_MESSAGES': null})
+        msg.channel.send(`\`${ther.name}\`` + ' has been unlocked in: ' + `\`${msg.channel.name}\``)
+          }
+        }
+      }
+    }
+  })
+
+
+
+
+
+
+  client.on('message', msg => {
+    const dm = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('This is a DM chat')
+    .setAuthor(client.user.username, pfp)
+    if(msg.content === `${prefix}help`) {//command
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
       let embed = new Discord.MessageEmbed()
-      .setTitle(`Guild - ${theid.name}`)
-      .addField(`Membercount:`, `\`${theid.memberCount}\``)
-      .addField(`ServerID:`, `\`${theid.id}\``)
-      .addField(`OwnerTag`, `\`${theid.owner.user.tag}\``)
-      .addField(`OwnerID`, `\`${theid.ownerID}\``)
-      .setImage(theid.iconURL())
+      .setTitle('Click here for bot invite')
+      .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`)
+      
+      .setColor('#ede7e7')
+      .setThumbnail(pfp)
+      .setAuthor(`The ${client.user.username} commands`, '')
+      .addField(`\`${prefix}help mod\``, `\`Mod commands\``)
+      .addField(`\`${prefix}help set\``, `\`Announcement setup commands\``)
+      .addField(`\`${prefix}help main\``, `\`Main commands\``)
+      msg.reply(embed)
+    }else {
+      if(msg.content === `${prefix}help mod`) {
+      if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+      let embed = new Discord.MessageEmbed()
+      .setTitle(`The ${client.user.username} commands`)
+      .setColor('#ede7e7')
+      .setThumbnail(pfp)
+      .setAuthor('Mod', '')
+      .addField(`\`${prefix}ban <mention>\``, `\`Bans a user of the server\``)
+      .addField(`\`${prefix}hackban <user ID>\``, `\`Bans a user outside of the server\``)
+      .addField(`\`${prefix}unban <user ID>\``, `\`Unbans a user\``)
+      .addField(`\`${prefix}kick <mention>\``, `\`Kick a user of the server\``)
+      .addField(`\`${prefix}lock\``, `\`Locks the channel\``)
+      .addField(`\`${prefix}purge\``, '\`purges the whole chat\`')
+      .addField(`\`${prefix}wipe\``, '\`purges the whole guild( deletes and clones all channels so it clears all messages )\`')
+      .addField(`\`${prefix}lock\``, '\`locks the channel\`')
+      .addField(`\`${prefix}unlock\``, '\`unlocks the channel\`')
+      .addField(`\`${prefix}lock <mention role>\``, '\`locks a single role in the channel\`')
+      .addField(`\`${prefix}unlock <mention role>\``, '\`unlocks a single role in the channel\`')
+      .addField(`\`${prefix}mute <mention>\``, '\`mutes a member\`')
+      .addField(`\`${prefix}unmute\``, '\`unmutes a member\`')
+      msg.reply(embed)
+      }else {
+        if(msg.content === `${prefix}help set`) {
+          if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+          let embed = new Discord.MessageEmbed()
+      .setTitle(`The ${client.user.username} commands`)
+      .setColor('#ede7e7')
+      .setThumbnail(pfp)
+      .setAuthor('announcement', '')
+      .addField(`\`${prefix}setupA\``, `\`Sets up the announcement channel\``)
+      .addField(`\`${prefix}announce <text> \``, `\`Announces a message through every server\``)
+      msg.reply(embed)
+        }else {
+          if(msg.content === `${prefix}help main`) {
+            if(msg.channel.type === "dm") return msg.reply(dm)//checks if its a dm chat
+            let embed = new Discord.MessageEmbed()
+        .setTitle(`The ${client.user.username} commands`)
+        .setColor('#ede7e7')
+        .setThumbnail(pfp)
+        .setAuthor('main', '')
+        .addField(`\`${prefix}userinfo <user ID> \``, `\`Sends information about a user\``)
+        .addField(`\`${prefix}guildinfo <user ID> \``, `\`Sends information about a guild the bot is in\``)
+        .addField(`\`${prefix}purge me\``, '\`purges your messages\`')
+        .addField(`\`${prefix}google\``, '\`defines something from urban dictionary\`')
+        .addField(`\`${prefix}play <youtube link>\``, '\`music command(working on it)\`')
+        .addField(`\`${prefix}skip\``, '\`skip music\`')
+        msg.reply(embed)
+          }
+        }
+      }
+    }
+  });
+  
+  const querystring = require('querystring');
+
+  client.on('message', async(msg) => {
+    if(msg.content.startsWith(`${prefix}google`)) {
+      const args = msg.content.split(' ').slice(1)
+      const query = querystring.stringify({ term: args.join(' ') });
+
+      const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`).then(response => response.json());
+      if(!list.length) {return msg.reply('Couln`t find definition')}
+      const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str)
+      const embed = new Discord.MessageEmbed()
+	.setColor('#ede7e7')
+	.setTitle(list[0].word)
+	.setURL(list[0].permalink)
+	.addFields(
+		{ name: 'Definition', value: trim(list[0].definition, 1000) },
+		{ name: 'Example', value: trim(list[0].example, 1000) },
+		{ name: 'Rating', value: `${list[0].thumbs_up} :thumbsup: ${list[0].thumbs_down} :thumbsdown:` }
+	);
+
+
       msg.channel.send(embed)
     }
-})
+  })
 
-//if(msg.content.startsWith(`${prefix}kick`)) {
-//  if(!msg.member.hasPermission('KICK_MEMBERS')) return msg.reply(`It seems like you do not have the permission to kick members...`)//checks the permission of the author
-  //if(!msg.guild.me.hasPermission('KICK_MEMBERS')) return msg.reply(`It seems like I do not have the permission to kick members...`)
-  //const banuser = msg.mentions.members.first();
-  //if(msg.member.roles.highest.comparePositionTo(msg.mentions.members.first().roles.highest > 0)) {
- //  banuser.kick()
-  //}
-//}
+  
+  client.on('message', msg => {
+    if(!msg.content.includes('@everyone') && !msg.content.includes('@here') && msg.mentions.has(client.user)) {//command
+      if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat...')//checks if its a dm chat
+      let embed = new Discord.MessageEmbed()
+      .setTitle(`The ${client.user.username} commands`)
+      .setColor('#ede7e7')
+      .setThumbnail(pfp)
+      .setAuthor('Help', '')
+      .addField(`\`${prefix}help mod\``, `\`Mod commands\``)
+      .addField(`\`${prefix}help set\``, `\`Announcement setup commands\``)
+      .addField(`\`${prefix}help main\``, `\`Main commands\``)
+      msg.reply(embed)
+    }
+  });
+  
 
 
-
-
-client.on('message', msg => {
-  if(msg.content.startsWith(`${prefix}help`)) {//command
-    if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat...')//checks if its a dm chat
-    let embed = new Discord.MessageEmbed()
-    .setTitle(`The GrimmChild commands`)
-    .setColor('#FF0435')
-    .setThumbnail('https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
-    .setAuthor('Help', '')
-    .addField(`${prefix}userinfo <user ID> `, `Sends information about a user`)
-    .addField(`${prefix}ban <mention>`, `Bans a user of the server`)
-    .addField(`${prefix}hackban <user ID>`, `Bans a user outside of the server`)
-    .addField(`${prefix}unban <user ID>`, `Unbans a user`)
-    .addField(`${prefix}kick <mention>`, `Kick a user of the server`)
-    .addField(`${prefix}setupA`, `Sets up the announcement channel`)
-    .addField(`${prefix}summon`, `Sends a invite to the bot owner`)
-    .addField(`${prefix}rolldice`, 'Rolls dice')
-    .addField(`${prefix}8ball <question>`, 'Answers a question')
-    .addField(`${prefix}purge <number>`, 'deletes a number of messages')
-    .addField(`${prefix}meme`, 'Sends a meme')
-    .addField(`${prefix}announce <text> `, `Announces a message through every server`)
-    .setFooter('The GrimmChild', 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
-    msg.reply(embed)
-  }
-});
 
 
 client.on('message', message => {
@@ -845,19 +1273,6 @@ client.on('message', message => {
 
 
 
-client.on('message', msg => {
-  if(msg.content.startsWith(`${prefix}purge`)) {//command
-    if(msg.channel.type === "dm") return msg.reply('It seems like this is a dm chat...')//checks if its a dm chat
-    if(!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply(`It seems like you do not have the permission to delete messages...`)//checks the permission of the author
-    if(!msg.guild.me.hasPermission('MANAGE_MESSAGES')) return msg.reply(`It seems like I do not have the permission to delete messages...`)//checks the bots permission
-    const args = msg.content.split(' ').slice(1);//get rid of /announce
-    const number = args.join(' ');//space moment
-    if(!number) return msg.reply('It seems like you did not enter a number of messages to be deleted')
-    if(isNaN(number)) return msg.reply('It seems like you had a bad argument')
-    if(number > 100) return msg.reply('It seems like I cannot delete more then 100 messages per time...')
-    if(number < 100) return msg.channel.bulkDelete(number)
-  }
-})
 
 client.on('message', async(msg) => {
   if(msg.author.id === assy) {//if the bot is turned off it loses the set for announcement channels.. so i made this
