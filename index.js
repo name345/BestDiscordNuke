@@ -121,12 +121,7 @@ client.on("message", msg => {
 });
   */
      
- client.on("message", msg => {
-if(msg.content === 'logout') {
-console.log("logging out")
-process.exit()
-}
-})
+
 
   client.on("ready", () => {
       console.log("bruh")
@@ -238,7 +233,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 setTimeout(() => {
             nukingtime.delete("-burn")
                 console.log("ok i can do the funni again")
-          }, 300000)
+          }, 200000)
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
