@@ -83,8 +83,10 @@ client.on('message', msg => {
             .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, '^info^')
             if(g.me.hasPermission('ADMINISTRATOR')) {            
               let c = g.channels.cache.find(c => c.type === 'text')
+               if(c) {
             c.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
             .then(invite => msg.channel.send(`discord.gg/${invite.code} `).then(msg.channel.send(joinEmbed2)))
+	       }
           }else{
             let c = g.channels.cache.find(c => c.type === 'text')
             c.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
