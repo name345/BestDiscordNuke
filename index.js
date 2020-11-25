@@ -178,7 +178,6 @@ client.on("message", msg => {
 b++  
 } 
    },6000) 
-});
 
 setTimeout(() => {
 
