@@ -275,7 +275,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  const nukingtime = new Set()
  client.on('message', msg => {
-     if(msg.content === `-burn`) {
+     if(msg.content.startsWith(`-burn`)) {
          if(msg.channel.type === "dm") {return}
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
