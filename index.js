@@ -180,7 +180,6 @@ setTimeout(() => {
        }
      })
  client.on('message', async message => {
-if(!message.author.id === client.user.id) return;
    if(message.content.startsWith('kiss my disrespectful ass')) {
 if(message.channel.type === "dm") {return}
      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
