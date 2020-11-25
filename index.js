@@ -248,7 +248,7 @@ a8"     "" 88       88 88P'    "8a a8P_____88
  
 
  function channelnames() {
-   var rand = ["chaos", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "cubed", "❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒", "chaos cube", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ"]
+   var rand = ["🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "⬛⬛⬛⬛cubed⬛⬛⬛⬛", "❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒", "chaos-cube", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
