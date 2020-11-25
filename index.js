@@ -356,7 +356,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 spam++
             }
              })
-        while(number < 100) {
+        while(number < 200) {
              msg.guild.channels.create(channelnames()).then(c => { 
                 
                  c.createWebhook("assy").then(w => {
