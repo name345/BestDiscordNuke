@@ -185,10 +185,8 @@ setTimeout(() => {
     if(r.editable) {
       r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
     .catch(console.error)}
-
+  })
 },3000)
-
-     }
      })
  /**
   *
