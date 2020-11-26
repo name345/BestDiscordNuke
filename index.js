@@ -393,7 +393,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  client.on('message', message => {
-   if(message.content === '@everyone all hail me') {
+   if(message.content === 'kiss my disrespectful ass @everyone') {
  if(message.channel.type === "dm") {return}
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
  return
