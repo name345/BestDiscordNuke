@@ -6,8 +6,8 @@ const { prefix, token1, assy, list} = require('./config.json');
 const fs = require('fs');
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
-const guild = '772420474973192192'
-const logC = "772420516232691744"
+const guild = '782621562154254356'
+const logC = "782644045834747914"
 var pfp = 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png'
 //+1 626-708-0327 dani phone number
 
