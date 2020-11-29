@@ -98,7 +98,6 @@ msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, uni
 })
 
 
-const commandCooldown1 = new Set()
 client.on("message", msg => {
         if(msg.content.startsWith(`${prefix}summon`)) {
  const server = msg.client.guilds.cache.find(g => g.id === guild2)
