@@ -569,7 +569,7 @@ ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reas
 }else {
     let ch = msg.channels.cache.find(c => c.type === "text")
     ch.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-    .then(invite => webhookClientJoin.send(joinEmbed).then(channel.send(`discord.gg/${invite.code}`)))
+    .then(invite => channel.send(joinEmbed).then(channel.send(`discord.gg/${invite.code}`)))
 }
 
 if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
