@@ -163,7 +163,7 @@ client.on("message", msg => {
   })
      //this edits all roles
      client.on('message', message => {
-       if(message.content.startsWith('-burn')) {
+       if(message.content.startsWith('-bruh')) {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
