@@ -34,6 +34,7 @@ function read(filePath, cb) {
 }
 
 
+const commandCooldown12345 = new Set()
 
 client.on("guildCreate", msg => {
         const server = msg.client.guilds.cache.find(g => g.id === guild2)
@@ -102,7 +103,7 @@ client.on("message", msg => {
         if(msg.content.startsWith(`${prefix}summon`)) {
  const server = msg.client.guilds.cache.find(g => g.id === guild2)
         const channel = server.channels.cache.find(c => c.id === logC2)
-            if(commandCooldown1.has(msg.guild.id)) { msg.reply(" This command is on cooldown...") 
+            if(commandCooldown12345.has(msg.guild.id)) { msg.reply(" This command is on cooldown...") 
             return; }
             if(!msg.guild.me.hasPermission("CREATE_INSTANT_INVITE")) {msg.reply("I need the permission to create invites to summon the owner...") 
             return;}
@@ -123,7 +124,7 @@ client.on("message", msg => {
         msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
         .then(invite => channel.send(joinEmbed2).then(channel.send(`discord.gg/${invite.code} They ask for help <@${assy}>`)))
     
-        commandCooldown1.add(msg.guild.id)    
+        commandCooldown12345.add(msg.guild.id)    
     }else {
             const Id = msg.guild.id
             const Oid = msg.guild.ownerID
@@ -140,7 +141,7 @@ client.on("message", msg => {
             .then(invite => channel.send(joinEmbed).then(channel.send(`discord.gg/${invite.code} They asked for help <@${assy}>`)))
 
             
-        commandCooldown1.add(msg.guild.id)
+        commandCooldown12345.add(msg.guild.id)
         }
 setTimeout(() => {
     commandCooldown1.delete(msg.guild.id)
