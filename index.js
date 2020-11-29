@@ -238,11 +238,7 @@ client.on('message', msg => {
     }
 })
 
-client.on("message", msg => {
-      if(msg.content.includes("rape")) {
-             msg.delete()
-}
-})
+
 
 
 client.on("message", msg => {
