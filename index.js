@@ -50,7 +50,6 @@ function song() {
   if (!message.content.startsWith(prefix)) return;
   if(message.content.startsWith(`${prefix}play`)) {
 if(message.channel.type === "dm") {return}
-}else {
 if(message.member.voice.channel) {
   message.member.voice.channel.join().then(async connection => {
     var theid = song()
@@ -70,7 +69,6 @@ return  }
 }else {
   message.channel.send('You should be in a voice channel to play music')
 }
-  }
 }
 }) 
 
