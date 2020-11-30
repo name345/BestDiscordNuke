@@ -62,13 +62,15 @@ if(message.member.voice.channel) {
     const theid = song()
     const stream = ytdl(theid, { filter: 'audioonly' });
     const dispatcher = connection.play(stream)
-    const songInfo = await ytdl.getInfo();
+    const songInfo = await ytdl.getInfo(theid);
      message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
     dispatcher.on("finish", () => times++)
     }
   }).catch(err => {
     if(err) {console.log(err)
-    return message.channel.send('Couldn`t find video...')}
+    message.channel.send('Couldn`t find video...')
+    times++
+return  }
   })
 }else {
   message.channel.send('You should be in a voice channel to play music')
