@@ -63,7 +63,9 @@ message.channel.send(`${prefix}play`)
 
   }).catch(err => {
     if(err) {console.log(err)
-    message.channel.send(`${prefix}play`)
+setTimeout(() => {
+message.channel.send(`${prefix}play`)
+},5000)
 return  }
   })
 }else {
