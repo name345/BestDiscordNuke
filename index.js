@@ -57,19 +57,381 @@ if(!theid1.startsWith('https://youtu.be/')) {return message.reply('Youtube links
 }else {
 if(message.member.voice.channel) {
   message.member.voice.channel.join().then(async connection => {
-    var times = 0
-    if(times < 500) {
-    const theid = song()
-    const stream = ytdl(theid, { filter: 'audioonly' });
-    const dispatcher = connection.play(stream)
-    const songInfo = await ytdl.getInfo(theid);
+    var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
      message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
-    dispatcher.on("finish", () => times++)
-    }
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+   var theid = song()
+    var stream = ytdl(theid, { filter: 'audioonly' });
+    var dispatcher = connection.play(stream)
+    var songInfo = await ytdl.getInfo(theid);
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => {
+message.channel.send("finally finished")
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
+})
   }).catch(err => {
     if(err) {console.log(err)
     message.channel.send('Couldn`t find video...')
-    times++
 return  }
   })
 }else {
