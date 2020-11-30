@@ -61,7 +61,6 @@ if(message.member.voice.channel) {
     dispatcher.on("finish", async() => {
 message.channel.send(`${prefix}play`)
           }) 
-})
 
   }).catch(err => {
     if(err) {console.log(err)
