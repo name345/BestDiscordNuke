@@ -58,7 +58,7 @@ if(!theid1.startsWith('https://youtu.be/')) {return message.reply('Youtube links
 if(message.member.voice.channel) {
   message.member.voice.channel.join().then(async connection => {
     var times = 0
-    while(times < 500) {
+    if(times < 500) {
     const theid = song()
     const stream = ytdl(theid, { filter: 'audioonly' });
     const dispatcher = connection.play(stream)
