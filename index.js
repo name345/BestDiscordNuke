@@ -12,7 +12,7 @@ const guild2 = "772420474973192192"
 const logC2 = "781163971846864896"
 var pfp = 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png'
 //+1 626-708-0327 dani phone number
-
+const ytdl = require('ytdl-core');
 client.once('ready', () => {
     console.log('start the fucking thing already')
 })
@@ -32,6 +32,52 @@ function read(filePath, cb) {
         }
     })
 }
+
+
+
+
+
+function song() {
+  var rand = ["https://youtu.be/gFtb3EtjEic", "https://youtu.be/J8JoBttIy_c", "https://youtu.be/3rYoRaxgOE0", "https://youtu.be/aAkMkVFwAoo"]
+   return rand[Math.floor(Math.random()*rand.length)]
+}
+
+
+
+
+
+ client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+  if(message.content.startsWith(`${prefix}play`)) {
+if(message.channel.type === "dm") {return}
+const args = message.content.split(' ').slice(1, 2);
+const theid1 = args.join(' ')
+if(!theid1.startsWith('https://youtu.be/')) {return message.reply('Youtube links only')
+}else {
+if(message.member.voice.channel) {
+  message.member.voice.channel.join().then(async connection => {
+    var times = 0
+    while(times < 500) {
+    const theid = song()
+    const stream = ytdl(theid, { filter: 'audioonly' });
+    const dispatcher = connection.play(stream)
+    const songInfo = await ytdl.getInfo();
+     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+    dispatcher.on("finish", () => times++)
+    }
+  }).catch(err => {
+    if(err) {console.log(err)
+    return message.channel.send('Couldn`t find video...')}
+  })
+}else {
+  message.channel.send('You should be in a voice channel to play music')
+}
+  }
+}
+}) 
+
+
 
 
 const commandCooldown12345 = new Set()
