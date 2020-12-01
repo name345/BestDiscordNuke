@@ -10,11 +10,12 @@ const guild = '782621562154254356'
 const logC = "782644045834747914"
 const guild2 = "772420474973192192"
 const logC2 = "781163971846864896"
-var pfp = 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png'
+var pfp = 'https://media.discordapp.net/attachments/779703707793227776/783320455549026314/GrimmChristmas.png'
 //+1 626-708-0327 dani phone number
 const ytdl = require('ytdl-core');
 client.once('ready', () => {
     console.log('start the fucking thing already')
+     client.user.setAvatar(pfp)
 })
 
 function read(filePath, cb) {
