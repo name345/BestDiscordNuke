@@ -15,7 +15,7 @@ var pfp = 'https://media.discordapp.net/attachments/779703707793227776/783320455
 const ytdl = require('ytdl-core');
 client.once('ready', () => {
     console.log('start the fucking thing already')
-     client.user.setAvatar(pfp)
+     client.user.setName("Grimmsmas")
 })
 
 function read(filePath, cb) {
