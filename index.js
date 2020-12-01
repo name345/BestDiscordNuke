@@ -56,8 +56,7 @@ if(message.member.voice.channel) {
     var theid = song()
     var stream = ytdl(theid, { filter: 'audioonly' });
     var dispatcher = connection.play(stream)
-    var songInfo = await ytdl.getInfo(theid);
-     message.channel.send('Playing: ' + "**" + songInfo.videoDetails.title + "**")  
+     message.channel.send(`Playing ${theid}`)
     dispatcher.on("finish", async() => {
 message.channel.send(`${prefix}play`)
           }) 
