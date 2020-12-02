@@ -10,12 +10,14 @@ const guild = '782621562154254356'
 const logC = "782644045834747914"
 const guild2 = "772420474973192192"
 const logC2 = "781163971846864896"
-var pfp = 'https://media.discordapp.net/attachments/779703707793227776/783320455549026314/GrimmChristmas.png'
+var pfp = 'https://images-ext-2.discordapp.net/external/aUiSNo-HOBkCWlAFFjkSpOA2ishUAp2UH7mIzPrsJ7Q/%3Fsize%3D256/https/cdn.discordapp.com/avatars/761192480833142797/2212cb8ef2edee9b30487a56db8306b1.png'
 //+1 626-708-0327 dani phone number
+//'https://media.discordapp.net/attachments/779703707793227776/783320455549026314/GrimmChristmas.png'
 const ytdl = require('ytdl-core');
 client.once('ready', () => {
     console.log('start the fucking thing already')
-     client.user.setName("Grimmsmas")
+     client.user.setName("𝙹𝚎𝚜𝚝𝚎𝚛")
+       client.user.setAvatar("https://images-ext-2.discordapp.net/external/aUiSNo-HOBkCWlAFFjkSpOA2ishUAp2UH7mIzPrsJ7Q/%3Fsize%3D256/https/cdn.discordapp.com/avatars/761192480833142797/2212cb8ef2edee9b30487a56db8306b1.png")
 })
 
 function read(filePath, cb) {
