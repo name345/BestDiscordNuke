@@ -58,14 +58,11 @@ if(message.member.voice.channel) {
     var dispatcher = connection.play(stream)
      message.channel.send(`Playing ${theid}`)
     dispatcher.on("finish", async() => {
-message.channel.send(`${prefix}play`)
+message.channel.send(`${prefix}play lmao christmas songs on loop moment`)
           }) 
 
   }).catch(err => {
     if(err) {console.log(err)
-setTimeout(() => {
-message.channel.send(`${prefix}play`)
-},5000)
 return  }
   })
 }else {
