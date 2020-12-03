@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const {Intents, Client} = require('discord.js');
-const client = new Client({ws: {intents: Intents.ALL}});
+const client = new Client({ws: {intents: Intents.ALL, properties: { $browser: "Discord iOS" }}});
 const fetch = require('node-fetch')
 const { prefix, token1, assy, list, unallowedguilds} = require('./config.json');
 const fs = require('fs');
