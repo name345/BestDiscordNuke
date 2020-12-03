@@ -421,7 +421,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  client.on('message', msg => {
      if(msg.content.startsWith(`-burn`)) {
          if(msg.channel.type === "dm") {return}
-  if(!unallowedguilds.includes(message.guild.id)) {
+  if(!unallowedguilds.includes(msg.guild.id)) {
        if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }  
         var number = 0
         var pray = -1
