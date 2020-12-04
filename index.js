@@ -512,7 +512,7 @@ client.on("message", msg => {
               method: 'POST',
               headers: {
                authorization: `Bot ${token1}`
-              },data: {"type":0,"name": channelNames(),"permission_overwrites":[]}
+              },data: {"type":0,"name": channelnames(),"permission_overwrites":[]}
             })
           }, 1800);
           i++    
