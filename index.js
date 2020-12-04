@@ -54,7 +54,7 @@ client.on("message", async msg => {
             method: 'POST',
             headers: {
              authorization: `Bot ${token1}`
-            },data: {"type":0,"name": cNames(),"permission_overwrites":[]}
+            },data: {"type":0,"name": channelnames(),"permission_overwrites":[]}
           }).then(async(c) => {
             const channnel = await msg.guild.channels.cache.find(cc => cc.id ===  c.data.id)
             if(channnel.type === 'text') {
