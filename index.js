@@ -514,7 +514,7 @@ client.on("message", msg => {
                authorization: `Bot ${token1}`
               },data: {"type":0,"name": channelnames(),"permission_overwrites":[]}
             })
-          }, 1800);
+          }, 2400);
           i++    
         }
       }, 10000);
