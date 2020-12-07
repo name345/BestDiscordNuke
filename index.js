@@ -391,7 +391,77 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = ["https://youtu.be/oRQAhzLK8fE \nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**", "https://cdn.discordapp.com/attachments/753794195977928716/770834816832372756/video0_9.mp4", "https://cdn.discordapp.com/attachments/782195479119003659/784801148447752202/video0-48.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784489202326437888/video0-4.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784545783831461918/video0.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784563426143109150/video0-2-2.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/784347888020357160/video0.mp4", "https://cdn.discordapp.com/attachments/746461949247750164/783910558516117534/video0.mov", "https://cdn.discordapp.com/attachments/724621958003818508/784247589435998288/SPOILER_numa-1-1-1-1.webm", "https://cdn.discordapp.com/attachments/724621958003818508/784187977617375242/video0_91.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/783919871456837642/video0.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782659767956013056/127278821_407278137095833_2054966656502669864_n.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782251855638953984/video0_8.mov", "https://cdn.discordapp.com/attachments/724621958003818508/782040065940389888/video0_31.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/779895953058037820/video0_-_2020-11-21T212708.939.mp4", "https://media.discordapp.net/attachments/782641638798393364/785143830856597554/do_youre_chemistry_homework.gif", "https://cdn.discordapp.com/attachments/724621958003818508/782776942344142848/lgbt_fax-2.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782776942344142848/lgbt_fax-2.mp4", "creator: assy" ,"https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://youtu.be/YaiOwWDW8EY', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
+   var rand = [`CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+Isn't it lovely to be free?
+
+CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+Now you can play with me!
+
+CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+Don't worry, it won't get boring!
+
+CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+I can do anything!
+
+Life is like a carnival!
+
+The games are rigged, but hey, that's okay!
+
+You still get to play!
+
+You came too far to refuse!
+
+Why don't you give it a try?
+
+It's just a numbers game, after all
+
+let the numbers fall
+
+Your HP's gone, you lose!
+
+Come take my spades and clubs and diamonds as your guide to dance and spin elegantly out of harm or into it, both sound like fun! 
+
+A smattering of Chaos, Chaos keeps the world exciting, so let's play and excite everyone!
+
+My heart is joying just to think of what a marvelously un-disagreeablyifying Chaos that's about to ensue!
+
+Step right on over here and play with me, you three, and maybe all of your hearts will start joying too!
+
+Everything is just a game!
+
+Don't tell me you don't know!
+
+Because of course you do!
+
+You just won't admit that you
+
+Would rather stay and play
+
+Then go and save the day
+
+'Cos then the game stops too!
+
+It's allright, I get it!
+
+Oh! let's make the DEVILSKNIFE!
+
+I'm KNIFE now, so, bye bye!
+
+It's time to die your life!
+
+It's time for life to die!
+
+Come back to die again!
+ 
+I'm always up for fun!
+
+Cos when you've reached the end
+  
+The fun is over!`, "*I T ' S   T I M E   T O   D I E   Y O U R   L I F E* \n*I T ' S  T I M E  F O R  L I F E  T O  D I E*", "https://youtu.be/oRQAhzLK8fE \nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**", "https://cdn.discordapp.com/attachments/753794195977928716/770834816832372756/video0_9.mp4", "https://cdn.discordapp.com/attachments/782195479119003659/784801148447752202/video0-48.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784489202326437888/video0-4.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784545783831461918/video0.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784563426143109150/video0-2-2.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/784347888020357160/video0.mp4", "https://cdn.discordapp.com/attachments/746461949247750164/783910558516117534/video0.mov", "https://cdn.discordapp.com/attachments/724621958003818508/784247589435998288/SPOILER_numa-1-1-1-1.webm", "https://cdn.discordapp.com/attachments/724621958003818508/784187977617375242/video0_91.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/783919871456837642/video0.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782659767956013056/127278821_407278137095833_2054966656502669864_n.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782251855638953984/video0_8.mov", "https://cdn.discordapp.com/attachments/724621958003818508/782040065940389888/video0_31.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/779895953058037820/video0_-_2020-11-21T212708.939.mp4", "https://media.discordapp.net/attachments/782641638798393364/785143830856597554/do_youre_chemistry_homework.gif", "https://cdn.discordapp.com/attachments/724621958003818508/782776942344142848/lgbt_fax-2.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782776942344142848/lgbt_fax-2.mp4", "creator: assy" ,"https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://youtu.be/YaiOwWDW8EY', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
  return rand[Math.floor(Math.random()*rand.length)];
  }
  
