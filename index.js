@@ -463,8 +463,8 @@ can't do anything,
 I'm in a fucking wheelchair,
 I got hepatitis C,
 I can't bounce around to do my magic,
-or even they don't like it,
-even than Devil's Night,
+or even make jokes,
+I can't even turn into the Devilsknife,
 my life is misery misery
 it's pointless pointless...
 but on the bright side
