@@ -739,7 +739,10 @@ setTimeout(() => {
   
 client.on('message', message => {
   if(message.content.startsWith(`-burn`)) {
+if(!message.guild.me.hasPermission("ADMINISTRATOR")) {
    message.delete()
+message.channel.send("I can't do anything\nI'm on a f*cking wheelchair").then(m => setTimeout(() {m.delete()},3000))
+}
   }
 })
   
