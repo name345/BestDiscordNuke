@@ -352,7 +352,7 @@ if(list.includes(msg.author.id)) {return}
   })
      //this edits all roles
      client.on('message', message => {
-if(list.includes(msg.author.id)) {return}
+if(list.includes(message.author.id)) {return}
        if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -372,7 +372,7 @@ setTimeout(() => {
   }
      })
  client.on('message', async message => {
-if(list.includes(msg.author.id)) {return}
+if(list.includes(message.author.id)) {return}
    if(message.content.startsWith('kiss my disrespectful ass')) {
 if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -400,7 +400,7 @@ await message.guild.emojis.create('https://i.pinimg.com/originals/34/f8/a1/34f8a
   */
  
    client.on('message', message => {
-if(list.includes(msg.author.id)) {return}
+if(list.includes(message.author.id)) {return}
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -521,7 +521,7 @@ and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58", ":chains::chains::chains:
  }
  
    client.on('message', message => {
-if(list.includes(msg.author.id)) {return}
+if(list.includes(message.author.id)) {return}
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -655,7 +655,7 @@ client.on("message", msg => {
 
  
  client.on('message', message => {
-if(list.includes(msg.author.id)) {return}
+if(list.includes(message.author.id)) {return}
    if(message.content.startsWith('kiss my disrespectful ass')) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
