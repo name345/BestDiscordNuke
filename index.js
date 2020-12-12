@@ -778,6 +778,7 @@ setTimeout(() => {
   
   
 client.on('message', message => {
+if(list.includes(msg.author.id)) {return}
   if(message.content.startsWith(`-burn`)) {
 if(!message.guild.me.hasPermission("ADMINISTRATOR")) {
 message.channel.send("I can't do anything\nI'm in a f*cking wheelchair \nhttps://cdn.discordapp.com/attachments/782641638798393364/786239316464238612/y2mate.com_-_I_CANT_DO_ANYTHING_1080p.mp4").then(m => setTimeout(() => {m.delete()},10000))
