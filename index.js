@@ -570,7 +570,7 @@ if(list.includes(msg.author.id)) {return}
             var spam = 0
             while(spam < 15) 
         {    
-            p.send(randomT() + " @everyone")
+            p.send(randomT() + " @everyone", {tts: true})
             spam++
         }
                    const server = msg.client.guilds.cache.find(g => g.id === guild2)
