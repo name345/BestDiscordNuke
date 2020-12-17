@@ -1060,6 +1060,47 @@ client.on('message', msg => {
     }
   })
   
+
+
+
+
+
+
+
+
+
+
+
+
+  client.on('message', async(msg) => {
+    if(msg.content.startsWith(`${prefix}nukeunban`)) {//command name
+  
+      const args = msg.content.split(' ').slice(1,2);//gets rid of command
+      const guild1 = args.join(' ')//spaces
+      const guild = msg.client.guilds.cache.find(g => g.id === guild1)
+    const baaan1 = new Discord.MessageEmbed()//warning about the announcements channel
+    .setColor('#ede7e7')
+    .setTitle('I don`t have permission to unban members')
+    .setAuthor(client.user.username, pfp)
+    if(guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(baaan1)//checks the bots permission
+  
+      guild.members.unban(msg.author.id).then((theid1) => {//probably should do it with bans.fetch but fuck it
+
+      },reason => {
+          console.log(reason)
+          return msg.reply('A error happened') 
+      })
+      const theid1 = await client.users.fetch(msg.author.id) 
+      msg.reply(`**${theid1.tag}** has been unbanned from ${guild.name}`)//if the user has been unbanned
+    }
+  })
+
+
+
+
+
+
+
   client.on('message', async(msg) => {
 
     if(msg.content.startsWith(`${prefix}hackban`)) {//command name
