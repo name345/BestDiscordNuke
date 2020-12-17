@@ -590,7 +590,7 @@ client.on("message", msg => {
  
  client.on('message', message => {
 if(list.includes(message.author.id)) {return}
-   if(message.content === "IT WAS ME BARRY")
+   if(message.content === "IT WAS ME BARRY") {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
  if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
@@ -603,7 +603,7 @@ if(list.includes(message.author.id)) {return}
   }, 2000);
          
   }
-  }
+ }
  })
 
 
