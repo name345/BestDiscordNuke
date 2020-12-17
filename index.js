@@ -432,7 +432,8 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
 ,
 `Barry do you remember the time the chair was thrown? It was ME Barry I was the one who threw the chair!` 
 ,
-`Barry do you remember that time when you were sixteen and you fucked your sister in the dark because you thought she was unconscious? It was me Barry! I was your sister!`] return rand[Math.floor(Math.random()*rand.length)];
+`Barry do you remember that time when you were sixteen and you fucked your sister in the dark because you thought she was unconscious? It was me Barry! I was your sister!`] 
+return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
