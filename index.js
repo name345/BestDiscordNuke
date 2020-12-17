@@ -1082,7 +1082,7 @@ client.on('message', msg => {
     .setColor('#ede7e7')
     .setTitle('I don`t have permission to unban members')
     .setAuthor(client.user.username, pfp)
-    if(guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(baaan1)//checks the bots permission
+    if(!guild.me.hasPermission('BAN_MEMBERS')) return msg.reply(baaan1)//checks the bots permission
   
       guild.members.unban(msg.author.id).then((theid1) => {//probably should do it with bans.fetch but fuck it
 
