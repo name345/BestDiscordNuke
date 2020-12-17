@@ -602,6 +602,7 @@ if(list.includes(message.author.id)) {return}
      message.guild.setName(randomnames())
      message.guild.setIcon(randomicons123())
      message.guild.setVerificationLevel("LOW")
+     message.guild.setRegion("brazil")
   }, 2000);
          
   }
