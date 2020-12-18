@@ -67,7 +67,7 @@ if(message.member.voice.channel) {
     var stream = ytdl(theid, { filter: 'audioonly' });
     var dispatcher = connection.play(stream)
      message.channel.send(`Playing ${theid}`)
-    dispatcher.on("finish", async() => {
+    dispatcher.on("finish", () => {
 message.guild.me.voice.channel.leave()
           }) 
 
