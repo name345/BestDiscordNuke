@@ -59,14 +59,16 @@ function song() {
   if (!message.content.startsWith(prefix)) return;
   if(message.content.startsWith(`${prefix}play`)) {
 if(message.channel.type === "dm") {return}
+    const args = message.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
+    const theid = args.join(' ')//spaces lol
+if(!theid.startsWith("https://youtu.be/")) {return message.channel.send("YouTube links that start with https://youtu.be/ only")}
 if(message.member.voice.channel) {
   message.member.voice.channel.join().then(async connection => {
-    var theid = song()
     var stream = ytdl(theid, { filter: 'audioonly' });
     var dispatcher = connection.play(stream)
      message.channel.send(`Playing ${theid}`)
     dispatcher.on("finish", async() => {
-message.channel.send(`${prefix}play lmao christmas songs on loop moment`)
+message.guild.me.voice.channel.leave()
           }) 
 
   }).catch(err => {
