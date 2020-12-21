@@ -1188,7 +1188,7 @@ client.on('message', msg => {
         if(!bruh) {return}
         if(theid.me.hasPermission("CREATE_INSTANT_INVITE")) {
           if(msg.author.id === assy) {
-             if(msg.theid.me.hasPermission("ADMINISTRATOR")) {msg.channel.send("with admin(just checking)")}
+             if(theid.me.hasPermission("ADMINISTRATOR")) {msg.channel.send("with admin(just checking)")}
           bruh.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
         .then(i => msg.channel.send("https://discord.gg/" + i.code))}
         }
