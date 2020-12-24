@@ -456,7 +456,7 @@ return rand[Math.floor(Math.random()*rand.length)];
  
  
  function randomicons123() {
-   var rand = ["https://media.discordapp.net/attachments/782775478820929577/789141260106596372/comics-reverse-flash-wallpaper-thumb.png", "https://i.ytimg.com/vi/xpWOO9nRvIU/maxresdefault.jpg", "https://images-ext-2.discordapp.net/external/6MPTRncmvgq5hPq9oqcBF8EMu1hFsEhKqLaNuO_T6pk/https/cdn.discordapp.com/avatars/759838559946801173/15718b03a63578fea527dd1cb8638c46.webp"]
+   var rand = ["https://cdn.discordapp.com/attachments/782725465269600286/791723871450824774/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722670575190016/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722515415695380/santahat.png"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
