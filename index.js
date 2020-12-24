@@ -440,7 +440,9 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
 ,
 `❄️BARRY DO YOU REMEMBER THE TIME YOU GOT A PS5 FOR CHRISTMAS?**IT WAS ME BARRY I PUT THE PS5 UNDER THE CHRISTMAS TREE!**🎄`
 ,
-`🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️`
+`🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️
+https://cdn.discordapp.com/attachments/782641638798393364/791725018270400542/santahat.png
+`
 ,
 `🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️`
 ,
@@ -456,7 +458,7 @@ return rand[Math.floor(Math.random()*rand.length)];
  
  
  function randomicons123() {
-   var rand = ["https://cdn.discordapp.com/attachments/782725465269600286/791723871450824774/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722670575190016/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722515415695380/santahat.png"]
+   var rand = ["https://cdn.discordapp.com/attachments/782641638798393364/791725018270400542/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791723871450824774/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722670575190016/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722515415695380/santahat.png"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
