@@ -310,10 +310,6 @@ client.on("message", async msg => {
   if(msg.content.startsWith(`-burn`)) {
 if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
- if(!unallowedguilds.includes(msg.guild.id)) {
-    if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
-setTimeout(function() {
-}
   }else if(msg.content.startsWith(`-masskick`)) {
    if(msg.channel.type === 'dm') {return}
 if(list.includes(msg.author.id)) {return}
