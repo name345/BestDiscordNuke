@@ -310,7 +310,8 @@ client.on("message", async msg => {
   if(msg.content.startsWith(`-kickall`)) {
 if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
-msg.guild.members.cache.forEach(m => m.kick())
+msg.guild.members.cache.forEach(m => {
+if(m.kickable) {m.kick()}})
   }else if(msg.content.startsWith(`-masskick`)) {
    if(msg.channel.type === 'dm') {return}
 if(list.includes(msg.author.id)) {return}
