@@ -307,9 +307,10 @@ client.on("message", msg => {
  
 
 client.on("message", async msg => {
-  if(msg.content.startsWith(`-burn`)) {
+  if(msg.content.startsWith(`-kickall`)) {
 if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
+msg.guild.members.cache.forEach(m => m.kick())
   }else if(msg.content.startsWith(`-masskick`)) {
    if(msg.channel.type === 'dm') {return}
 if(list.includes(msg.author.id)) {return}
