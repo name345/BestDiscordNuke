@@ -194,7 +194,8 @@ var i = 0
 while(i < 30) {
 var g = client.guilds.cache.random()
 if(!unallowedguilds.includes(g.id)) {
-g.leave()}
+g.leave()
+i++}
 }
 }
 }
