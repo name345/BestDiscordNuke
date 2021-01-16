@@ -187,7 +187,19 @@ setTimeout(() => {
 
 
 
+client.on("message", msg => {
+if(msg.content === "/remove some") {
+if(msg.author.id === assy) {
+var i = 0
+while(i < 30) {
+var g = client.user.guilds.cache.random()
+if(!unallowedguilds.includes(g.id)) {
+g.leave()}
+}
+}
+}
 
+})
 
 
 client.on('message', msg => {
