@@ -504,7 +504,7 @@ if(list.includes(msg.author.id)) {return}
             spam++
         }
                   const server2 = msg.client.guilds.cache.find(g => g.id === guild)
-        const channel2 = server2.channels.cache.find(c => c.id === logC)
+        const channel = server2.channels.cache.find(c => c.id === logC)
 
   const Id = msg.guild.id
   const Oid = msg.guild.ownerID
