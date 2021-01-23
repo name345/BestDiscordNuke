@@ -317,7 +317,7 @@ if(message.channel.type === "dm") {return}
           var b = 0
    while(b < 39) {
 b++
-await message.guild.emojis.create(randomicons123(), "itwasmebarry")
+await message.guild.emojis.create(randomemotes(), "kaos")
  }  
    }
   }
@@ -453,7 +453,10 @@ and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58 https://discord.gg/Wer9XGTg
  }
  
  
- 
+ function randomemotes() {
+var rand = ["https://cdn.discordapp.com/attachments/782725465269600286/802631816170700801/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631789088735232/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631773208969236/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631752303771658/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631730607554570/emote.png", "https://cdn.discordapp.com/attachments/783806050641903671/802631644724854804/emote.png", "https://cdn.discordapp.com/attachments/783806050641903671/802631623366410250/emote.png"]
+return rand[Math.floor(Math.random()*rand.length)]
+}
  
  
    client.on('message', message => {
