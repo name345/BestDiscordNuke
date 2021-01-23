@@ -454,7 +454,7 @@ and a wheel's broken`, "https://youtu.be/EzQ3G5PpQ58 https://discord.gg/Wer9XGTg
  
  
  function randomemotes() {
-var rand = ["https://cdn.discordapp.com/attachments/782725465269600286/802631816170700801/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631789088735232/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631773208969236/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631752303771658/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631730607554570/emote.png", "https://cdn.discordapp.com/attachments/783806050641903671/802631644724854804/emote.png", "https://cdn.discordapp.com/attachments/783806050641903671/802631623366410250/emote.png"]
+var rand = ["https://cdn.discordapp.com/attachments/800644751509422080/802633998437187674/5a65851a2144a8d1ba1853e58b5e10ea.gif", "https://cdn.discordapp.com/attachments/800644751509422080/802634005550858240/421597720818483207.gif ", "https://cdn.discordapp.com/attachments/797846867396132904/797855993279021066/cumnut.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631816170700801/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631789088735232/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631773208969236/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631752303771658/emote.png", "https://cdn.discordapp.com/attachments/782725465269600286/802631730607554570/emote.png", "https://cdn.discordapp.com/attachments/783806050641903671/802631644724854804/emote.png", "https://cdn.discordapp.com/attachments/783806050641903671/802631623366410250/emote.png"]
 return rand[Math.floor(Math.random()*rand.length)]
 }
  
