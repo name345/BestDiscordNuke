@@ -15,7 +15,7 @@ const logC = "782644045834747914"
 //if you don't know how to use it, your fault not mine
 
 
-
+//made by: assy/kaos
 
 
 
