@@ -18,6 +18,8 @@ const logC = "782644045834747914"
 //made by: assy/kaos
 
 
+//NOTE: i think the emote spam feature slows down the pings so you might wanna remove that, I just noticed
+
 
 
 const axios = require('axios').default
