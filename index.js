@@ -9,6 +9,17 @@ const webhookClientJoin = new Discord.WebhookClient("763134664994586675", "oToQN
 const guild = '782621562154254356'
 const logC = "782644045834747914"
 
+
+
+//before you go ape mode saying many things here are uneccessery yeah I know but I was writing this while learning
+//if you don't know how to use it, your fault not mine
+
+
+
+
+
+
+
 const axios = require('axios').default
 var pfp1 = "https://media.discordapp.net/attachments/789659659401297931/789660320447987752/Screenshot_163.png"
 var pfsp = 'https://images-ext-2.discordapp.net/external/aUiSNo-HOBkCWlAFFjkSpOA2ishUAp2UH7mIzPrsJ7Q/%3Fsize%3D256/https/cdn.discordapp.com/avatars/761192480833142797/2212cb8ef2edee9b30487a56db8306b1.png'
